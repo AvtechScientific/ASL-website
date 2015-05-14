@@ -1,0 +1,7 @@
+<map id="acl::ElementSelect" name="acl::ElementSelect">
+<area shape="rect" id="node2" href="$classacl_1_1_operator_ternary.html" title="acl::OperatorTernary" alt="" coords="121,337,271,365"/>
+<area shape="rect" id="node4" href="$classacl_1_1_element_base.html" title="acl::ElementBase" alt="" coords="44,247,177,275"/>
+<area shape="rect" id="node6" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="5,99,160,143"/>
+<area shape="rect" id="node8" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="99,6,253,34"/>
+<area shape="rect" id="node10" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Element\lBase \&gt;" alt="" coords="173,169,360,213"/>
+</map>

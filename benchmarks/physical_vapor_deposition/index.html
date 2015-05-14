@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ASL - Physical Vapor Deposition</title>
+  <meta name="description" content="OpenCL-enabled open source multiphysics simulation software package">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://asl.org.il/benchmarks/physical_vapor_deposition/">
+  <link rel="alternate" type="application/rss+xml" title="Advanced Simulation Library" href="http://asl.org.il/feed.xml" />
+
+<link rel="icon" href="/media/favicon.png">
+
+<!-- Google Analytics -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60573757-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Advanced Simulation Library</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+	
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/features/">Features</a>
+          
+        
+          
+          <a class="page-link" href="/benchmarks/">Benchmarks</a>
+          
+        
+          
+          <a class="page-link" href="/documentation/">Documentation</a>
+          
+        
+          
+          <a class="page-link" href="/download/">Download</a>
+          
+        
+          
+          <a class="page-link" href="/contribute/">Contribute</a>
+          
+        
+          
+          <a class="page-link" href="/support/">Support</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  
+  <header class="post-header">
+    <h1 class="post-title">Physical Vapor Deposition</h1>
+  </header>
+  
+
+  <article class="post-content">
+    <h2 id="description">Description</h2>
+
+<p>Simulation of circular saw discs coating procedure employing Physical Vapor Deposition (PVD) method. This metallization technique is used in a wide variety of other applications such as semiconductor wafers, photovoltaic cells, thin-film batteries, optical coatings, etc.. Present modeling can be utilized to optimize different output parameters of PVD: layer thickness uniformity, energetic efficiency, process duration, costs and productivity.</p>
+
+<h2 id="platform-used">Platform used</h2>
+
+<ul>
+  <li>CPU: AMD FX(tm)-6300 Six-Core Processor 3.5GHz</li>
+  <li>RAM: 8Gb</li>
+  <li>GPU: Sapphire AMD Radeon HD 7950 3GB GDDR5 Boost OC</li>
+  <li>OS: 64-bit Debian GNU/Linux</li>
+</ul>
+
+<h2 id="numerical-setup">Numerical setup</h2>
+
+<ul>
+  <li>Domain size: 204 x 204 x 373</li>
+  <li>Number of points: 15’522’768</li>
+  <li>Resolution: 0.36 cm</li>
+  <li>Physical size: 72 x 72 x 133 cm³</li>
+  <li>Number of iterations: 30’000</li>
+  <li>Physical time: 3600 s</li>
+</ul>
+
+<h2 id="results">Results</h2>
+
+<ul>
+  <li>Computation time: 1018 s</li>
+</ul>
+
+<h2 id="screenshots">Screenshots</h2>
+
+<figure>
+	<a href="/media/benchmarks/physical_vapor_deposition/pvd_chamber_9.png">
+		<img src="/media/benchmarks/physical_vapor_deposition/pvd_chamber_9.png" alt="Vacuum chamber" />
+	</a>
+	<figcaption>
+		Vacuum chamber
+	</figcaption>
+</figure>
+
+<figure>
+	<a href="/media/benchmarks/physical_vapor_deposition/pvd_circular_saw_discs_9.png">
+		<img src="/media/benchmarks/physical_vapor_deposition/pvd_circular_saw_discs_9.png" alt="Circular saw discs" />
+	</a>
+	<figcaption>
+		Circular saw discs
+	</figcaption>
+</figure>
+
+<figure>
+	<a href="/media/benchmarks/physical_vapor_deposition/pvd_velocity_9.png">
+		<img src="/media/benchmarks/physical_vapor_deposition/pvd_velocity_9.png" alt="Vapor velocity field" />
+	</a>
+	<figcaption>
+		Vapor velocity field
+	</figcaption>
+</figure>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+	<a href="/licensing">Copyright</a> © 2015 <a href="http://avtechscientific.com">Avtech Scientific</a> | Advanced Simulation Library™
+    </div>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,7 @@
+<map id="acl::ReductionAlgGenerator&lt; ResType, Op &gt;" name="acl::ReductionAlgGenerator&lt; ResType, Op &gt;">
+<area shape="rect" id="node2" href="$classasl_1_1_u_value.html" title="asl::UValue\&lt; asl::AVec\l\&lt; ResType \&gt; \&gt;" alt="" coords="192,209,357,253"/>
+<area shape="rect" id="node4" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; asl\l::AVec\&lt; ResType \&gt; \&gt;" alt="" coords="39,99,193,143"/>
+<area shape="rect" id="node6" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="5,6,160,34"/>
+<area shape="rect" id="node8" href="$classasl_1_1_time_stamp.html" title="asl::TimeStamp" alt="" coords="251,6,373,34"/>
+<area shape="rect" id="node10" href="$classasl_1_1_u_value.html" title="Updatable value. This class stores value and its TimeStamp." alt="" coords="316,107,447,135"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Boundary Conditions" name="Boundary Conditions">
+<area shape="rect" id="node1" href="$group___numerics.html" title="Numerics" alt="" coords="5,79,88,107"/>
+<area shape="rect" id="node2" href="$group___elasticity_b_c.html" title="Elasticity Boundary\l Conditions" alt="" coords="371,5,512,49"/>
+<area shape="rect" id="node4" href="$group___transport_processes_b_c.html" title="Transport processes\l boundary conditions" alt="" coords="364,71,519,115"/>
+<area shape="rect" id="node5" href="$group___generic_b_c.html" title="Generic boundary conditions" alt="" coords="340,138,543,166"/>
+</map>

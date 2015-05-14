@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ASL - Features</title>
+  <meta name="description" content="OpenCL-enabled open source multiphysics simulation software package">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://asl.org.il/features/">
+  <link rel="alternate" type="application/rss+xml" title="Advanced Simulation Library" href="http://asl.org.il/feed.xml" />
+
+<link rel="icon" href="/media/favicon.png">
+
+<!-- Google Analytics -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60573757-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Advanced Simulation Library</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+	
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link active" href="/features/">Features</a>
+          
+        
+          
+          <a class="page-link" href="/benchmarks/">Benchmarks</a>
+          
+        
+          
+          <a class="page-link" href="/documentation/">Documentation</a>
+          
+        
+          
+          <a class="page-link" href="/download/">Download</a>
+          
+        
+          
+          <a class="page-link" href="/contribute/">Contribute</a>
+          
+        
+          
+          <a class="page-link" href="/support/">Support</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  
+  <header class="post-header">
+    <h1 class="post-title">Features</h1>
+  </header>
+  
+
+  <article class="post-content">
+    <p>Advanced Simulation Library is a free and open source multiphysics simulation software package and a tool for solving Partial Differential Equations. It has significant user base across many areas of engineering and science, from both industrial and academic organizations. ASL utilizes only the methods that allow efficient parallelization: Lattice Boltzmann methods, Explicit Finite Difference, Matrix Free Finite Elements, etc. and exploits all available hardware resources, such as SIMD, local cache, etc.. Once written, an ASL-based application can be deployed on a variety of architectures, such as CPU, GPU, FPGA, DSP, clusters and supercomputers, sometimes even without recompilation.</p>
+
+<p>ASL has an extensive range of features to solve anything from complex fluid flows involving chemical reactions, turbulence and heat transfer, to solid mechanics and elasticity.</p>
+
+<p>Proprietary software often constitutes a black-box to the user, especially in the field of scientific computing. The availability of the source code, on the other hand, enables him to know exactly what happens on each and every step of the simulation and what assumption and approximations are being made. This approach is a fundamental principle of <a href="http://en.wikipedia.org/wiki/Open_science">Open Science</a> that guarantees reproducibility of research. By being open, ASL also offers users complete freedom to extend and customize its existing functionality, either by themselves or by third party experts.</p>
+
+<ul>
+  <li><strong>License</strong>: GNU Affero General Public License (AGPL) with an optional <a href="/licensing">commercial license</a>.</li>
+  <li><strong>Numerical methods</strong>: <a href="http://en.wikipedia.org/wiki/Finite_difference_method">Finite difference method</a>, <a href="http://en.wikipedia.org/wiki/Lattice_Boltzmann_methods">Lattice Boltzmann methods</a>.</li>
+  <li><strong>Computational engine</strong>: implemented in OpenCL, wrapped into C++ classes.</li>
+  <li><strong>Platforms</strong>: cross-platform - Linux, Unix, Windows, Mac OS X.</li>
+  <li><strong>Architectures</strong>: CPU, GPU, APU, FPGA, DSP, clusters/supercomputers.</li>
+  <li><strong>Interfacing</strong>: VTK/ParaView, MATLAB (export).</li>
+  <li><strong>Implemented phenomena</strong>:
+    <ul>
+      <li><a href="/doc/Developer-Guide/group___transport_processes.html"><em>Transport processes</em></a>
+        <ul>
+          <li>multicomponent transport processes</li>
+          <li>multiphase transport processes</li>
+          <li>compressible and incompressible fluid flow</li>
+        </ul>
+      </li>
+      <li><a href="/doc/Developer-Guide/group___chemical_reactions.html"><em>Chemical reactions</em></a>
+        <ul>
+          <li>electrode reactions</li>
+        </ul>
+      </li>
+      <li><a href="/doc/Developer-Guide/group___elasticity.html"><em>Elasticity</em></a>
+        <ul>
+          <li>homogenious isotropic elasticity</li>
+          <li>homogenious isotropic poroelasticity</li>
+        </ul>
+      </li>
+      <li><a href="/doc/Developer-Guide/group___interface_tracking.html"><em>Interface tracking</em></a>
+        <ul>
+          <li>evolution of an interface</li>
+          <li>evolution of an interface with crystalographic kinetics</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Next release highlights</strong>:
+    <ul>
+      <li>integrated GPU-enabled visualization engine</li>
+      <li>integrated Graphical User Interface</li>
+      <li>new physical/chemical phenomena</li>
+    </ul>
+  </li>
+</ul>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+	<a href="/licensing">Copyright</a> © 2015 <a href="http://avtechscientific.com">Avtech Scientific</a> | Advanced Simulation Library™
+    </div>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
