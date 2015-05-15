@@ -143,7 +143,7 @@
     </ul>
   </li>
   <li>Create a build directory: <code>mkdir build-asl; cd build-asl</code></li>
-  <li>Run cmake: <code>cmake -G "Unix Makefiles" ../ASL</code></li>
+  <li>Use <a href="http://www.cmake.org/cmake/help/v3.2/manual/cmake-generators.7.html">cmake generator</a> to produce Makefiles: <code>cmake -G "Unix Makefiles" ../ASL</code> or project files for your IDE (Visual Studio, Xcode, Eclipse, etc.): <code>cmake -G "Visual Studio 10" ../ASL</code></li>
   <li>Run make (as root if installing into default destination <code>/usr/local</code>): <code>make install</code></li>
 </ol>
 
