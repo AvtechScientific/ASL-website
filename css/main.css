@@ -289,6 +289,8 @@ pre {
 .page-content {
   padding: 30px 0 0 0;
   text-align: justify; }
+  .page-content .footnote, .page-content .footnotes {
+    font-size: 13.2px; }
   .page-content h1 {
     font-size: 28px; }
     @media screen and (max-width: 800px) {
