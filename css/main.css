@@ -39,12 +39,9 @@ img {
 /**
  * Figures
  */
-.figure {
-  float: none;
-  clear: both; }
-
 figure {
-  display: table; }
+  display: table;
+  float: left; }
 
 figure img, figure video {
   border-style: solid;
@@ -371,7 +368,8 @@ pre {
   color: #FAFAFA;
   padding: 8px 15px;
   border-radius: 5px;
-  margin: 30px 0; }
+  margin: 30px 0;
+  clear: both; }
   .social-share a {
     font-weight: bold;
     color: #fff;
