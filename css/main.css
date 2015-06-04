@@ -39,9 +39,12 @@ img {
 /**
  * Figures
  */
+.figure {
+  float: none;
+  clear: both; }
+
 figure {
-  display: table;
-  float: left; }
+  display: table; }
 
 figure img, figure video {
   border-style: solid;
