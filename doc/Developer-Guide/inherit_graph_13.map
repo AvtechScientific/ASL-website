@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classasl_1_1_a_b_d_file_in.html" title="ABD (ASL Binary Dump) file, input." alt="" coords="5,5,112,33"/>
+<area shape="rect" id="node1" href="$classasl_1_1_abstract_data.html" title="asl::AbstractData" alt="" coords="5,42,129,69"/>
+<area shape="rect" id="node2" href="$classasl_1_1_abstract_data_with_ghost_nodes.html" title="asl::AbstractDataWithGhost\lNodes" alt="" coords="177,5,364,47"/>
+<area shape="rect" id="node4" href="$singletonasl_1_1_data_wrapper.html" title="Class defines a folding rule into a 1D/2D/3D bulk. " alt="" coords="192,71,349,98"/>
+<area shape="rect" id="node3" href="$singletonasl_1_1_data_with_ghost_nodes.html" title="asl::DataWithGhostNodes\&lt; V \&gt;" alt="" coords="412,13,620,39"/>
 </map>

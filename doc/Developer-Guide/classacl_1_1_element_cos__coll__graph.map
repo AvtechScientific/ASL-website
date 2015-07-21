@@ -1,7 +1,7 @@
 <map id="acl::ElementCos" name="acl::ElementCos">
-<area shape="rect" id="node2" href="$classacl_1_1_operator_unary.html" title="acl::OperatorUnary" alt="" coords="125,318,267,346"/>
-<area shape="rect" id="node4" href="$classacl_1_1_element_base.html" title="acl::ElementBase" alt="" coords="44,238,177,266"/>
-<area shape="rect" id="node6" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="5,99,160,143"/>
-<area shape="rect" id="node8" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="99,6,253,34"/>
-<area shape="rect" id="node10" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Element\lBase \&gt;" alt="" coords="173,169,360,213"/>
+<area shape="rect" id="node2" href="$classacl_1_1_operator_unary.html" title="acl::OperatorUnary" alt="" coords="116,301,248,328"/>
+<area shape="rect" id="node3" href="$classacl_1_1_element_base.html" title="acl::ElementBase" alt="" coords="37,225,162,252"/>
+<area shape="rect" id="node4" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="5,95,145,136"/>
+<area shape="rect" id="node5" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="90,5,231,32"/>
+<area shape="rect" id="node6" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Element\lBase \&gt;" alt="" coords="160,160,329,201"/>
 </map>

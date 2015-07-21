@@ -1,11 +1,11 @@
 <map id="asl::BCDirectCopier" name="asl::BCDirectCopier">
-<area shape="rect" id="node2" href="$classasl_1_1_b_cond_connector.html" title="Virtual class describes general interface for boundary conditions which connect two datas..." alt="" coords="1052,162,1207,190"/>
-<area shape="rect" id="node4" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="656,162,781,190"/>
-<area shape="rect" id="node6" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="677,111,760,139"/>
-<area shape="rect" id="node8" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="253,106,379,134"/>
-<area shape="rect" id="node10" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="7,133,121,161"/>
-<area shape="rect" id="node15" title="STL class." alt="" coords="253,55,379,83"/>
-<area shape="rect" id="node19" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="624,239,813,283"/>
-<area shape="rect" id="node21" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="239,309,393,337"/>
-<area shape="rect" id="node24" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Kernel \&gt;" alt="" coords="839,361,1025,389"/>
+<area shape="rect" id="node2" href="$classasl_1_1_b_cond_connector.html" title="Virtual class describes general interface for boundary conditions which connect two datas..." alt="" coords="967,155,1113,181"/>
+<area shape="rect" id="node3" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="602,155,721,181"/>
+<area shape="rect" id="node4" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="621,104,701,131"/>
+<area shape="rect" id="node5" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="233,101,351,128"/>
+<area shape="rect" id="node6" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="5,127,116,153"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="234,51,350,77"/>
+<area shape="rect" id="node10" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="575,226,748,267"/>
+<area shape="rect" id="node11" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="221,293,363,320"/>
+<area shape="rect" id="node12" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Kernel \&gt;" alt="" coords="772,344,943,371"/>
 </map>

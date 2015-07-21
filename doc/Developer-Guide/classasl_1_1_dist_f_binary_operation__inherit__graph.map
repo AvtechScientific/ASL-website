@@ -1,5 +1,5 @@
 <map id="asl::DistFBinaryOperation" name="asl::DistFBinaryOperation">
-<area shape="rect" id="node5" href="$classasl_1_1_dist_f_operation_and.html" title="asl::DistFOperationAnd" alt="" coords="5,161,173,189"/>
-<area shape="rect" id="node7" href="$classasl_1_1_dist_f_operation_or.html" title="asl::DistFOperationOr" alt="" coords="197,161,355,189"/>
-<area shape="rect" id="node2" href="$classasl_1_1_distance_function.html" title="asl::DistanceFunction" alt="" coords="104,6,261,34"/>
+<area shape="rect" id="node3" href="$classasl_1_1_dist_f_operation_and.html" title="asl::DistFOperationAnd" alt="" coords="5,155,164,181"/>
+<area shape="rect" id="node4" href="$classasl_1_1_dist_f_operation_or.html" title="asl::DistFOperationOr" alt="" coords="189,155,338,181"/>
+<area shape="rect" id="node2" href="$classasl_1_1_distance_function.html" title="asl::DistanceFunction" alt="" coords="99,5,249,32"/>
 </map>

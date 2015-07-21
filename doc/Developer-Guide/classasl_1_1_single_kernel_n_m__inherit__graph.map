@@ -1,14 +1,14 @@
 <map id="asl::SingleKernelNM" name="asl::SingleKernelNM">
-<area shape="rect" id="node5" href="$classasl_1_1_data_clipper.html" title="Algorithm for generation of coarsed dataset." alt="" coords="416,5,539,33"/>
-<area shape="rect" id="node7" href="$classasl_1_1_data_coarser.html" title="Algorithm for generation of coarsed dataset." alt="" coords="413,55,541,83"/>
-<area shape="rect" id="node9" href="$classasl_1_1_d_f_optimizer.html" title="Numerical method which makes changes in the input map and produces map suitbale and optimal for use i..." alt="" coords="415,106,540,134"/>
-<area shape="rect" id="node11" href="$classasl_1_1_f_d_advection_diffusion.html" title="Numerical method which computes multicomponent transport processes." alt="" coords="387,157,568,185"/>
-<area shape="rect" id="node13" href="$classasl_1_1_f_d_multi_phase.html" title="Numerical method which computes multiphase transport processes." alt="" coords="411,207,544,235"/>
-<area shape="rect" id="node15" href="$classasl_1_1_f_d_stefan_maxwell.html" title="Numerical method which computes multicomponent transport processes." alt="" coords="400,258,555,286"/>
-<area shape="rect" id="node17" href="$classasl_1_1_f_d_stefan_maxwell_electric_field.html" title="asl::FDStefanMaxwellElectric\lField" alt="" coords="376,309,579,353"/>
-<area shape="rect" id="node19" href="$classasl_1_1_l_b_g_k.html" title="Numerical method for fluid flow." alt="" coords="436,375,519,403"/>
-<area shape="rect" id="node23" href="$classasl_1_1_single_kernel_map_n_m.html" title="asl::SingleKernelMapNM" alt="" coords="391,426,564,454"/>
-<area shape="rect" id="node2" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="7,207,132,235"/>
-<area shape="rect" id="node21" href="$classasl_1_1_l_b_g_k_turbulence.html" title="asl::LBGKTurbulence" alt="" coords="627,375,776,403"/>
-<area shape="rect" id="node25" href="$classasl_1_1_f_d_b_v_kinetics.html" title="Numerical method which computes electrode reactions." alt="" coords="636,426,767,454"/>
+<area shape="rect" id="node3" href="$classasl_1_1_data_clipper.html" title="Algorithm for generation of coarsed dataset. " alt="" coords="401,5,517,32"/>
+<area shape="rect" id="node4" href="$classasl_1_1_data_coarser.html" title="Algorithm for generation of coarsed dataset. " alt="" coords="398,56,519,83"/>
+<area shape="rect" id="node5" href="$classasl_1_1_d_f_optimizer.html" title="Numerical method which makes changes in the input map and produces map suitbale and optimal for use i..." alt="" coords="398,107,519,133"/>
+<area shape="rect" id="node6" href="$classasl_1_1_f_d_advection_diffusion.html" title="Numerical method which computes multicomponent transport processes. " alt="" coords="371,157,546,184"/>
+<area shape="rect" id="node7" href="$classasl_1_1_f_d_multi_phase.html" title="Numerical method which computes multiphase transport processes. " alt="" coords="393,208,524,235"/>
+<area shape="rect" id="node8" href="$classasl_1_1_f_d_stefan_maxwell.html" title="Numerical method which computes multicomponent transport processes. " alt="" coords="383,259,534,285"/>
+<area shape="rect" id="node9" href="$classasl_1_1_f_d_stefan_maxwell_electric_field.html" title="asl::FDStefanMaxwellElectric\lField" alt="" coords="361,310,556,351"/>
+<area shape="rect" id="node10" href="$classasl_1_1_l_b_g_k.html" title="Numerical method for fluid flow. " alt="" coords="417,376,500,403"/>
+<area shape="rect" id="node12" href="$classasl_1_1_single_kernel_map_n_m.html" title="asl::SingleKernelMapNM" alt="" coords="375,427,542,453"/>
+<area shape="rect" id="node2" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="5,208,124,235"/>
+<area shape="rect" id="node11" href="$classasl_1_1_l_b_g_k_turbulence.html" title="asl::LBGKTurbulence" alt="" coords="604,376,751,403"/>
+<area shape="rect" id="node13" href="$classasl_1_1_f_d_b_v_kinetics.html" title="Numerical method which computes electrode reactions. " alt="" coords="612,427,743,453"/>
 </map>

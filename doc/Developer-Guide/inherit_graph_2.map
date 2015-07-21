@@ -1,41 +1,41 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classacl_1_1_element_base.html" title="acl::ElementBase" alt="" coords="5,486,139,514"/>
-<area shape="rect" id="node3" href="$classacl_1_1_constant.html" title="acl::Constant\&lt; T \&gt;" alt="" coords="216,5,357,33"/>
-<area shape="rect" id="node5" href="$classacl_1_1_element_excerpt.html" title="acl::ElementExcerpt" alt="" coords="212,55,361,83"/>
-<area shape="rect" id="node7" href="$classacl_1_1_element_for.html" title="For loop." alt="" coords="227,106,347,134"/>
-<area shape="rect" id="node9" href="$classacl_1_1_element_if_else.html" title="If&#45;Else conditional structure." alt="" coords="220,157,353,185"/>
-<area shape="rect" id="node11" href="$classacl_1_1_element_parser.html" title="acl::ElementParser" alt="" coords="216,207,357,235"/>
-<area shape="rect" id="node13" href="$classacl_1_1_element_sync_copy.html" title="acl::ElementSyncCopy" alt="" coords="205,258,368,286"/>
-<area shape="rect" id="node15" href="$classacl_1_1_group_i_d.html" title="acl::GroupID" alt="" coords="237,309,336,337"/>
-<area shape="rect" id="node17" href="$classacl_1_1_index.html" title="acl::Index" alt="" coords="245,359,328,387"/>
-<area shape="rect" id="node19" href="$classacl_1_1_index_ext.html" title="acl::IndexExt" alt="" coords="236,410,337,438"/>
-<area shape="rect" id="node21" href="$classacl_1_1_local_array.html" title="acl::LocalArray\&lt; T \&gt;" alt="" coords="211,461,363,489"/>
-<area shape="rect" id="node23" href="$classacl_1_1_mem_block.html" title="acl::MemBlock" alt="" coords="229,511,344,539"/>
-<area shape="rect" id="node29" href="$classacl_1_1_operator_binary.html" title="acl::OperatorBinary" alt="" coords="215,562,359,590"/>
-<area shape="rect" id="node47" href="$classacl_1_1_operator_generic.html" title="acl::OperatorGeneric" alt="" coords="209,613,364,641"/>
-<area shape="rect" id="node49" href="$classacl_1_1_operator_ternary.html" title="acl::OperatorTernary" alt="" coords="212,663,361,691"/>
-<area shape="rect" id="node55" href="$classacl_1_1_operator_unary.html" title="acl::OperatorUnary" alt="" coords="216,739,357,767"/>
-<area shape="rect" id="node69" href="$classacl_1_1_private_array.html" title="acl::PrivateArray\&lt; T \&gt;" alt="" coords="205,790,368,818"/>
-<area shape="rect" id="node71" href="$classacl_1_1_private_variable.html" title="acl::PrivateVariable\&lt; T \&gt;" alt="" coords="197,841,376,869"/>
-<area shape="rect" id="node73" href="$classacl_1_1_variable.html" title="acl::Variable\&lt; T \&gt;" alt="" coords="219,891,355,919"/>
-<area shape="rect" id="node75" href="$classacl_1_1_variable_reference.html" title="acl::VariableReference\&lt; T \&gt;" alt="" coords="188,942,385,970"/>
-<area shape="rect" id="node77" href="$classacl_1_1_variable_s_p.html" title="acl::VariableSP\&lt; T \&gt;" alt="" coords="211,993,363,1021"/>
-<area shape="rect" id="node25" href="$classacl_1_1_array.html" title="Global array." alt="" coords="487,125,604,153"/>
-<area shape="rect" id="node27" href="$classacl_1_1_subvector.html" title="acl::Subvector\&lt; T \&gt;" alt="" coords="471,175,620,203"/>
-<area shape="rect" id="node31" href="$classacl_1_1_element_assignment_safe.html" title="acl::ElementAssignmentSafe" alt="" coords="443,226,648,254"/>
-<area shape="rect" id="node33" href="$classacl_1_1_element_division.html" title="acl::ElementDivision" alt="" coords="471,277,620,305"/>
-<area shape="rect" id="node35" href="$classacl_1_1_element_generic_atomic_function.html" title="acl::ElementGenericAtomic\lFunction" alt="" coords="448,327,643,371"/>
-<area shape="rect" id="node37" href="$classacl_1_1_element_generic_binary.html" title="acl::ElementGenericBinary" alt="" coords="451,394,640,422"/>
-<area shape="rect" id="node39" href="$classacl_1_1_element_generic_binary_function.html" title="acl::ElementGenericBinary\lFunction" alt="" coords="451,445,640,489"/>
-<area shape="rect" id="node41" href="$classacl_1_1_element_product.html" title="acl::ElementProduct" alt="" coords="471,511,620,539"/>
-<area shape="rect" id="node43" href="$classacl_1_1_element_subtraction.html" title="acl::ElementSubtraction" alt="" coords="459,562,632,590"/>
-<area shape="rect" id="node45" href="$classacl_1_1_element_sum.html" title="acl::ElementSum" alt="" coords="480,613,611,641"/>
-<area shape="rect" id="node51" href="$classacl_1_1_element_mad.html" title="The class is realization of the mad operation." alt="" coords="481,663,609,691"/>
-<area shape="rect" id="node53" href="$classacl_1_1_element_select.html" title="acl::ElementSelect" alt="" coords="475,714,616,742"/>
-<area shape="rect" id="node57" href="$classacl_1_1_element_convert.html" title="realizes convert_ functionality" alt="" coords="471,765,620,793"/>
-<area shape="rect" id="node59" href="$classacl_1_1_element_cos.html" title="acl::ElementCos" alt="" coords="483,815,608,843"/>
-<area shape="rect" id="node61" href="$classacl_1_1_element_generic_unary.html" title="acl::ElementGenericUnary" alt="" coords="452,866,639,894"/>
-<area shape="rect" id="node63" href="$classacl_1_1_element_generic_unary_s_i_m_d.html" title="acl::ElementGenericUnarySIMD" alt="" coords="435,917,656,945"/>
-<area shape="rect" id="node65" href="$classacl_1_1_element_sin.html" title="acl::ElementSin" alt="" coords="485,967,605,995"/>
-<area shape="rect" id="node67" href="$classacl_1_1_element_sqrt.html" title="acl::ElementSqrt" alt="" coords="481,1018,609,1046"/>
+<area shape="rect" id="node1" href="$classacl_1_1_element_base.html" title="acl::ElementBase" alt="" coords="5,487,131,513"/>
+<area shape="rect" id="node2" href="$classacl_1_1_constant.html" title="acl::Constant\&lt; T \&gt;" alt="" coords="206,5,338,32"/>
+<area shape="rect" id="node3" href="$classacl_1_1_element_excerpt.html" title="acl::ElementExcerpt" alt="" coords="202,56,342,83"/>
+<area shape="rect" id="node4" href="$classacl_1_1_element_for.html" title="For loop. " alt="" coords="215,107,329,133"/>
+<area shape="rect" id="node5" href="$classacl_1_1_element_if_else.html" title="If&#45;Else conditional structure. " alt="" coords="207,157,337,184"/>
+<area shape="rect" id="node6" href="$classacl_1_1_element_parser.html" title="acl::ElementParser" alt="" coords="205,208,339,235"/>
+<area shape="rect" id="node7" href="$classacl_1_1_element_sync_copy.html" title="acl::ElementSyncCopy" alt="" coords="194,259,350,285"/>
+<area shape="rect" id="node8" href="$classacl_1_1_group_i_d.html" title="acl::GroupID" alt="" coords="224,309,320,336"/>
+<area shape="rect" id="node9" href="$classacl_1_1_index.html" title="acl::Index" alt="" coords="233,360,311,387"/>
+<area shape="rect" id="node10" href="$classacl_1_1_index_ext.html" title="acl::IndexExt" alt="" coords="223,411,321,437"/>
+<area shape="rect" id="node11" href="$classacl_1_1_local_array.html" title="acl::LocalArray\&lt; T \&gt;" alt="" coords="201,461,343,488"/>
+<area shape="rect" id="node12" href="$classacl_1_1_mem_block.html" title="acl::MemBlock" alt="" coords="217,512,327,539"/>
+<area shape="rect" id="node15" href="$classacl_1_1_operator_binary.html" title="acl::OperatorBinary" alt="" coords="205,563,339,589"/>
+<area shape="rect" id="node24" href="$classacl_1_1_operator_generic.html" title="acl::OperatorGeneric" alt="" coords="201,613,343,640"/>
+<area shape="rect" id="node25" href="$classacl_1_1_operator_ternary.html" title="acl::OperatorTernary" alt="" coords="201,664,343,691"/>
+<area shape="rect" id="node28" href="$classacl_1_1_operator_unary.html" title="acl::OperatorUnary" alt="" coords="206,740,338,767"/>
+<area shape="rect" id="node35" href="$classacl_1_1_private_array.html" title="acl::PrivateArray\&lt; T \&gt;" alt="" coords="197,791,347,817"/>
+<area shape="rect" id="node36" href="$classacl_1_1_private_variable.html" title="acl::PrivateVariable\&lt; T \&gt;" alt="" coords="189,841,355,868"/>
+<area shape="rect" id="node37" href="$classacl_1_1_variable.html" title="acl::Variable\&lt; T \&gt;" alt="" coords="209,892,335,919"/>
+<area shape="rect" id="node38" href="$classacl_1_1_variable_reference.html" title="acl::VariableReference\&lt; T \&gt;" alt="" coords="179,943,365,969"/>
+<area shape="rect" id="node39" href="$classacl_1_1_variable_s_p.html" title="acl::VariableSP\&lt; T \&gt;" alt="" coords="200,993,344,1020"/>
+<area shape="rect" id="node13" href="$singletonacl_1_1_array.html" title="Global array. " alt="" coords="463,125,573,152"/>
+<area shape="rect" id="node14" href="$classacl_1_1_subvector.html" title="acl::Subvector\&lt; T \&gt;" alt="" coords="449,176,587,203"/>
+<area shape="rect" id="node16" href="$classacl_1_1_element_assignment_safe.html" title="acl::ElementAssignmentSafe" alt="" coords="423,227,613,253"/>
+<area shape="rect" id="node17" href="$classacl_1_1_element_division.html" title="acl::ElementDivision" alt="" coords="447,277,589,304"/>
+<area shape="rect" id="node18" href="$classacl_1_1_element_generic_atomic_function.html" title="acl::ElementGenericAtomic\lFunction" alt="" coords="427,329,609,370"/>
+<area shape="rect" id="node19" href="$classacl_1_1_element_generic_binary.html" title="acl::ElementGenericBinary" alt="" coords="429,395,607,421"/>
+<area shape="rect" id="node20" href="$classacl_1_1_element_generic_binary_function.html" title="acl::ElementGenericBinary\lFunction" alt="" coords="429,446,607,487"/>
+<area shape="rect" id="node21" href="$classacl_1_1_element_product.html" title="acl::ElementProduct" alt="" coords="448,512,588,539"/>
+<area shape="rect" id="node22" href="$classacl_1_1_element_subtraction.html" title="acl::ElementSubtraction" alt="" coords="437,563,599,589"/>
+<area shape="rect" id="node23" href="$classacl_1_1_element_sum.html" title="acl::ElementSum" alt="" coords="457,613,579,640"/>
+<area shape="rect" id="node26" href="$classacl_1_1_element_mad.html" title="The class is realization of the mad operation. " alt="" coords="458,664,578,691"/>
+<area shape="rect" id="node27" href="$classacl_1_1_element_select.html" title="acl::ElementSelect" alt="" coords="452,715,584,741"/>
+<area shape="rect" id="node29" href="$classacl_1_1_element_convert.html" title="realizes convert_ functionality " alt="" coords="447,765,589,792"/>
+<area shape="rect" id="node30" href="$classacl_1_1_element_cos.html" title="acl::ElementCos" alt="" coords="459,816,577,843"/>
+<area shape="rect" id="node31" href="$classacl_1_1_element_generic_unary.html" title="acl::ElementGenericUnary" alt="" coords="431,867,605,893"/>
+<area shape="rect" id="node32" href="$classacl_1_1_element_generic_unary_s_i_m_d.html" title="acl::ElementGenericUnarySIMD" alt="" coords="413,917,623,944"/>
+<area shape="rect" id="node33" href="$classacl_1_1_element_sin.html" title="acl::ElementSin" alt="" coords="461,968,575,995"/>
+<area shape="rect" id="node34" href="$classacl_1_1_element_sqrt.html" title="acl::ElementSqrt" alt="" coords="459,1019,577,1045"/>
 </map>

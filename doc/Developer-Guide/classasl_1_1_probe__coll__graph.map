@@ -1,12 +1,12 @@
 <map id="asl::Probe" name="asl::Probe">
-<area shape="rect" id="node2" href="$classacl_1_1_kernel.html" title="OpenCl Kernel generator." alt="" coords="1465,243,1551,271"/>
-<area shape="rect" id="node4" href="$classacl_1_1_expression_container.html" title="acl::ExpressionContainer" alt="" coords="1048,193,1227,221"/>
-<area shape="rect" id="node8" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="260,89,415,117"/>
-<area shape="rect" id="node14" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="641,126,796,170"/>
-<area shape="rect" id="node33" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Abstract\lData \&gt;" alt="" coords="836,5,1023,49"/>
-<area shape="rect" id="node39" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="1251,66,1440,110"/>
-<area shape="rect" id="node10" title="STL class." alt="" coords="275,415,400,443"/>
-<area shape="rect" id="node17" title="STL class." alt="" coords="295,281,380,309"/>
-<area shape="rect" id="node19" title="STL class." alt="" coords="7,273,143,317"/>
-<area shape="rect" id="node21" href="$classacl_1_1_kernel_configuration.html" title="ACL Kernel configuration class." alt="" coords="1052,302,1223,330"/>
+<area shape="rect" id="node2" href="$classacl_1_1_kernel.html" title="OpenCl Kernel generator. " alt="" coords="1347,257,1431,283"/>
+<area shape="rect" id="node3" href="$classacl_1_1_expression_container.html" title="acl::ExpressionContainer" alt="" coords="957,206,1125,233"/>
+<area shape="rect" id="node5" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="237,81,379,107"/>
+<area shape="rect" id="node8" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="585,125,725,167"/>
+<area shape="rect" id="node15" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Abstract\lData \&gt;" alt="" coords="763,5,933,47"/>
+<area shape="rect" id="node17" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="1149,64,1323,105"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="250,423,366,450"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="268,293,348,319"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="5,285,132,327"/>
+<area shape="rect" id="node11" href="$classacl_1_1_kernel_configuration.html" title="ACL Kernel configuration class. " alt="" coords="961,314,1122,341"/>
 </map>

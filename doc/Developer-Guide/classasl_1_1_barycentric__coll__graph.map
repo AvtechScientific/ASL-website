@@ -1,6 +1,6 @@
 <map id="asl::Barycentric" name="asl::Barycentric">
-<area shape="rect" id="node2" href="$classasl_1_1_a_matr.html" title="asl::AMatr\&lt; T \&gt;" alt="" coords="5,193,128,221"/>
-<area shape="rect" id="node6" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt;\&gt;" alt="" coords="115,99,216,127"/>
-<area shape="rect" id="node8" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="108,6,223,34"/>
-<area shape="rect" id="node10" title="STL class." alt="" coords="240,99,365,127"/>
+<area shape="rect" id="node3" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt;\&gt;" alt="" coords="13,95,108,121"/>
+<area shape="rect" id="node4" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="132,95,248,121"/>
+<area shape="rect" id="node7" href="$classasl_1_1_a_matr.html" title="asl::AMatr\&lt; T \&gt;" alt="" coords="230,184,345,211"/>
 </map>

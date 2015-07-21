@@ -1,5 +1,5 @@
 <map id="asl::SingleKernelNM" name="asl::SingleKernelNM">
-<area shape="rect" id="node2" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="5,99,131,127"/>
-<area shape="rect" id="node4" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Kernel \&gt;" alt="" coords="155,99,341,127"/>
-<area shape="rect" id="node6" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="171,6,325,34"/>
+<area shape="rect" id="node2" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="5,95,124,121"/>
+<area shape="rect" id="node3" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Kernel \&gt;" alt="" coords="149,95,319,121"/>
+<area shape="rect" id="node4" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="163,5,305,32"/>
 </map>

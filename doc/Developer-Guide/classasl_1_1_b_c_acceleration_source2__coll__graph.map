@@ -1,21 +1,22 @@
 <map id="asl::BCAccelerationSource2" name="asl::BCAccelerationSource2">
-<area shape="rect" id="node2" href="$classasl_1_1_b_cond.html" title="Virtual class describes general interface for boundary conditions." alt="" coords="2239,470,2329,498"/>
-<area shape="rect" id="node4" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1901,643,2027,671"/>
-<area shape="rect" id="node75" href="$classasl_1_1_elasticity_common_a.html" title="abstract class for elasticity solver" alt="" coords="2199,747,2369,775"/>
-<area shape="rect" id="node6" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1500,538,1583,566"/>
-<area shape="rect" id="node8" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="1067,529,1192,557"/>
-<area shape="rect" id="node10" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="661,555,776,583"/>
-<area shape="rect" id="node13" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties." alt="" coords="1891,409,2037,437"/>
-<area shape="rect" id="node18" title="STL class." alt="" coords="275,409,400,437"/>
-<area shape="rect" id="node67" title="STL class." alt="" coords="444,998,599,1026"/>
-<area shape="rect" id="node39" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="1669,605,1859,649"/>
-<area shape="rect" id="node41" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="260,731,415,759"/>
-<area shape="rect" id="node54" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="641,822,796,866"/>
-<area shape="rect" id="node46" href="$classacl_1_1_kernel.html" title="OpenCl Kernel generator." alt="" coords="1499,905,1584,933"/>
-<area shape="rect" id="node48" href="$classacl_1_1_expression_container.html" title="acl::ExpressionContainer" alt="" coords="1040,855,1219,883"/>
-<area shape="rect" id="node70" href="$classacl_1_1_vector_of_elements.html" title="The class represents several Element." alt="" coords="1883,762,2045,790"/>
-<area shape="rect" id="node57" title="STL class." alt="" coords="295,930,380,958"/>
-<area shape="rect" id="node59" title="STL class." alt="" coords="7,1017,143,1061"/>
-<area shape="rect" id="node61" href="$classacl_1_1_kernel_configuration.html" title="ACL Kernel configuration class." alt="" coords="1044,906,1215,934"/>
-<area shape="rect" id="node73" href="$classasl_1_1_f_d_elasticity2.html" title="Numerical method which computes homogenious isotropic elasticity equation." alt="" coords="2503,754,2631,782"/>
+<area shape="rect" id="node2" href="$classasl_1_1_b_cond.html" title="Virtual class describes general interface for boundary conditions. " alt="" coords="2070,416,2157,443"/>
+<area shape="rect" id="node3" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1753,51,1871,77"/>
+<area shape="rect" id="node31" href="$classasl_1_1_elasticity_common_a.html" title="abstract class for elasticity solver " alt="" coords="2032,759,2195,785"/>
+<area shape="rect" id="node4" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1382,57,1462,84"/>
+<area shape="rect" id="node5" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="987,5,1104,32"/>
+<area shape="rect" id="node6" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="611,33,721,60"/>
+<area shape="rect" id="node7" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties. " alt="" coords="1743,305,1881,332"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="250,369,366,396"/>
+<area shape="rect" id="node27" title="STL class. " alt="" coords="411,837,551,864"/>
+<area shape="rect" id="node29" title="STL class. " alt="" coords="403,877,559,904"/>
+<area shape="rect" id="node16" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="1537,543,1711,585"/>
+<area shape="rect" id="node17" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="237,633,379,660"/>
+<area shape="rect" id="node22" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="596,647,736,689"/>
+<area shape="rect" id="node19" href="$classacl_1_1_kernel.html" title="OpenCl Kernel generator. " alt="" coords="1380,721,1464,748"/>
+<area shape="rect" id="node20" href="$classacl_1_1_expression_container.html" title="acl::ExpressionContainer" alt="" coords="961,655,1129,681"/>
+<area shape="rect" id="node23" title="STL class. " alt="" coords="268,741,348,768"/>
+<area shape="rect" id="node24" title="STL class. " alt="" coords="5,734,132,775"/>
+<area shape="rect" id="node25" href="$classacl_1_1_kernel_configuration.html" title="ACL Kernel configuration class. " alt="" coords="965,764,1126,791"/>
+<area shape="rect" id="node28" href="$classacl_1_1_vector_of_elements.html" title="The class represents several Element. " alt="" coords="1735,841,1889,868"/>
+<area shape="rect" id="node30" href="$classasl_1_1_f_d_elasticity2.html" title="Numerical method which computes homogenious isotropic elasticity equation. " alt="" coords="2317,720,2444,747"/>
 </map>

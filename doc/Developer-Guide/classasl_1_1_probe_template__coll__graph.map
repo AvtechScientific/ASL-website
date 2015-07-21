@@ -1,5 +1,5 @@
 <map id="asl::ProbeTemplate" name="asl::ProbeTemplate">
-<area shape="rect" id="node4" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; double \&gt;" alt="" coords="5,99,157,127"/>
-<area shape="rect" id="node6" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="24,6,139,34"/>
-<area shape="rect" id="node8" title="STL class." alt="" coords="181,99,307,127"/>
+<area shape="rect" id="node3" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; double \&gt;" alt="" coords="5,95,147,121"/>
+<area shape="rect" id="node4" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="21,5,131,32"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="171,95,287,121"/>
 </map>

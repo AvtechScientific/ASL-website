@@ -1,7 +1,7 @@
 <map id="Functions" name="Functions">
-<area shape="rect" id="node1" href="$group___synchronization_functions.html" title="Synchronization Functions" alt="" coords="369,5,556,33"/>
-<area shape="rect" id="node2" href="$group___math_functions.html" title="Mathematical Functions" alt="" coords="376,55,549,83"/>
-<area shape="rect" id="node4" href="$group___host_interection_functions.html" title="Host Interaction Functions" alt="" coords="369,106,556,134"/>
-<area shape="rect" id="node5" href="$group___special_purpose_functions.html" title="Special Purpose Functions" alt="" coords="369,157,556,185"/>
-<area shape="rect" id="node6" href="$group___a_c_l.html" title="Advanced Computational\l Language" alt="" coords="7,73,188,117"/>
+<area shape="rect" id="node1" href="$group___synchronization_functions.html" title="Synchronization Functions" alt="" coords="349,5,525,32"/>
+<area shape="rect" id="node2" href="$group___math_functions.html" title="Mathematical Functions" alt="" coords="357,56,518,83"/>
+<area shape="rect" id="node4" href="$group___host_interection_functions.html" title="Host Interaction Functions" alt="" coords="349,107,525,133"/>
+<area shape="rect" id="node5" href="$group___special_purpose_functions.html" title="Special Purpose Functions" alt="" coords="348,157,527,184"/>
+<area shape="rect" id="node6" href="$group___a_c_l.html" title="Advanced Computational\l Language" alt="" coords="5,74,173,115"/>
 </map>

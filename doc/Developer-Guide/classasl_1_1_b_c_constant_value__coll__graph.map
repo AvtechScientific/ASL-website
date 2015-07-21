@@ -1,14 +1,14 @@
 <map id="asl::BCConstantValue" name="asl::BCConstantValue">
-<area shape="rect" id="node2" href="$classasl_1_1_b_cond.html" title="Virtual class describes general interface for boundary conditions." alt="" coords="2104,229,2195,257"/>
-<area shape="rect" id="node4" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1709,8,1835,36"/>
-<area shape="rect" id="node6" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1303,109,1385,137"/>
-<area shape="rect" id="node8" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="907,134,1032,162"/>
-<area shape="rect" id="node10" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="527,101,641,129"/>
-<area shape="rect" id="node13" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties." alt="" coords="1699,336,1845,364"/>
-<area shape="rect" id="node18" title="STL class." alt="" coords="184,333,309,361"/>
-<area shape="rect" id="node50" title="STL class." alt="" coords="160,502,333,530"/>
-<area shape="rect" id="node39" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="1677,469,1867,513"/>
-<area shape="rect" id="node41" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="1267,545,1421,573"/>
-<area shape="rect" id="node45" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Kernel \&gt;" alt="" coords="1892,597,2079,625"/>
-<area shape="rect" id="node48" href="$classacl_1_1_vector_of_elements.html" title="The class represents several Element." alt="" coords="1481,650,1644,678"/>
+<area shape="rect" id="node2" href="$classasl_1_1_b_cond.html" title="Virtual class describes general interface for boundary conditions. " alt="" coords="1917,226,2004,252"/>
+<area shape="rect" id="node3" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1553,6,1671,32"/>
+<area shape="rect" id="node4" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1182,107,1262,134"/>
+<area shape="rect" id="node5" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="822,134,939,160"/>
+<area shape="rect" id="node6" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="473,102,584,128"/>
+<area shape="rect" id="node7" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties. " alt="" coords="1543,331,1681,358"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="169,331,285,358"/>
+<area shape="rect" id="node20" title="STL class. " alt="" coords="149,498,305,524"/>
+<area shape="rect" id="node16" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="1525,460,1699,501"/>
+<area shape="rect" id="node17" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="1151,536,1293,563"/>
+<area shape="rect" id="node18" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Kernel \&gt;" alt="" coords="1723,588,1893,615"/>
+<area shape="rect" id="node19" href="$classacl_1_1_vector_of_elements.html" title="The class represents several Element. " alt="" coords="1342,640,1497,667"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="asl::BCondConnectorSlice" name="asl::BCondConnectorSlice">
-<area shape="rect" id="node2" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1568,5,1693,33"/>
-<area shape="rect" id="node4" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="861,110,987,138"/>
-<area shape="rect" id="node8" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1249,125,1332,153"/>
-<area shape="rect" id="node6" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="481,161,596,189"/>
-<area shape="rect" id="node12" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties." alt="" coords="1557,322,1704,350"/>
-<area shape="rect" id="node17" title="STL class." alt="" coords="161,355,287,383"/>
+<area shape="rect" id="node2" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1431,5,1550,32"/>
+<area shape="rect" id="node3" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="782,109,899,136"/>
+<area shape="rect" id="node5" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1138,123,1218,149"/>
+<area shape="rect" id="node4" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="433,159,544,185"/>
+<area shape="rect" id="node6" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties. " alt="" coords="1421,320,1560,347"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="149,351,265,377"/>
 </map>

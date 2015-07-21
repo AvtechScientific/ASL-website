@@ -1,5 +1,5 @@
 <map id="acl::PrivateArray&lt; T &gt;" name="acl::PrivateArray&lt; T &gt;">
-<area shape="rect" id="node2" href="$classacl_1_1_element_base.html" title="acl::ElementBase" alt="" coords="20,209,153,237"/>
-<area shape="rect" id="node4" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="9,99,164,143"/>
-<area shape="rect" id="node6" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="9,6,164,34"/>
+<area shape="rect" id="node2" href="$classacl_1_1_element_base.html" title="acl::ElementBase" alt="" coords="18,199,143,225"/>
+<area shape="rect" id="node3" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="11,95,151,136"/>
+<area shape="rect" id="node4" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="10,5,151,32"/>
 </map>

@@ -1,5 +1,5 @@
-<map id="Transport processes" name="Transport processes">
-<area shape="rect" id="node3" href="$group___transport_processes_b_c.html" title="Transport processes\l boundary conditions" alt="" coords="496,5,651,49"/>
-<area shape="rect" id="node4" href="$group___num_methods.html" title="NumericalMethods" alt="" coords="503,113,644,141"/>
-<area shape="rect" id="node2" href="$group___physics.html" title="Physics" alt="" coords="5,63,75,91"/>
+<map id="Transport Processes" name="Transport Processes">
+<area shape="rect" id="node3" href="$group___transport_processes_b_c.html" title="Transport Processes\l Boundary Conditions" alt="" coords="476,5,623,47"/>
+<area shape="rect" id="node4" href="$group___num_methods.html" title="Numerical Methods" alt="" coords="482,106,617,133"/>
+<area shape="rect" id="node2" href="$group___physics.html" title="Physics" alt="" coords="5,59,75,86"/>
 </map>

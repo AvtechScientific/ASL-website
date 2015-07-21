@@ -1,20 +1,21 @@
 <map id="asl::BCRigidWallRelaxation" name="asl::BCRigidWallRelaxation">
-<area shape="rect" id="node2" href="$classasl_1_1_b_cond.html" title="Virtual class describes general interface for boundary conditions." alt="" coords="2172,354,2263,382"/>
-<area shape="rect" id="node4" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1749,303,1875,331"/>
-<area shape="rect" id="node6" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1356,61,1439,89"/>
-<area shape="rect" id="node8" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="917,101,1043,129"/>
-<area shape="rect" id="node10" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="532,65,647,93"/>
-<area shape="rect" id="node13" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties." alt="" coords="1739,354,1885,382"/>
-<area shape="rect" id="node18" title="STL class." alt="" coords="167,473,292,501"/>
-<area shape="rect" id="node70" title="STL class." alt="" coords="323,859,477,887"/>
-<area shape="rect" id="node39" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="1525,571,1715,615"/>
-<area shape="rect" id="node41" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="512,630,667,658"/>
-<area shape="rect" id="node44" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; FDElasticity\lRelaxation \&gt;" alt="" coords="1911,638,2116,682"/>
-<area shape="rect" id="node57" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="903,849,1057,893"/>
-<area shape="rect" id="node49" href="$classacl_1_1_kernel.html" title="OpenCl Kernel generator." alt="" coords="1769,915,1855,943"/>
-<area shape="rect" id="node51" href="$classacl_1_1_expression_container.html" title="acl::ExpressionContainer" alt="" coords="1308,890,1487,918"/>
-<area shape="rect" id="node73" href="$classacl_1_1_vector_of_elements.html" title="The class represents several Element." alt="" coords="1539,715,1701,743"/>
-<area shape="rect" id="node60" title="STL class." alt="" coords="547,969,632,997"/>
-<area shape="rect" id="node62" title="STL class." alt="" coords="161,961,297,1005"/>
-<area shape="rect" id="node64" href="$classacl_1_1_kernel_configuration.html" title="ACL Kernel configuration class." alt="" coords="1312,941,1483,969"/>
+<area shape="rect" id="node2" href="$classasl_1_1_b_cond.html" title="Virtual class describes general interface for boundary conditions. " alt="" coords="2097,412,2184,439"/>
+<area shape="rect" id="node3" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1727,49,1846,76"/>
+<area shape="rect" id="node4" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1383,57,1463,84"/>
+<area shape="rect" id="node5" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="1019,5,1136,32"/>
+<area shape="rect" id="node6" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="633,33,744,60"/>
+<area shape="rect" id="node7" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties. " alt="" coords="1717,268,1856,295"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="257,369,373,396"/>
+<area shape="rect" id="node28" title="STL class. " alt="" coords="429,912,569,939"/>
+<area shape="rect" id="node30" title="STL class. " alt="" coords="237,952,393,979"/>
+<area shape="rect" id="node16" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="796,554,969,595"/>
+<area shape="rect" id="node17" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="245,645,386,672"/>
+<area shape="rect" id="node18" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; FDElasticity\lRelaxation \&gt;" alt="" coords="1880,639,2073,681"/>
+<area shape="rect" id="node23" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="619,722,759,763"/>
+<area shape="rect" id="node20" href="$classacl_1_1_kernel.html" title="OpenCl Kernel generator. " alt="" coords="1381,788,1465,815"/>
+<area shape="rect" id="node21" href="$classacl_1_1_expression_container.html" title="acl::ExpressionContainer" alt="" coords="993,729,1161,756"/>
+<area shape="rect" id="node24" title="STL class. " alt="" coords="275,816,355,843"/>
+<area shape="rect" id="node25" title="STL class. " alt="" coords="5,809,132,850"/>
+<area shape="rect" id="node26" href="$classacl_1_1_kernel_configuration.html" title="ACL Kernel configuration class. " alt="" coords="997,839,1158,865"/>
+<area shape="rect" id="node29" href="$classacl_1_1_vector_of_elements.html" title="The class represents several Element. " alt="" coords="1539,937,1693,964"/>
 </map>

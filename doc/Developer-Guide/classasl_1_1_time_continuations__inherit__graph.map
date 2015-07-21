@@ -1,5 +1,5 @@
 <map id="asl::TimeContinuations" name="asl::TimeContinuations">
-<area shape="rect" id="node5" href="$classasl_1_1_time_contin_p_lagrange.html" title="Numerical method that generates temporal extrapolation of the data with Lagrangian polynoms..." alt="" coords="5,169,192,197"/>
-<area shape="rect" id="node7" href="$classasl_1_1_time_contin_p_lagrange_fraction.html" title="Numerical method that generates temporal extrapolation of the data with Lagrangian polynoms of fracti..." alt="" coords="216,161,403,205"/>
-<area shape="rect" id="node2" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="141,6,267,34"/>
+<area shape="rect" id="node3" href="$classasl_1_1_time_contin_p_lagrange.html" title="Numerical method that generates temporal extrapolation of the data with Lagrangian polynoms..." alt="" coords="5,162,181,189"/>
+<area shape="rect" id="node4" href="$classasl_1_1_time_contin_p_lagrange_fraction.html" title="Numerical method that generates temporal extrapolation of the data with Lagrangian polynoms of fracti..." alt="" coords="205,155,381,196"/>
+<area shape="rect" id="node2" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="134,5,253,32"/>
 </map>

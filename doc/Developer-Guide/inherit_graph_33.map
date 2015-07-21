@@ -1,3 +1,72 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classasl_1_1_parameter.html" title="asl::Parameter\&lt; T \&gt;" alt="" coords="5,5,157,33"/>
+<area shape="rect" id="node1" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="5,1593,124,1620"/>
+<area shape="rect" id="node2" href="$classasl_1_1_b_cond.html" title="Virtual class describes general interface for boundary conditions. " alt="" coords="220,288,307,315"/>
+<area shape="rect" id="node18" href="$classasl_1_1_b_cond_connector.html" title="Virtual class describes general interface for boundary conditions which connect two datas..." alt="" coords="190,789,337,816"/>
+<area shape="rect" id="node20" href="$classasl_1_1_b_cond_connector_slice.html" title="Virtual class describes general interface for boundary conditions which connect two datas..." alt="" coords="175,1051,351,1077"/>
+<area shape="rect" id="node21" href="$classasl_1_1_b_cond_dynamic.html" title="Virtual class describes general interface for boundary conditions. " alt="" coords="194,1101,333,1128"/>
+<area shape="rect" id="node22" href="$classasl_1_1_b_cond_slice.html" title="Virtual class describes general interface for boundary conditions. " alt="" coords="205,1152,321,1179"/>
+<area shape="rect" id="node24" href="$classasl_1_1_b_cond_with_map.html" title="Virtual class describes general interface for boundary conditions. " alt="" coords="194,1203,333,1229"/>
+<area shape="rect" id="node43" href="$classasl_1_1_elasticity_common_a.html" title="abstract class for elasticity solver " alt="" coords="182,1593,345,1620"/>
+<area shape="rect" id="node48" href="$classasl_1_1_f_d_advection_diffusion2.html" title="Numerical method which computes multicomponent transport processes; . " alt="" coords="172,1644,355,1671"/>
+<area shape="rect" id="node49" href="$classasl_1_1_f_d_advection_diffusion_extended.html" title="Numerical method which computes multicomponent transport processes. " alt="" coords="176,1695,351,1737"/>
+<area shape="rect" id="node50" href="$classasl_1_1_f_d_advection_diffusion_inhomogeneous.html" title="Numerical method which computes multicomponent transport processes. " alt="" coords="176,1761,351,1802"/>
+<area shape="rect" id="node51" href="$classasl_1_1_level_set.html" title="Numerical method which computes evolution of an interface. " alt="" coords="214,1827,313,1853"/>
+<area shape="rect" id="node56" href="$classasl_1_1_single_kernel_n_m.html" title="asl::SingleKernelNM" alt="" coords="193,2055,334,2081"/>
+<area shape="rect" id="node68" href="$classasl_1_1_time_continuations.html" title="Numerical method that generates temporal extrapolation of the data, Abstract class. " alt="" coords="185,2349,341,2376"/>
+<area shape="rect" id="node3" href="$classasl_1_1_b_c_acceleration_source2.html" title="Bondary condition local force(acceleration) " alt="" coords="435,5,621,32"/>
+<area shape="rect" id="node4" href="$classasl_1_1_b_c_constant_gradient.html" title="Bondary condition that makes fixed gradient. " alt="" coords="444,56,612,83"/>
+<area shape="rect" id="node5" href="$classasl_1_1_b_c_constant_source.html" title="Bondary condition that adds fixed value to one in each point. " alt="" coords="448,107,608,133"/>
+<area shape="rect" id="node6" href="$classasl_1_1_b_c_constant_value.html" title="Bondary condition that puts fixed value in each point. " alt="" coords="452,157,604,184"/>
+<area shape="rect" id="node7" href="$classasl_1_1_b_c_free_surface.html" title="Bondary condition corresponding to a free surface ( &#160;and ) " alt="" coords="459,208,597,235"/>
+<area shape="rect" id="node8" href="$classasl_1_1_b_c_free_surface2.html" title="Bondary condition corresponding to a free surface ( ) " alt="" coords="456,259,600,285"/>
+<area shape="rect" id="node9" href="$classasl_1_1_b_c_imposed_displacement_velocity_value.html" title="Bondary condition set given values to displacement/velocity. " alt="" coords="430,310,626,351"/>
+<area shape="rect" id="node10" href="$classasl_1_1_b_c_l_b_g_k_common.html" title="asl::BCLBGKCommon" alt="" coords="451,376,605,403"/>
+<area shape="rect" id="node15" href="$classasl_1_1_b_c_rigid_wall.html" title="Bondary condition corresponding to a rigid wall ( &#160;and ) " alt="" coords="467,427,589,453"/>
+<area shape="rect" id="node16" href="$classasl_1_1_b_c_rigid_wall_poro_elasticity.html" title="Bondary condition corresponding to a rigid wall ( &#160;and ) " alt="" coords="427,477,629,504"/>
+<area shape="rect" id="node17" href="$classasl_1_1_b_c_rigid_wall_relaxation.html" title="Bondary condition corresponding to a rigid wall ( &#160;and ) " alt="" coords="436,528,620,555"/>
+<area shape="rect" id="node11" href="$classasl_1_1_b_c_constant_pressure.html" title="Bondary condition corresponding an in&#45; or outflow boundary conditions with a given pressure..." alt="" coords="725,300,896,327"/>
+<area shape="rect" id="node12" href="$classasl_1_1_b_c_constant_pressure_velocity.html" title="Bondary condition corresponding wall with given velocity for uncompressible. " alt="" coords="701,351,920,377"/>
+<area shape="rect" id="node13" href="$classasl_1_1_b_c_constant_velocity.html" title="Bondary condition corresponding wall with given velocity for uncompressible. " alt="" coords="727,401,894,428"/>
+<area shape="rect" id="node14" href="$classasl_1_1_b_c_no_slip.html" title="Bondary condition corresponding to a rigid wall ( ) " alt="" coords="758,452,863,479"/>
+<area shape="rect" id="node19" href="$classasl_1_1_b_c_direct_copier.html" title="Bondary condition that copies directly the values from one data to another. " alt="" coords="459,579,597,605"/>
+<area shape="rect" id="node23" href="$classasl_1_1_b_c_s_constant_value.html" title="Bondary condition that puts fixed value in each point uses Slices. " alt="" coords="447,629,609,656"/>
+<area shape="rect" id="node25" href="$classasl_1_1_b_c_constant_flux_map.html" title="Bondary condition that makes constant flux for pure diffusion. " alt="" coords="443,680,613,707"/>
+<area shape="rect" id="node26" href="$classasl_1_1_b_c_constant_gradient_map.html" title="Bondary condition that makes fixed gradient. " alt="" coords="431,731,625,757"/>
+<area shape="rect" id="node27" href="$classasl_1_1_b_c_constant_gradient_map2.html" title="Bondary condition that puts fixed value in each point. " alt="" coords="428,781,628,808"/>
+<area shape="rect" id="node28" href="$classasl_1_1_b_c_constant_pressure_velocity_map.html" title="asl::BCConstantPressureVelocityMap" alt="" coords="407,832,649,859"/>
+<area shape="rect" id="node29" href="$classasl_1_1_b_c_constant_value_map.html" title="Bondary condition that puts fixed value in each point. " alt="" coords="439,883,617,909"/>
+<area shape="rect" id="node30" href="$classasl_1_1_b_c_constant_value_middle_point_map.html" title="Bondary condition that puts fixed value in each boundary point. " alt="" coords="433,934,623,975"/>
+<area shape="rect" id="node31" href="$classasl_1_1_b_c_kinetics_limited_deposition_map.html" title="Set outflux corresponding to kinetics and transport limitations of the deposition rate..." alt="" coords="407,1000,649,1027"/>
+<area shape="rect" id="node32" href="$classasl_1_1_b_c_linear_growth_map.html" title="asl::BCLinearGrowthMap" alt="" coords="444,1051,612,1077"/>
+<area shape="rect" id="node33" href="$classasl_1_1_b_c_linear_growth_map1.html" title="Boundary condition that makes gradient proportional to a surface concentration. " alt="" coords="441,1101,615,1128"/>
+<area shape="rect" id="node34" href="$classasl_1_1_b_c_linear_growth_map2.html" title="asl::BCLinearGrowthMap2" alt="" coords="441,1152,615,1179"/>
+<area shape="rect" id="node35" href="$classasl_1_1_b_c_no_slip_map.html" title="Bondary condition corresponding to a rigid wall ( ) " alt="" coords="463,1203,593,1229"/>
+<area shape="rect" id="node36" href="$classasl_1_1_b_c_rigid_wall_d_f.html" title="Bondary condition corresponding to a rigid wall ( &#160;and ) " alt="" coords="458,1253,598,1280"/>
+<area shape="rect" id="node37" href="$classasl_1_1_b_c_transport_limited_deposition_map.html" title="Set outflux corresponding to transport limitation of the deposition rate. " alt="" coords="403,1304,653,1331"/>
+<area shape="rect" id="node38" href="$classasl_1_1_b_c_value_p_f_map.html" title="Bondary condition that puts fixed value in each point. " alt="" coords="457,1355,599,1381"/>
+<area shape="rect" id="node39" href="$classasl_1_1_b_c_velocity_map.html" title="asl::BCVelocityMap" alt="" coords="459,1405,597,1432"/>
+<area shape="rect" id="node40" href="$classasl_1_1_b_c_zero_stress_map.html" title="Bondary condition corresponding to a free surface. " alt="" coords="451,1456,605,1483"/>
+<area shape="rect" id="node41" href="$classasl_1_1_compute_surface_flux_map.html" title="asl::ComputeSurfaceFluxMap" alt="" coords="431,1507,625,1533"/>
+<area shape="rect" id="node42" href="$classasl_1_1_compute_surface_force_map.html" title="asl::ComputeSurfaceForceMap" alt="" coords="427,1557,629,1584"/>
+<area shape="rect" id="node44" href="$classasl_1_1_f_d_elasticity2.html" title="Numerical method which computes homogenious isotropic elasticity equation. " alt="" coords="465,1608,591,1635"/>
+<area shape="rect" id="node45" href="$classasl_1_1_f_d_elasticity_incompressible_static.html" title="Numerical method which computes homogenious isotropic elasticity equation. " alt="" coords="425,1659,631,1701"/>
+<area shape="rect" id="node46" href="$classasl_1_1_f_d_elasticity_relaxation.html" title="Numerical method which computes homogenious isotropic elasticity equation. " alt="" coords="437,1725,619,1752"/>
+<area shape="rect" id="node47" href="$classasl_1_1_f_d_poro_elasticity.html" title="Numerical method which computes homogenious isotropic poro&#45;elasticity equation. " alt="" coords="455,1776,601,1803"/>
+<area shape="rect" id="node52" href="$classasl_1_1_level_set_linear.html" title="Numerical method which computes evolution of an interface. " alt="" coords="461,1827,595,1853"/>
+<area shape="rect" id="node53" href="$classasl_1_1_interface_tracking_alg1.html" title="Numerical method which computes evolution of an interface. " alt="" coords="723,1776,898,1803"/>
+<area shape="rect" id="node54" href="$classasl_1_1_l_s_faceted_growth.html" title="Numerical method which computes evolution of an interface with a crystalographic kinetics. " alt="" coords="735,1827,887,1853"/>
+<area shape="rect" id="node55" href="$classasl_1_1_l_s_normal_growth.html" title="Numerical method which computes evolution of an interface. " alt="" coords="737,1877,884,1904"/>
+<area shape="rect" id="node57" href="$classasl_1_1_data_clipper.html" title="Algorithm for generation of coarsed dataset. " alt="" coords="470,1877,586,1904"/>
+<area shape="rect" id="node58" href="$classasl_1_1_data_coarser.html" title="Algorithm for generation of coarsed dataset. " alt="" coords="467,1928,589,1955"/>
+<area shape="rect" id="node59" href="$classasl_1_1_d_f_optimizer.html" title="Numerical method which makes changes in the input map and produces map suitbale and optimal for use i..." alt="" coords="467,1979,589,2005"/>
+<area shape="rect" id="node60" href="$classasl_1_1_f_d_advection_diffusion.html" title="Numerical method which computes multicomponent transport processes. " alt="" coords="441,2029,615,2056"/>
+<area shape="rect" id="node61" href="$classasl_1_1_f_d_multi_phase.html" title="Numerical method which computes multiphase transport processes. " alt="" coords="463,2080,593,2107"/>
+<area shape="rect" id="node62" href="$classasl_1_1_f_d_stefan_maxwell.html" title="Numerical method which computes multicomponent transport processes. " alt="" coords="453,2131,603,2157"/>
+<area shape="rect" id="node63" href="$classasl_1_1_f_d_stefan_maxwell_electric_field.html" title="asl::FDStefanMaxwellElectric\lField" alt="" coords="431,2182,625,2223"/>
+<area shape="rect" id="node64" href="$classasl_1_1_l_b_g_k.html" title="Numerical method for fluid flow. " alt="" coords="487,2248,569,2275"/>
+<area shape="rect" id="node66" href="$classasl_1_1_single_kernel_map_n_m.html" title="asl::SingleKernelMapNM" alt="" coords="445,2299,611,2325"/>
+<area shape="rect" id="node65" href="$classasl_1_1_l_b_g_k_turbulence.html" title="asl::LBGKTurbulence" alt="" coords="737,2248,884,2275"/>
+<area shape="rect" id="node67" href="$classasl_1_1_f_d_b_v_kinetics.html" title="Numerical method which computes electrode reactions. " alt="" coords="745,2299,876,2325"/>
+<area shape="rect" id="node69" href="$classasl_1_1_time_contin_p_lagrange.html" title="Numerical method that generates temporal extrapolation of the data with Lagrangian polynoms..." alt="" coords="440,2349,616,2376"/>
+<area shape="rect" id="node70" href="$classasl_1_1_time_contin_p_lagrange_fraction.html" title="Numerical method that generates temporal extrapolation of the data with Lagrangian polynoms of fracti..." alt="" coords="440,2401,616,2442"/>
 </map>

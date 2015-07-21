@@ -1,14 +1,14 @@
 <map id="asl::BCLBGKCommon" name="asl::BCLBGKCommon">
-<area shape="rect" id="node2" href="$classasl_1_1_b_cond.html" title="Virtual class describes general interface for boundary conditions." alt="" coords="2109,503,2200,531"/>
-<area shape="rect" id="node4" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1664,554,1789,582"/>
-<area shape="rect" id="node6" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1257,75,1340,103"/>
-<area shape="rect" id="node8" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="861,57,987,85"/>
-<area shape="rect" id="node10" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="481,17,596,45"/>
-<area shape="rect" id="node13" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties." alt="" coords="1653,315,1800,343"/>
-<area shape="rect" id="node18" title="STL class." alt="" coords="161,329,287,357"/>
-<area shape="rect" id="node39" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="1632,605,1821,649"/>
-<area shape="rect" id="node41" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="1221,697,1376,725"/>
-<area shape="rect" id="node45" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; acl\l::KernelMerger \&gt;" alt="" coords="1861,711,2013,755"/>
-<area shape="rect" id="node50" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Kernel \&gt;" alt="" coords="1633,773,1820,801"/>
-<area shape="rect" id="node54" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; LBGK \&gt;" alt="" coords="1847,667,2028,695"/>
+<area shape="rect" id="node2" href="$classasl_1_1_b_cond.html" title="Virtual class describes general interface for boundary conditions. " alt="" coords="1925,495,2012,521"/>
+<area shape="rect" id="node3" href="$classasl_1_1_num_method.html" title="asl::NumMethod" alt="" coords="1513,545,1631,572"/>
+<area shape="rect" id="node4" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="1142,73,1222,100"/>
+<area shape="rect" id="node5" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="782,53,899,80"/>
+<area shape="rect" id="node6" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="433,7,544,33"/>
+<area shape="rect" id="node7" href="$classasl_1_1_vector_template.html" title="Defines set of vectros with several properties. " alt="" coords="1503,309,1641,336"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="149,317,265,344"/>
+<area shape="rect" id="node16" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; VectorOf\lElementsData \&gt;" alt="" coords="1485,597,1659,638"/>
+<area shape="rect" id="node17" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="1111,688,1253,715"/>
+<area shape="rect" id="node18" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; acl\l::KernelMerger \&gt;" alt="" coords="1697,698,1836,739"/>
+<area shape="rect" id="node20" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Kernel \&gt;" alt="" coords="1487,764,1657,791"/>
+<area shape="rect" id="node21" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; LBGK \&gt;" alt="" coords="1683,660,1851,687"/>
 </map>

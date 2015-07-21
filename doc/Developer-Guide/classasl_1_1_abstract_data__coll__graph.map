@@ -1,5 +1,5 @@
 <map id="asl::AbstractData" name="asl::AbstractData">
-<area shape="rect" id="node2" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="31,193,113,221"/>
-<area shape="rect" id="node4" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="105,99,231,127"/>
-<area shape="rect" id="node6" href="$classasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="15,6,129,34"/>
+<area shape="rect" id="node2" href="$classasl_1_1_block.html" title="asl::Block" alt="" coords="27,184,107,211"/>
+<area shape="rect" id="node3" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; int \&gt;" alt="" coords="97,95,214,121"/>
+<area shape="rect" id="node4" href="$singletonasl_1_1_a_vec.html" title="asl::AVec\&lt; T \&gt;" alt="" coords="12,5,123,32"/>
 </map>

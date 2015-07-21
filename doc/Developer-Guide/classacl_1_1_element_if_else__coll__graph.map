@@ -1,7 +1,7 @@
 <map id="acl::ElementIfElse" name="acl::ElementIfElse">
-<area shape="rect" id="node2" href="$classacl_1_1_element_base.html" title="acl::ElementBase" alt="" coords="377,238,511,266"/>
-<area shape="rect" id="node4" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="365,99,520,143"/>
-<area shape="rect" id="node6" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="215,6,369,34"/>
-<area shape="rect" id="node15" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Element\lBase \&gt;" alt="" coords="199,169,385,213"/>
-<area shape="rect" id="node11" title="STL class." alt="" coords="5,107,131,135"/>
+<area shape="rect" id="node2" href="$classacl_1_1_element_base.html" title="acl::ElementBase" alt="" coords="385,233,510,259"/>
+<area shape="rect" id="node3" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; cl\l::CommandQueue \&gt;" alt="" coords="373,95,513,136"/>
+<area shape="rect" id="node4" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; T \&gt;" alt="" coords="234,5,375,32"/>
+<area shape="rect" id="node8" href="$classstd_1_1shared__ptr.html" title="std::shared_ptr\&lt; Element\lBase \&gt;" alt="" coords="220,160,389,201"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="5,102,121,129"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="Advanced Computational Language" name="Advanced Computational Language">
-<area shape="rect" id="node1" href="$group___hardware_information.html" title="Hardware Information" alt="" coords="253,5,413,33"/>
-<area shape="rect" id="node2" href="$group___functions.html" title="Functions" alt="" coords="292,55,375,83"/>
-<area shape="rect" id="node3" href="$group___operators.html" title="Operators" alt="" coords="291,106,376,134"/>
-<area shape="rect" id="node5" href="$group___control_structures.html" title="Control Structures" alt="" coords="264,157,403,185"/>
-<area shape="rect" id="node6" href="$group___kernel_gen.html" title="OpenCL Kernel Generation" alt="" coords="239,207,428,235"/>
-<area shape="rect" id="node7" href="$group___complex_data_types.html" title="Complex Data Types" alt="" coords="257,258,409,286"/>
-<area shape="rect" id="node8" href="$group___atomic_functions.html" title="Atomic Functions" alt="" coords="268,309,399,337"/>
+<area shape="rect" id="node1" href="$group___hardware_information.html" title="Hardware Information" alt="" coords="237,5,384,32"/>
+<area shape="rect" id="node2" href="$group___functions.html" title="Functions" alt="" coords="271,56,350,83"/>
+<area shape="rect" id="node3" href="$group___operators.html" title="Operators" alt="" coords="271,107,350,133"/>
+<area shape="rect" id="node5" href="$group___control_structures.html" title="Control Structures" alt="" coords="247,157,375,184"/>
+<area shape="rect" id="node6" href="$group___kernel_gen.html" title="OpenCL Kernel Generation" alt="" coords="221,208,400,235"/>
+<area shape="rect" id="node7" href="$group___complex_data_types.html" title="Complex Data Types" alt="" coords="237,259,384,285"/>
+<area shape="rect" id="node8" href="$group___atomic_functions.html" title="Atomic Functions" alt="" coords="249,309,373,336"/>
 </map>
