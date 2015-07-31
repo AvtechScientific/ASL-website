@@ -116,8 +116,7 @@
   <article class="post-content">
     <ul>
   <li><a href="https://github.com/AvtechScientific/ASL/wiki">Wiki</a></li>
-  <li><a href="https://github.com/AvtechScientific/ASL/wiki/Tutorials">Tutorials</a></li>
-  <li><a href="https://github.com/AvtechScientific/ASL/wiki/User-Guide">User Guide</a></li>
+  <li><a href="https://github.com/AvtechScientific/ASL/wiki/User-Guide">User Guide</a> (Work in progress…)</li>
   <li><a href="/doc/Developer-Guide">Developer Guide</a></li>
   <li><a href="/doc/Developer-Guide/examples.html">Distributed examples</a></li>
 </ul>
@@ -129,8 +128,7 @@
 <ol>
   <li>Install <a href="http://cmake.org">cmake</a> (&gt;=3.0.2, BSD License) and the required libraries:
     <ul>
-      <li><a href="https://www.khronos.org/opencl">OpenCL</a> (=1.2 (2.0 supplies no C++ bindings), OpenCL Specification License)</li>
-      <li><a href="https://www.khronos.org/registry/cl/api/1.2/cl.hpp">C++ bindings for OpenCL</a> (=1.2 (2.0 supplies no C++ bindings), OpenCL Specification License)</li>
+      <li><a href="https://www.khronos.org/opencl">OpenCL</a> (&gt;=1.2, OpenCL Specification License)</li>
       <li><a href="http://www.boost.org">boost</a> (&gt;=1.55, Boost Software License)</li>
       <li><a href="http://vtk.org">VTK</a> (&gt;=6.1, BSD License)</li>
       <li><a href="https://github.com/AvtechScientific/ASL/blob/master/cmake/ASLBuildOptions.cmake#L3">optional</a>: Matlab support with <a href="https://sourceforge.net/projects/matio">matio</a> (&gt;=1.5.2, BSD License)</li>
@@ -146,30 +144,30 @@
 <h3 id="running-an-example">Running an example</h3>
 
 <ol>
-  <li>Go to examples: <code>cd examples/flow/locomotive_in_tunnel</code></li>
-  <li>Copy the .stl input file: <code>cp ../../../../ASL/examples/input_data/locomotive.stl .</code></li>
-  <li>Run: <code>./locomotive_in_tunnel</code>. Optionally: change some parameters - <code>./locomotive_in_tunnel --dx 0.1 --dt 2</code> or write all of them into a file for later editing/reuse - <code>./locomotive_in_tunnel -g bigGrid.ini</code>. List all available options - <code>locomotive_in_tunnel -h</code>.</li>
-  <li>Post-processing: see <a href="https://github.com/AvtechScientific/ASL/wiki/User-Guide#post-processing">step by step example</a> and the ParaView state file <code>examples/input_data/locomotive_in_tunnel.pvsm</code>.</li>
+  <li>Go to examples: <code>cd examples/flow/locomotive</code></li>
+  <li><code>./asl-locomotive --input ../../../../ASL/examples/input_data/locomotive.stl</code>  <br />
+Optionally: change parameters <code>./asl-locomotive --input locomotive.stl --dx 1 --dt 2</code> or write all of them into a file for later editing/reuse - <code>./asl-locomotive -g bigGrid.ini</code>. List all available options - <code>./asl-locomotive -h</code>.</li>
+  <li>Post-processing: see <a href="https://github.com/AvtechScientific/ASL/wiki/User-Guide#post-processing">step by step example</a> and <code>examples/input_data/locomotive.pvsm</code> - the ParaView state file.</li>
 </ol>
 
 <h3 id="writing-your-own-code-using-asl">Writing your own code using ASL</h3>
 
 <ol>
-  <li>Take a look on <a href="http://asl.org.il/doc/Developer-Guide/examples.html">examples</a> and the <a href="http://asl.org.il/doc/Developer-Guide/">API documentation</a>, start with <a href="http://asl.org.il/doc/Developer-Guide/locomotive_in_tunnel_8cc-example.html">examples/flow/locomotive_in_tunnel.cc</a></li>
-  <li>ASL installation supplies <code>ASL.pc</code> and <code>ASLConfig.cmake</code> files. To build your program using:
-    <ul>
-      <li><code>pkg-config</code>: launch <code>c++ `pkg-config --cflags --libs ASL` -o locomotive_in_tunnel locomotive_in_tunnel.cc</code></li>
-      <li><code>cmake</code>: write a basic <code>CMakeLists.txt</code> file:</li>
-    </ul>
-  </li>
+  <li>Take a look on <a href="http://asl.org.il/doc/Developer-Guide/examples.html">examples</a> and the <a href="http://asl.org.il/doc/Developer-Guide/">API documentation</a>, start with <a href="http://asl.org.il/doc/Developer-Guide/locomotive_8cc-example.html">examples/flow/locomotive.cc</a></li>
+  <li>ASL installation supplies <code>ASL.pc</code> and <code>ASLConfig.cmake</code> files. To build your program using:</li>
 </ol>
+
+<ul>
+  <li><code>pkg-config</code>: <code>c++ `pkg-config --cflags --libs ASL` -o locomotive locomotive.cc</code></li>
+  <li><code>cmake</code>: write a basic <code>CMakeLists.txt</code> file:</li>
+</ul>
 
 <pre><code class="language-cmake">project(locomotive)
 cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 find_package(ASL 0.1.4 CONFIG REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-add_executable(locomotive_in_tunnel locomotive_in_tunnel.cc)
-target_link_libraries(locomotive_in_tunnel PRIVATE ASL::aslnum ASL::aslvtk ASL::asl)
+add_executable(locomotive locomotive.cc)
+target_link_libraries(locomotive PRIVATE ASL::aslnum ASL::aslvtk ASL::asl)
 </code></pre>
 
   </article>
