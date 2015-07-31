@@ -89,84 +89,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ASL Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro"></a>
-Introduction</h1>
-<p>For many large applications C++ is the language of choice and so it seems reasonable to define C++ bindings for OpenCL.</p>
-<p>The interface is contained with a single C++ header file <em><a class="el" href="cl_8hpp.html" title="C++ bindings for OpenCL 1.0 (rev 48), OpenCL 1.1 (rev 33) and OpenCL 1.2 (rev 15) ...">cl.hpp</a></em> and all definitions are contained within the namespace <em>cl</em>. There is no additional requirement to include <em>cl.h</em> and to use either the C++ or original C bindings it is enough to simply include <em><a class="el" href="cl_8hpp.html" title="C++ bindings for OpenCL 1.0 (rev 48), OpenCL 1.1 (rev 33) and OpenCL 1.2 (rev 15) ...">cl.hpp</a></em>.</p>
-<p>The bindings themselves are lightweight and correspond closely to the underlying C API. Using the C++ bindings introduces no additional execution overhead.</p>
-<p>For detail documentation on the bindings see:</p>
-<p>The OpenCL C++ Wrapper API 1.2 (revision 09) <a href="http://www.khronos.org/registry/cl/specs/opencl-cplusplus-1.2.pdf">http://www.khronos.org/registry/cl/specs/opencl-cplusplus-1.2.pdf</a></p>
-<h1><a class="anchor" id="example"></a>
-Example</h1>
-<p>The following example shows a general use case for the C++ bindings, including support for the optional exception feature and also the supplied vector and string classes, see following sections for decriptions of these features.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#define __CL_ENABLE_EXCEPTIONS</span></div>
-<div class="line"></div>
-<div class="line"><span class="preprocessor">#if defined(__APPLE__) || defined(__MACOSX)</span></div>
-<div class="line"><span class="preprocessor">#include &lt;OpenCL/cl.hpp&gt;</span></div>
-<div class="line"><span class="preprocessor">#else</span></div>
-<div class="line"><span class="preprocessor">#include &lt;CL/cl.hpp&gt;</span></div>
-<div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor">#include &lt;cstdio&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"></div>
-<div class="line"> <span class="keyword">const</span> <span class="keywordtype">char</span> * helloStr  = <span class="stringliteral">&quot;__kernel void &quot;</span></div>
-<div class="line">                          <span class="stringliteral">&quot;hello(void) &quot;</span></div>
-<div class="line">                          <span class="stringliteral">&quot;{ &quot;</span></div>
-<div class="line">                          <span class="stringliteral">&quot;  &quot;</span></div>
-<div class="line">                          <span class="stringliteral">&quot;} &quot;</span>;</div>
-<div class="line"></div>
-<div class="line"> <span class="keywordtype">int</span></div>
-<div class="line"> <a class="code" href="acoustic_waves_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"> {</div>
-<div class="line">    cl_int err = CL_SUCCESS;</div>
-<div class="line">    <span class="keywordflow">try</span> {</div>
-<div class="line"></div>
-<div class="line">      std::vector&lt;cl::Platform&gt; platforms;</div>
-<div class="line">      <a class="code" href="classcl_1_1_platform.html#af411de5b4cb0f553ea1dc2147e58d837">cl::Platform::get</a>(&amp;platforms);</div>
-<div class="line">      <span class="keywordflow">if</span> (platforms.size() == 0) {</div>
-<div class="line">          std::cout &lt;&lt; <span class="stringliteral">&quot;Platform size 0\n&quot;</span>;</div>
-<div class="line">          <span class="keywordflow">return</span> -1;</div>
-<div class="line">      }</div>
-<div class="line"></div>
-<div class="line">      cl_context_properties properties[] = </div>
-<div class="line">         { CL_CONTEXT_PLATFORM, (cl_context_properties)(platforms[0])(), 0};</div>
-<div class="line">      <a class="code" href="classcl_1_1_context.html">cl::Context</a> context(CL_DEVICE_TYPE_CPU, properties); </div>
-<div class="line"></div>
-<div class="line">      std::vector&lt;cl::Device&gt; devices = context.getInfo&lt;CL_CONTEXT_DEVICES&gt;();</div>
-<div class="line"></div>
-<div class="line">      <a class="code" href="classcl_1_1_program.html#a5a9894f09322a68303c9de8729ae722d">cl::Program::Sources</a> source(1,</div>
-<div class="line">          std::make_pair(helloStr,strlen(helloStr)));</div>
-<div class="line">      <a class="code" href="classcl_1_1_program.html">cl::Program</a> program_ = <a class="code" href="classcl_1_1_program.html">cl::Program</a>(context, source);</div>
-<div class="line">      program_.<a class="code" href="classcl_1_1_program.html#af5d2cda1beb24653522383efb7d53104">build</a>(devices);</div>
-<div class="line"></div>
-<div class="line">      <a class="code" href="classcl_1_1_kernel.html">cl::Kernel</a> kernel(program_, <span class="stringliteral">&quot;hello&quot;</span>, &amp;err);</div>
-<div class="line"></div>
-<div class="line">      <a class="code" href="classcl_1_1_event.html">cl::Event</a> event;</div>
-<div class="line">      <a class="code" href="classcl_1_1_command_queue.html">cl::CommandQueue</a> queue(context, devices[0], 0, &amp;err);</div>
-<div class="line">      queue.enqueueNDRangeKernel(</div>
-<div class="line">          kernel, </div>
-<div class="line">          cl::NullRange, </div>
-<div class="line">          <a class="code" href="classcl_1_1_n_d_range.html">cl::NDRange</a>(4,4),</div>
-<div class="line">          cl::NullRange,</div>
-<div class="line">          NULL,</div>
-<div class="line">          &amp;event); </div>
-<div class="line"></div>
-<div class="line">      <span class="keyword">event</span>.wait();</div>
-<div class="line">    }</div>
-<div class="line">    <span class="keywordflow">catch</span> (cl::Error err) {</div>
-<div class="line">       std::cerr </div>
-<div class="line">          &lt;&lt; <span class="stringliteral">&quot;ERROR: &quot;</span></div>
-<div class="line">          &lt;&lt; err.what()</div>
-<div class="line">          &lt;&lt; <span class="stringliteral">&quot;(&quot;</span></div>
-<div class="line">          &lt;&lt; err.err()</div>
-<div class="line">          &lt;&lt; <span class="stringliteral">&quot;)&quot;</span></div>
-<div class="line">          &lt;&lt; std::endl;</div>
-<div class="line">    }</div>
-<div class="line"></div>
-<div class="line">   <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
-<div class="line"> }</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+<div class="textblock"><p><div class="dotgraph">
+</div>
+ </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

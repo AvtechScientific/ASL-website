@@ -202,7 +202,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Copies of these objects are shallow, meaning that the copy will refer to the same underlying cl_event as the original. For details, see clRetainEvent() and clReleaseEvent().</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>cl_event </dd></dl>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02813">2813</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02714">2714</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a90e01689f7b394fc003d66c48a7f6f95"></a>
 <div class="memitem">
@@ -227,7 +227,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Default constructor - initializes to NULL. </p>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02817">2817</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02718">2718</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor from cl_event - takes ownership. </p>
 <p>This effectively transfers ownership of a refcount on the cl_event into the new <a class="el" href="classcl_1_1_event.html" title="Class interface for cl_event. ">Event</a> object. </p>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02824">2824</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02725">2725</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -297,7 +297,7 @@ template&lt;typename T &gt; </div>
 
 <p>Wrapper for clGetEventInfo(). </p>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02839">2839</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02740">2740</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -327,7 +327,7 @@ template&lt;cl_int name&gt; </div>
 
 <p>Wrapper for clGetEventInfo() that returns by value. </p>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02849">2849</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02750">2750</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ template&lt;typename T &gt; </div>
 
 <p>Wrapper for clGetEventProfilingInfo(). </p>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02862">2862</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02763">2763</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -397,7 +397,7 @@ template&lt;cl_int name&gt; </div>
 
 <p>Wrapper for clGetEventProfilingInfo() that returns by value. </p>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02872">2872</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02773">2773</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ template&lt;cl_int name&gt; </div>
 <p>Assignment operator from cl_event - takes ownership. </p>
 <p>This effectively transfers ownership of a refcount on the rhs and calls clReleaseEvent() on the value previously held by this instance. </p>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02831">2831</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02732">2732</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -454,7 +454,7 @@ template&lt;cl_int name&gt; </div>
 <p>Blocks the calling thread until this event completes. </p>
 <p>Wraps clWaitForEvents(). </p>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02887">2887</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02788">2788</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 
 </div>
 </div>
@@ -483,7 +483,7 @@ template&lt;cl_int name&gt; </div>
 <p>Blocks the calling thread until every event specified is complete. </p>
 <p>Wraps clWaitForEvents(). </p>
 
-<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02919">2919</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cl_8hpp_source.html#l02820">2820</a> of file <a class="el" href="cl_8hpp_source.html">cl.hpp</a>.</p>
 
 </div>
 </div>
