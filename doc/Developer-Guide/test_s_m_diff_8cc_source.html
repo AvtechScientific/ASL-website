@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -191,15 +191,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="namespaceasl.html#a43ad4513d2baf1208d772cb46c23ed98">initAll</a>(bc);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Computing...&quot;</span> &lt;&lt; flush;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Computing...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="classasl_1_1_timer.html">asl::Timer</a> timer;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html">asl::WriterVTKXML</a> writer(<span class="stringliteral">&quot;testSMDiff&quot;</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html">asl::WriterVTKXML</a> writer(appParamsManager.<a class="code" href="classasl_1_1_parameters_manager.html#a2b6b8a34e28b0e8d0ff06b8d7dbc49dd">getDir</a>() + <span class="stringliteral">&quot;testSMDiff&quot;</span>);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  writer.<a class="code" href="classasl_1_1_writer.html#af26c67a142065f85b44ac280a71e61b7">addScalars</a>(<span class="stringliteral">&quot;c1&quot;</span>, *c1Field);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  writer.<a class="code" href="classasl_1_1_writer.html#af26c67a142065f85b44ac280a71e61b7">addScalars</a>(<span class="stringliteral">&quot;c2&quot;</span>, *c2Field);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  writer.addScalars(<span class="stringliteral">&quot;c2&quot;</span>, *c2Field);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="namespaceasl.html#affa721cec9e33d916206b8e12f7cd5ed">executeAll</a>(bc);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  writer.<a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html#a37a0d9925b6cc954876aa14da9689cea">write</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  writer.write();</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  timer.<a class="code" href="classasl_1_1_timer.html#aa60805a0b350da39279189e0d9cb18d5">start</a>();</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i(1); i &lt; 401; ++i)</div>
@@ -209,7 +209,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span>(!(i%40))</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      cout &lt;&lt; i &lt;&lt; endl;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      writer.<a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html#a37a0d9925b6cc954876aa14da9689cea">write</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      writer.write();</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  timer.<a class="code" href="classasl_1_1_timer.html#a369f85c48a8588b48e2ba0f754d43bf2">stop</a>();</div>
@@ -241,9 +241,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="test_s_m_diff_8cc_html_a7e5d378565813569a8039d254981ef93"><div class="ttname"><a href="test_s_m_diff_8cc.html#a7e5d378565813569a8039d254981ef93">Param</a></div><div class="ttdeci">asl::UValue&lt; double &gt; Param</div><div class="ttdef"><b>Definition:</b> <a href="test_s_m_diff_8cc_source.html#l00041">testSMDiff.cc:41</a></div></div>
 <div class="ttc" id="namespaceasl_html_a43ad4513d2baf1208d772cb46c23ed98"><div class="ttname"><a href="namespaceasl.html#a43ad4513d2baf1208d772cb46c23ed98">asl::initAll</a></div><div class="ttdeci">void initAll(std::vector&lt; T * &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="asl_num_method_8h_source.html#l00067">aslNumMethod.h:67</a></div></div>
 <div class="ttc" id="asl_templates_8h_html"><div class="ttname"><a href="asl_templates_8h.html">aslTemplates.h</a></div></div>
+<div class="ttc" id="classasl_1_1_parameters_manager_html_a2b6b8a34e28b0e8d0ff06b8d7dbc49dd"><div class="ttname"><a href="classasl_1_1_parameters_manager.html#a2b6b8a34e28b0e8d0ff06b8d7dbc49dd">asl::ParametersManager::getDir</a></div><div class="ttdeci">std::string getDir()</div></div>
 <div class="ttc" id="group___boundary_conditions_html_ggae173c7e8ab6cd5980d0475bd7f0ff129ad0b48b19e82d76d7b78e5ba676782e92"><div class="ttname"><a href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129ad0b48b19e82d76d7b78e5ba676782e92">asl::X0</a></div><div class="ttdef"><b>Definition:</b> <a href="asl_b_cond_8h_source.html#l00309">aslBCond.h:309</a></div></div>
 <div class="ttc" id="asl_basic_b_c_8h_html"><div class="ttname"><a href="asl_basic_b_c_8h.html">aslBasicBC.h</a></div></div>
 <div class="ttc" id="asl_parameters_manager_8h_html"><div class="ttname"><a href="asl_parameters_manager_8h.html">aslParametersManager.h</a></div></div>
+<div class="ttc" id="namespacecl_html_aec3275453ec57a74dfa7a34653cfa194"><div class="ttname"><a href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">cl::flush</a></div><div class="ttdeci">cl_int flush(void)</div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l07141">cl.hpp:7141</a></div></div>
 <div class="ttc" id="group___differential_opperators_html_ga20eb1654876b10e1f752eb0f22e68dad"><div class="ttname"><a href="group___differential_opperators.html#ga20eb1654876b10e1f752eb0f22e68dad">asl::dx</a></div><div class="ttdeci">acl::VectorOfElements dx(const TemplateVE &amp;a)</div><div class="ttdoc">differential operator  </div></div>
 <div class="ttc" id="test_s_m_diff_8cc_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="test_s_m_diff_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="test_s_m_diff_8cc_source.html#l00047">testSMDiff.cc:47</a></div></div>
 <div class="ttc" id="group___boundary_conditions_html_ggae173c7e8ab6cd5980d0475bd7f0ff129a09a9c7a9fcedd83682140e487bf02d20"><div class="ttname"><a href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129a09a9c7a9fcedd83682140e487bf02d20">asl::Y0</a></div><div class="ttdef"><b>Definition:</b> <a href="asl_b_cond_8h_source.html#l00309">aslBCond.h:309</a></div></div>
@@ -267,12 +269,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___templates_n_n_html_gadf330988f08da9a5b05d7fcf7171456c"><div class="ttname"><a href="group___templates_n_n.html#gadf330988f08da9a5b05d7fcf7171456c">asl::d3q7</a></div><div class="ttdeci">const VectorTemplate &amp; d3q7()</div><div class="ttdoc">Vector template. </div></div>
 <div class="ttc" id="singletonasl_1_1_u_value_html_ab332ee5af306aee74dbae575f53a88e8"><div class="ttname"><a href="singletonasl_1_1_u_value.html#ab332ee5af306aee74dbae575f53a88e8">asl::UValue::v</a></div><div class="ttdeci">const T &amp; v() const </div><div class="ttdef"><b>Definition:</b> <a href="asl_u_value_8h_source.html#l00043">aslUValue.h:43</a></div></div>
 <div class="ttc" id="classasl_1_1_application_parameters_manager_html_a9db9e7cf2dc5887077daabdd4d108871"><div class="ttname"><a href="classasl_1_1_application_parameters_manager.html#a9db9e7cf2dc5887077daabdd4d108871">asl::ApplicationParametersManager::load</a></div><div class="ttdeci">void load(int argc, char *argv[])</div></div>
-<div class="ttc" id="classasl_1_1_writer_v_t_k_x_m_l_html_a37a0d9925b6cc954876aa14da9689cea"><div class="ttname"><a href="classasl_1_1_writer_v_t_k_x_m_l.html#a37a0d9925b6cc954876aa14da9689cea">asl::WriterVTKXML::write</a></div><div class="ttdeci">void write()</div></div>
 <div class="ttc" id="asl_geom_inc_8h_html"><div class="ttname"><a href="asl_geom_inc_8h.html">aslGeomInc.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

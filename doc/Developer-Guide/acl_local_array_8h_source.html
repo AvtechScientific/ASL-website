@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -150,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">string</span> getLocalDeclaration(<span class="keyword">const</span> <a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> &amp; kernelConfig) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> addToKernelSource(vector&lt;Element&gt; &amp; arguments,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                     vector&lt;Element&gt; &amp; localDeclarations) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAsArgument(cl::Kernel &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAsArgument(<a class="code" href="classcl_1_1_kernel.html">cl::Kernel</a> &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  };</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -207,7 +207,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// can&#39;t be set as an argument</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classacl_1_1_local_array.html#a48489dd50f2a11d39280a67ee472aa40">  113</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_local_array.html#a48489dd50f2a11d39280a67ee472aa40">LocalArray&lt;T&gt;::setAsArgument</a>(cl::Kernel &amp; kernel,</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classacl_1_1_local_array.html#a48489dd50f2a11d39280a67ee472aa40">  113</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_local_array.html#a48489dd50f2a11d39280a67ee472aa40">LocalArray&lt;T&gt;::setAsArgument</a>(<a class="code" href="classcl_1_1_kernel.html">cl::Kernel</a> &amp; kernel,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                           <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
@@ -222,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classacl_1_1_local_array_html_ab7aaae58e4811fe9dea05522583c1553"><div class="ttname"><a href="classacl_1_1_local_array.html#ab7aaae58e4811fe9dea05522583c1553">acl::LocalArray::getLocalDeclaration</a></div><div class="ttdeci">virtual string getLocalDeclaration(const KernelConfiguration &amp;kernelConfig) const </div><div class="ttdef"><b>Definition:</b> <a href="acl_local_array_8h_source.html#l00099">aclLocalArray.h:99</a></div></div>
 <div class="ttc" id="classacl_1_1_local_array_html"><div class="ttname"><a href="classacl_1_1_local_array.html">acl::LocalArray</a></div><div class="ttdef"><b>Definition:</b> <a href="acl_local_array_8h_source.html#l00041">aclLocalArray.h:41</a></div></div>
 <div class="ttc" id="classacl_1_1_local_array_html_a3c3ef12bf7b1c8000277874d40e44d8d"><div class="ttname"><a href="classacl_1_1_local_array.html#a3c3ef12bf7b1c8000277874d40e44d8d">acl::LocalArray::getName</a></div><div class="ttdeci">virtual string getName() const </div><div class="ttdef"><b>Definition:</b> <a href="acl_local_array_8h_source.html#l00081">aclLocalArray.h:81</a></div></div>
-<div class="ttc" id="group___utilities_html_gaaa4453d519c71b1215509ab26d7cf970"><div class="ttname"><a href="group___utilities.html#gaaa4453d519c71b1215509ab26d7cf970">asl::numToStr</a></div><div class="ttdeci">std::string numToStr(T i)</div><div class="ttdoc">Converts numbers or another type to string. </div><div class="ttdef"><b>Definition:</b> <a href="asl_utilities_8h_source.html#l00045">aslUtilities.h:45</a></div></div>
+<div class="ttc" id="group___utilities_html_gaaa4453d519c71b1215509ab26d7cf970"><div class="ttname"><a href="group___utilities.html#gaaa4453d519c71b1215509ab26d7cf970">asl::numToStr</a></div><div class="ttdeci">std::string numToStr(T i)</div><div class="ttdoc">Converts numbers or another type to string. </div><div class="ttdef"><b>Definition:</b> <a href="asl_utilities_8h_source.html#l00048">aslUtilities.h:48</a></div></div>
 <div class="ttc" id="classacl_1_1_element_base_html"><div class="ttname"><a href="classacl_1_1_element_base.html">acl::ElementBase</a></div><div class="ttdef"><b>Definition:</b> <a href="acl_element_base_8h_source.html#l00049">aclElementBase.h:49</a></div></div>
 <div class="ttc" id="namespaceacl_html_a89183ec9e23f23abac089fe4b005ff7f"><div class="ttname"><a href="namespaceacl.html#a89183ec9e23f23abac089fe4b005ff7f">acl::paddingElements</a></div><div class="ttdeci">unsigned int paddingElements(unsigned int size, const KernelConfiguration &amp;kernelConfig)</div><div class="ttdoc">Adds padding in elements based on vector width. </div></div>
 <div class="ttc" id="classacl_1_1_local_array_html_ac4370f56a08c3b097e2de8cd425f5a5e"><div class="ttname"><a href="classacl_1_1_local_array.html#ac4370f56a08c3b097e2de8cd425f5a5e">acl::LocalArray::getAddressSpaceQualifier</a></div><div class="ttdeci">virtual string getAddressSpaceQualifier() const </div><div class="ttdef"><b>Definition:</b> <a href="acl_local_array_8h_source.html#l00093">aclLocalArray.h:93</a></div></div>
@@ -232,12 +232,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classacl_1_1_local_array_html_a96d326b18d678f5aa80085030ddac24b"><div class="ttname"><a href="classacl_1_1_local_array.html#a96d326b18d678f5aa80085030ddac24b">acl::LocalArray::addToKernelSource</a></div><div class="ttdeci">virtual void addToKernelSource(vector&lt; Element &gt; &amp;arguments, vector&lt; Element &gt; &amp;localDeclarations) const </div><div class="ttdef"><b>Definition:</b> <a href="acl_local_array_8h_source.html#l00106">aclLocalArray.h:106</a></div></div>
 <div class="ttc" id="classacl_1_1_kernel_configuration_html_a23994aafd27c38d81e93e4943d0eb8d7"><div class="ttname"><a href="classacl_1_1_kernel_configuration.html#a23994aafd27c38d81e93e4943d0eb8d7">acl::KernelConfiguration::unaligned</a></div><div class="ttdeci">bool unaligned</div><div class="ttdef"><b>Definition:</b> <a href="acl_kernel_configuration_8h_source.html#l00044">aclKernelConfiguration.h:44</a></div></div>
 <div class="ttc" id="namespaceacl_html_a3f9b20fd3aeb601b1a4e6fb0faeb9cb6"><div class="ttname"><a href="namespaceacl.html#a3f9b20fd3aeb601b1a4e6fb0faeb9cb6">acl::typeToTypeID</a></div><div class="ttdeci">constexpr const TypeID typeToTypeID()</div></div>
+<div class="ttc" id="classcl_1_1_kernel_html"><div class="ttname"><a href="classcl_1_1_kernel.html">cl::Kernel</a></div><div class="ttdoc">Class interface for cl_kernel. </div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l04820">cl.hpp:4820</a></div></div>
 <div class="ttc" id="classacl_1_1_local_array_html_a390d1d651f80e6b8a2274294e970855c"><div class="ttname"><a href="classacl_1_1_local_array.html#a390d1d651f80e6b8a2274294e970855c">acl::LocalArray::str</a></div><div class="ttdeci">virtual string str(const KernelConfiguration &amp;kernelConfig) const </div><div class="ttdef"><b>Definition:</b> <a href="acl_local_array_8h_source.html#l00068">aclLocalArray.h:68</a></div></div>
 <div class="ttc" id="namespaceacl_html_a1e5700b666ecb2f085d8bc1e8ae5579c"><div class="ttname"><a href="namespaceacl.html#a1e5700b666ecb2f085d8bc1e8ae5579c">acl::INDEX</a></div><div class="ttdeci">const std::string INDEX</div><div class="ttdef"><b>Definition:</b> <a href="acl_utilities_8h_source.html#l00040">aclUtilities.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

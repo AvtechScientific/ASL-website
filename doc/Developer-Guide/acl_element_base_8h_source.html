@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -167,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> addToKernelSource(vector&lt;<a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;ElementBase&gt;</a> &gt; &amp; arguments,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                     vector&lt;<a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;ElementBase&gt;</a> &gt; &amp; localDeclarations) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAsArgument(cl::Kernel &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> setAsArgument(<a class="code" href="classcl_1_1_kernel.html">cl::Kernel</a> &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keyword">virtual</span> ~<a class="code" href="classacl_1_1_element_base.html">ElementBase</a>();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  };</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
@@ -177,7 +177,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // ACLELEMENTBASE_H</span></div>
 <div class="ttc" id="namespaceacl_html"><div class="ttname"><a href="namespaceacl.html">acl</a></div><div class="ttdoc">Advanced Computational Language. </div><div class="ttdef"><b>Definition:</b> <a href="acl_8h_source.html#l00040">acl.h:40</a></div></div>
 <div class="ttc" id="classacl_1_1_element_base_html_a502e9b2215e99f5da74b21c65a1b50db"><div class="ttname"><a href="classacl_1_1_element_base.html#a502e9b2215e99f5da74b21c65a1b50db">acl::ElementBase::typeID</a></div><div class="ttdeci">TypeID typeID</div><div class="ttdef"><b>Definition:</b> <a href="acl_element_base_8h_source.html#l00053">aclElementBase.h:53</a></div></div>
-<div class="ttc" id="namespacecl_html"><div class="ttname"><a href="namespacecl.html">cl</a></div><div class="ttdef"><b>Definition:</b> <a href="acl_8h_source.html#l00033">acl.h:33</a></div></div>
+<div class="ttc" id="namespacecl_html"><div class="ttname"><a href="namespacecl.html">cl</a></div><div class="ttdoc">The OpenCL C++ bindings are defined within this namespace. </div><div class="ttdef"><b>Definition:</b> <a href="acl_8h_source.html#l00033">acl.h:33</a></div></div>
 <div class="ttc" id="namespaceacl_html_a26a28eb0d460d66f0a0532f92b72859f"><div class="ttname"><a href="namespaceacl.html#a26a28eb0d460d66f0a0532f92b72859f">acl::CommandQueue</a></div><div class="ttdeci">std::shared_ptr&lt; cl::CommandQueue &gt; CommandQueue</div><div class="ttdef"><b>Definition:</b> <a href="acl_8h_source.html#l00051">acl.h:51</a></div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="classacl_1_1_element_base_html"><div class="ttname"><a href="classacl_1_1_element_base.html">acl::ElementBase</a></div><div class="ttdef"><b>Definition:</b> <a href="acl_element_base_8h_source.html#l00049">aclElementBase.h:49</a></div></div>
@@ -190,13 +190,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespaceacl_html_af2e2c5325788889886836151c03f6aed"><div class="ttname"><a href="namespaceacl.html#af2e2c5325788889886836151c03f6aed">acl::Element</a></div><div class="ttdeci">std::shared_ptr&lt; ElementBase &gt; Element</div><div class="ttdef"><b>Definition:</b> <a href="acl_8h_source.html#l00049">acl.h:49</a></div></div>
 <div class="ttc" id="classacl_1_1_element_base_html_a5f98afab1e59b60116b6ce69b28c6e84"><div class="ttname"><a href="classacl_1_1_element_base.html#a5f98afab1e59b60116b6ce69b28c6e84">acl::ElementBase::queue</a></div><div class="ttdeci">CommandQueue queue</div><div class="ttdef"><b>Definition:</b> <a href="acl_element_base_8h_source.html#l00054">aclElementBase.h:54</a></div></div>
 <div class="ttc" id="classacl_1_1_element_base_html_aba59cc43f5bf18786fe0421544e8f6f6"><div class="ttname"><a href="classacl_1_1_element_base.html#aba59cc43f5bf18786fe0421544e8f6f6">acl::ElementBase::size</a></div><div class="ttdeci">unsigned int size</div><div class="ttdef"><b>Definition:</b> <a href="acl_element_base_8h_source.html#l00052">aclElementBase.h:52</a></div></div>
+<div class="ttc" id="classcl_1_1_kernel_html"><div class="ttname"><a href="classcl_1_1_kernel.html">cl::Kernel</a></div><div class="ttdoc">Class interface for cl_kernel. </div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l04820">cl.hpp:4820</a></div></div>
 <div class="ttc" id="namespaceacl_html_a8845e9018d129e24abd4bbb0c941ae39"><div class="ttname"><a href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39">acl::TypeID</a></div><div class="ttdeci">TypeID</div><div class="ttdef"><b>Definition:</b> <a href="acl_types_8h_source.html#l00038">aclTypes.h:38</a></div></div>
 <div class="ttc" id="group___kernel_gen_html_gad3c50512deb3cd20bef55603b2816edd"><div class="ttname"><a href="group___kernel_gen.html#gad3c50512deb3cd20bef55603b2816edd">acl::KERNEL_BASIC</a></div><div class="ttdeci">const KernelConfiguration KERNEL_BASIC</div><div class="ttdef"><b>Definition:</b> <a href="acl_element_base_8h_source.html#l00045">aclElementBase.h:45</a></div></div>
 <div class="ttc" id="namespaceacl_html_a1e5700b666ecb2f085d8bc1e8ae5579c"><div class="ttname"><a href="namespaceacl.html#a1e5700b666ecb2f085d8bc1e8ae5579c">acl::INDEX</a></div><div class="ttdeci">const std::string INDEX</div><div class="ttdef"><b>Definition:</b> <a href="acl_utilities_8h_source.html#l00040">aclUtilities.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

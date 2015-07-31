@@ -42,5 +42,8 @@ var searchData=
   ['bcvelocitymap',['BCVelocityMap',['../classasl_1_1_b_c_velocity_map.html',1,'asl']]],
   ['bczerostressmap',['BCZeroStressMap',['../classasl_1_1_b_c_zero_stress_map.html',1,'asl']]],
   ['block',['Block',['../classasl_1_1_block.html',1,'asl']]],
-  ['box',['Box',['../classasl_1_1_box.html',1,'asl']]]
+  ['box',['Box',['../classasl_1_1_box.html',1,'asl']]],
+  ['buffer',['Buffer',['../classcl_1_1_buffer.html',1,'cl']]],
+  ['buffergl',['BufferGL',['../classcl_1_1_buffer_g_l.html',1,'cl']]],
+  ['bufferrendergl',['BufferRenderGL',['../classcl_1_1_buffer_render_g_l.html',1,'cl']]]
 ];

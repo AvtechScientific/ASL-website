@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -125,83 +125,87 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef ACLHARDWARE_H</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define ACLHARDWARE_H</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;CL/cl.hpp&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="acl_std_includes_8h.html">aclStdIncludes.h</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="acl_types_8h.html">aclTypes.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceacl.html">acl</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;cl::CommandQueue&gt;</a> <a class="code" href="namespaceacl.html#a26a28eb0d460d66f0a0532f92b72859f">CommandQueue</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">extern</span> <span class="keyword">const</span> std::vector&lt;std::string&gt; <a class="code" href="namespaceacl.html#aca21b8aa3ea405148cafc22a1f5e2079">TYPE</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">extern</span> <span class="keyword">const</span> std::vector&lt;unsigned char&gt; <a class="code" href="namespaceacl.html#ab80ba0398589c98d73bbee9368b46620">TYPE_SIZE</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">/* expression in the condition field should have this type*/</span> </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">extern</span> <span class="keyword">const</span> std::vector&lt;TypeID&gt; <a class="code" href="namespaceacl.html#abe03dff21b9b9de8c557ca28bb5387f3">TYPE_SELECT</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  std::string <a class="code" href="group___hardware_information.html#gaad8e49c172899421b64dd330e2437ab2">getPlatformVendor</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//#include &lt;CL/cl.hpp&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// Supply &quot;cl.hpp&quot; with ASL, since it is not present in OpenCL 2.0</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Remove the file after switching to OpenCL 2.1</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cl_8hpp.html">cl.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="acl_std_includes_8h.html">aclStdIncludes.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="acl_types_8h.html">aclTypes.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceacl.html">acl</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;cl::CommandQueue&gt;</a> <a class="code" href="namespaceacl.html#a26a28eb0d460d66f0a0532f92b72859f">CommandQueue</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">extern</span> <span class="keyword">const</span> std::vector&lt;std::string&gt; <a class="code" href="namespaceacl.html#aca21b8aa3ea405148cafc22a1f5e2079">TYPE</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">extern</span> <span class="keyword">const</span> std::vector&lt;unsigned char&gt; <a class="code" href="namespaceacl.html#ab80ba0398589c98d73bbee9368b46620">TYPE_SIZE</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">/* expression in the condition field should have this type*/</span> </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">extern</span> <span class="keyword">const</span> std::vector&lt;TypeID&gt; <a class="code" href="namespaceacl.html#abe03dff21b9b9de8c557ca28bb5387f3">TYPE_SELECT</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::string <a class="code" href="group___hardware_information.html#ga21079d767e7582a8f719f4e742d79696">getDeviceName</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::string <a class="code" href="group___hardware_information.html#gaad8e49c172899421b64dd330e2437ab2">getPlatformVendor</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  std::string <a class="code" href="namespaceacl.html#ad35e93510a9c5cc45c4716a8c6dce312">getDeviceVersion</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  cl_device_type <a class="code" href="group___hardware_information.html#ga57e85c54bc68fce1726d026a2a448c2b">getDeviceType</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  std::string <a class="code" href="group___hardware_information.html#ga21079d767e7582a8f719f4e742d79696">getDeviceName</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::string <a class="code" href="namespaceacl.html#ad35e93510a9c5cc45c4716a8c6dce312">getDeviceVersion</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  cl_uint <a class="code" href="group___hardware_information.html#ga992c92323031125ea4ec115e810c8bb7">getNComputeUnits</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  cl::Device <a class="code" href="namespaceacl.html#a92ae41043f1202db568ac6e6102173f3">getDevice</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  cl::Context <a class="code" href="namespaceacl.html#a72a57b599764499b21ff2a5e667b50df">getContext</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group___hardware_information.html#gab30e7365f99d1390a1c458118cba7947">getAlignment</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  cl_device_local_mem_type <a class="code" href="group___hardware_information.html#gae410a9c353c701bb78500f2a1ad4ec63">getLocalMemoryType</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  cl_ulong <a class="code" href="group___hardware_information.html#gad74f74620cfb7a36cc973f035581e772">getLocalMemorySize</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  cl_device_type <a class="code" href="group___hardware_information.html#ga57e85c54bc68fce1726d026a2a448c2b">getDeviceType</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  cl_uint <a class="code" href="group___hardware_information.html#ga992c92323031125ea4ec115e810c8bb7">getNComputeUnits</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classcl_1_1_device.html">cl::Device</a> <a class="code" href="namespaceacl.html#a92ae41043f1202db568ac6e6102173f3">getDevice</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classcl_1_1_context.html">cl::Context</a> <a class="code" href="namespaceacl.html#a72a57b599764499b21ff2a5e667b50df">getContext</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group___hardware_information.html#gab30e7365f99d1390a1c458118cba7947">getAlignment</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  cl_device_local_mem_type <a class="code" href="group___hardware_information.html#gae410a9c353c701bb78500f2a1ad4ec63">getLocalMemoryType</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="group___hardware_information.html#ga3a16edf66331011b5fb4f3d4073cdcb6">getMaxItemSize</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  cl_uint <a class="code" href="group___hardware_information.html#ga492a65a9f8ac6a73ca5b33cbf53757e1">getVectorWidth</a>(<span class="keyword">const</span> CommandQueue &amp; queue, <span class="keyword">const</span> <a class="code" href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39">TypeID</a> typeID);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="group___hardware_information.html#ga6850b46794fe987be44b20cef9b266bd">extensionAvailable</a>(<span class="keyword">const</span> CommandQueue &amp; queue, <span class="keyword">const</span> <a class="code" href="namespaceacl.html#a70d5fd7fa84c9a3c8b0f7182fbc67328">Extension</a> extension);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  cl_ulong <a class="code" href="group___hardware_information.html#gad74f74620cfb7a36cc973f035581e772">getLocalMemorySize</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="group___hardware_information.html#ga3a16edf66331011b5fb4f3d4073cdcb6">getMaxItemSize</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  cl_uint <a class="code" href="group___hardware_information.html#ga492a65a9f8ac6a73ca5b33cbf53757e1">getVectorWidth</a>(<span class="keyword">const</span> CommandQueue &amp; queue, <span class="keyword">const</span> <a class="code" href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39">TypeID</a> typeID);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  cl_device_fp_config <a class="code" href="group___hardware_information.html#gabc1ed4682a37f8e057d4f037cac71979">doublePrecisionSupport</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">class </span>Kernel;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  cl_ulong <a class="code" href="group___hardware_information.html#ga60a7dd7730cdeb7405847051988bb5f5">getKernelLocalMemSize</a>(<span class="keyword">const</span> Kernel &amp; kernel);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  cl_ulong <a class="code" href="group___hardware_information.html#gab781c94f47e93a8d1c11e98110c06c7c">getKernelPrivateMemSize</a>(<span class="keyword">const</span> Kernel &amp; kernel);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classacl_1_1_hardware.html">  134</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classacl_1_1_hardware.html">Hardware</a></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <a class="code" href="classacl_1_1_hardware.html#adf21f1e0e7fc842fbed803b29056a67c">Hardware</a>();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_hardware.html#af2e51cafc912bb26b76d764b68ede01f">setDefaultQueue</a>(<span class="keyword">const</span> std::string &amp; platform = <span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                           <span class="keyword">const</span> std::string &amp; device = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classacl_1_1_hardware.html#a36f39c96d17cd7e4d22ac9c9d3135bb2">  146</a></span>&#160;      std::vector&lt;CommandQueue&gt; <a class="code" href="classacl_1_1_hardware.html#a36f39c96d17cd7e4d22ac9c9d3135bb2">queues</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classacl_1_1_hardware.html#aaadaae95e7a9c9b08b46a07cfb78760c">  147</a></span>&#160;      CommandQueue <a class="code" href="classacl_1_1_hardware.html#aaadaae95e7a9c9b08b46a07cfb78760c">defaultQueue</a>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      std::string <a class="code" href="classacl_1_1_hardware.html#a0439f5f6345def19000385804e32d5e4">getDevicesInfo</a>();</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      std::string <a class="code" href="classacl_1_1_hardware.html#a485dcd9de6df7cae2ba99da8879f83cb">getDefaultDeviceInfo</a>();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      std::string devicesInfo;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  };</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="comment">// GLOBALS</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keyword">extern</span> <a class="code" href="classacl_1_1_hardware.html">Hardware</a> <a class="code" href="namespaceacl.html#a40e55ae1aa7799ea12754653f8c0acfe">hardware</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="group___hardware_information.html#ga6850b46794fe987be44b20cef9b266bd">extensionAvailable</a>(<span class="keyword">const</span> CommandQueue &amp; queue, <span class="keyword">const</span> <a class="code" href="namespaceacl.html#a70d5fd7fa84c9a3c8b0f7182fbc67328">Extension</a> extension);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  cl_device_fp_config <a class="code" href="group___hardware_information.html#gabc1ed4682a37f8e057d4f037cac71979">doublePrecisionSupport</a>(<span class="keyword">const</span> CommandQueue &amp; queue);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keyword">class </span>Kernel;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  cl_ulong <a class="code" href="group___hardware_information.html#ga60a7dd7730cdeb7405847051988bb5f5">getKernelLocalMemSize</a>(<span class="keyword">const</span> Kernel &amp; kernel);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  cl_ulong <a class="code" href="group___hardware_information.html#gab781c94f47e93a8d1c11e98110c06c7c">getKernelPrivateMemSize</a>(<span class="keyword">const</span> Kernel &amp; kernel);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classacl_1_1_hardware.html">  138</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classacl_1_1_hardware.html">Hardware</a></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <a class="code" href="classacl_1_1_hardware.html#adf21f1e0e7fc842fbed803b29056a67c">Hardware</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_hardware.html#af2e51cafc912bb26b76d764b68ede01f">setDefaultQueue</a>(<span class="keyword">const</span> std::string &amp; platform = <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                           <span class="keyword">const</span> std::string &amp; device = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classacl_1_1_hardware.html#a36f39c96d17cd7e4d22ac9c9d3135bb2">  150</a></span>&#160;      std::vector&lt;CommandQueue&gt; <a class="code" href="classacl_1_1_hardware.html#a36f39c96d17cd7e4d22ac9c9d3135bb2">queues</a>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classacl_1_1_hardware.html#aaadaae95e7a9c9b08b46a07cfb78760c">  151</a></span>&#160;      CommandQueue <a class="code" href="classacl_1_1_hardware.html#aaadaae95e7a9c9b08b46a07cfb78760c">defaultQueue</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      std::string <a class="code" href="classacl_1_1_hardware.html#a0439f5f6345def19000385804e32d5e4">getDevicesInfo</a>();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      std::string <a class="code" href="classacl_1_1_hardware.html#a485dcd9de6df7cae2ba99da8879f83cb">getDefaultDeviceInfo</a>();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      std::string devicesInfo;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  };</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;} <span class="comment">// namespace acl</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif // ACLHARDWARE_H</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="comment">// GLOBALS</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keyword">extern</span> <a class="code" href="classacl_1_1_hardware.html">Hardware</a> <a class="code" href="namespaceacl.html#a40e55ae1aa7799ea12754653f8c0acfe">hardware</a>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;} <span class="comment">// namespace acl</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif // ACLHARDWARE_H</span></div>
 <div class="ttc" id="group___hardware_information_html_ga492a65a9f8ac6a73ca5b33cbf53757e1"><div class="ttname"><a href="group___hardware_information.html#ga492a65a9f8ac6a73ca5b33cbf53757e1">acl::getVectorWidth</a></div><div class="ttdeci">cl_uint getVectorWidth(const CommandQueue &amp;queue, const TypeID typeID)</div></div>
 <div class="ttc" id="namespaceacl_html_a70d5fd7fa84c9a3c8b0f7182fbc67328"><div class="ttname"><a href="namespaceacl.html#a70d5fd7fa84c9a3c8b0f7182fbc67328">acl::Extension</a></div><div class="ttdeci">Extension</div><div class="ttdef"><b>Definition:</b> <a href="acl_types_8h_source.html#l00029">aclTypes.h:29</a></div></div>
 <div class="ttc" id="namespaceacl_html_a92ae41043f1202db568ac6e6102173f3"><div class="ttname"><a href="namespaceacl.html#a92ae41043f1202db568ac6e6102173f3">acl::getDevice</a></div><div class="ttdeci">cl::Device getDevice(const CommandQueue &amp;queue)</div></div>
@@ -211,7 +215,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="group___hardware_information_html_gad74f74620cfb7a36cc973f035581e772"><div class="ttname"><a href="group___hardware_information.html#gad74f74620cfb7a36cc973f035581e772">acl::getLocalMemorySize</a></div><div class="ttdeci">cl_ulong getLocalMemorySize(const CommandQueue &amp;queue)</div></div>
 <div class="ttc" id="classacl_1_1_hardware_html_a0439f5f6345def19000385804e32d5e4"><div class="ttname"><a href="classacl_1_1_hardware.html#a0439f5f6345def19000385804e32d5e4">acl::Hardware::getDevicesInfo</a></div><div class="ttdeci">std::string getDevicesInfo()</div></div>
 <div class="ttc" id="namespaceacl_html_a72a57b599764499b21ff2a5e667b50df"><div class="ttname"><a href="namespaceacl.html#a72a57b599764499b21ff2a5e667b50df">acl::getContext</a></div><div class="ttdeci">cl::Context getContext(const CommandQueue &amp;queue)</div></div>
-<div class="ttc" id="classacl_1_1_hardware_html_aaadaae95e7a9c9b08b46a07cfb78760c"><div class="ttname"><a href="classacl_1_1_hardware.html#aaadaae95e7a9c9b08b46a07cfb78760c">acl::Hardware::defaultQueue</a></div><div class="ttdeci">CommandQueue defaultQueue</div><div class="ttdef"><b>Definition:</b> <a href="acl_hardware_8h_source.html#l00147">aclHardware.h:147</a></div></div>
+<div class="ttc" id="classacl_1_1_hardware_html_aaadaae95e7a9c9b08b46a07cfb78760c"><div class="ttname"><a href="classacl_1_1_hardware.html#aaadaae95e7a9c9b08b46a07cfb78760c">acl::Hardware::defaultQueue</a></div><div class="ttdeci">CommandQueue defaultQueue</div><div class="ttdef"><b>Definition:</b> <a href="acl_hardware_8h_source.html#l00151">aclHardware.h:151</a></div></div>
+<div class="ttc" id="cl_8hpp_html"><div class="ttname"><a href="cl_8hpp.html">cl.hpp</a></div><div class="ttdoc">C++ bindings for OpenCL 1.0 (rev 48), OpenCL 1.1 (rev 33) and OpenCL 1.2 (rev 15) ...</div></div>
 <div class="ttc" id="group___hardware_information_html_gab30e7365f99d1390a1c458118cba7947"><div class="ttname"><a href="group___hardware_information.html#gab30e7365f99d1390a1c458118cba7947">acl::getAlignment</a></div><div class="ttdeci">unsigned int getAlignment(const CommandQueue &amp;queue)</div></div>
 <div class="ttc" id="classstd_1_1shared__ptr_html"><div class="ttname"><a href="classstd_1_1shared__ptr.html">std::shared_ptr&lt; cl::CommandQueue &gt;</a></div></div>
 <div class="ttc" id="namespaceacl_html_ab80ba0398589c98d73bbee9368b46620"><div class="ttname"><a href="namespaceacl.html#ab80ba0398589c98d73bbee9368b46620">acl::TYPE_SIZE</a></div><div class="ttdeci">const std::vector&lt; unsigned char &gt; TYPE_SIZE</div></div>
@@ -223,23 +228,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespaceacl_html_aca21b8aa3ea405148cafc22a1f5e2079"><div class="ttname"><a href="namespaceacl.html#aca21b8aa3ea405148cafc22a1f5e2079">acl::TYPE</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; TYPE</div></div>
 <div class="ttc" id="group___hardware_information_html_ga6850b46794fe987be44b20cef9b266bd"><div class="ttname"><a href="group___hardware_information.html#ga6850b46794fe987be44b20cef9b266bd">acl::extensionAvailable</a></div><div class="ttdeci">bool extensionAvailable(const CommandQueue &amp;queue, const Extension extension)</div></div>
 <div class="ttc" id="group___hardware_information_html_gaad8e49c172899421b64dd330e2437ab2"><div class="ttname"><a href="group___hardware_information.html#gaad8e49c172899421b64dd330e2437ab2">acl::getPlatformVendor</a></div><div class="ttdeci">std::string getPlatformVendor(const CommandQueue &amp;queue)</div></div>
-<div class="ttc" id="classacl_1_1_hardware_html"><div class="ttname"><a href="classacl_1_1_hardware.html">acl::Hardware</a></div><div class="ttdoc">Provides access to the underlying hardware. </div><div class="ttdef"><b>Definition:</b> <a href="acl_hardware_8h_source.html#l00134">aclHardware.h:134</a></div></div>
+<div class="ttc" id="classacl_1_1_hardware_html"><div class="ttname"><a href="classacl_1_1_hardware.html">acl::Hardware</a></div><div class="ttdoc">Provides access to the underlying hardware. </div><div class="ttdef"><b>Definition:</b> <a href="acl_hardware_8h_source.html#l00138">aclHardware.h:138</a></div></div>
 <div class="ttc" id="group___hardware_information_html_ga21079d767e7582a8f719f4e742d79696"><div class="ttname"><a href="group___hardware_information.html#ga21079d767e7582a8f719f4e742d79696">acl::getDeviceName</a></div><div class="ttdeci">std::string getDeviceName(const CommandQueue &amp;queue)</div></div>
 <div class="ttc" id="acl_std_includes_8h_html"><div class="ttname"><a href="acl_std_includes_8h.html">aclStdIncludes.h</a></div></div>
 <div class="ttc" id="namespaceacl_html_abe03dff21b9b9de8c557ca28bb5387f3"><div class="ttname"><a href="namespaceacl.html#abe03dff21b9b9de8c557ca28bb5387f3">acl::TYPE_SELECT</a></div><div class="ttdeci">const std::vector&lt; TypeID &gt; TYPE_SELECT</div><div class="ttdoc">contains trasnlation of types necessery for use in the function select </div></div>
 <div class="ttc" id="classacl_1_1_hardware_html_adf21f1e0e7fc842fbed803b29056a67c"><div class="ttname"><a href="classacl_1_1_hardware.html#adf21f1e0e7fc842fbed803b29056a67c">acl::Hardware::Hardware</a></div><div class="ttdeci">Hardware()</div></div>
 <div class="ttc" id="group___hardware_information_html_gae410a9c353c701bb78500f2a1ad4ec63"><div class="ttname"><a href="group___hardware_information.html#gae410a9c353c701bb78500f2a1ad4ec63">acl::getLocalMemoryType</a></div><div class="ttdeci">cl_device_local_mem_type getLocalMemoryType(const CommandQueue &amp;queue)</div></div>
 <div class="ttc" id="namespaceacl_html_a8845e9018d129e24abd4bbb0c941ae39"><div class="ttname"><a href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39">acl::TypeID</a></div><div class="ttdeci">TypeID</div><div class="ttdef"><b>Definition:</b> <a href="acl_types_8h_source.html#l00038">aclTypes.h:38</a></div></div>
+<div class="ttc" id="classcl_1_1_device_html"><div class="ttname"><a href="classcl_1_1_device.html">cl::Device</a></div><div class="ttdoc">Class interface for cl_device_id. </div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l02005">cl.hpp:2005</a></div></div>
 <div class="ttc" id="namespaceacl_html_ad35e93510a9c5cc45c4716a8c6dce312"><div class="ttname"><a href="namespaceacl.html#ad35e93510a9c5cc45c4716a8c6dce312">acl::getDeviceVersion</a></div><div class="ttdeci">std::string getDeviceVersion(const CommandQueue &amp;queue)</div></div>
 <div class="ttc" id="group___hardware_information_html_ga60a7dd7730cdeb7405847051988bb5f5"><div class="ttname"><a href="group___hardware_information.html#ga60a7dd7730cdeb7405847051988bb5f5">acl::getKernelLocalMemSize</a></div><div class="ttdeci">cl_ulong getKernelLocalMemSize(const Kernel &amp;kernel)</div></div>
-<div class="ttc" id="classacl_1_1_hardware_html_a36f39c96d17cd7e4d22ac9c9d3135bb2"><div class="ttname"><a href="classacl_1_1_hardware.html#a36f39c96d17cd7e4d22ac9c9d3135bb2">acl::Hardware::queues</a></div><div class="ttdeci">std::vector&lt; CommandQueue &gt; queues</div><div class="ttdef"><b>Definition:</b> <a href="acl_hardware_8h_source.html#l00146">aclHardware.h:146</a></div></div>
+<div class="ttc" id="classacl_1_1_hardware_html_a36f39c96d17cd7e4d22ac9c9d3135bb2"><div class="ttname"><a href="classacl_1_1_hardware.html#a36f39c96d17cd7e4d22ac9c9d3135bb2">acl::Hardware::queues</a></div><div class="ttdeci">std::vector&lt; CommandQueue &gt; queues</div><div class="ttdef"><b>Definition:</b> <a href="acl_hardware_8h_source.html#l00150">aclHardware.h:150</a></div></div>
+<div class="ttc" id="classcl_1_1_context_html"><div class="ttname"><a href="classcl_1_1_context.html">cl::Context</a></div><div class="ttdoc">Class interface for cl_context. </div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l02440">cl.hpp:2440</a></div></div>
 <div class="ttc" id="classacl_1_1_hardware_html_af2e51cafc912bb26b76d764b68ede01f"><div class="ttname"><a href="classacl_1_1_hardware.html#af2e51cafc912bb26b76d764b68ede01f">acl::Hardware::setDefaultQueue</a></div><div class="ttdeci">void setDefaultQueue(const std::string &amp;platform=&quot;&quot;, const std::string &amp;device=&quot;&quot;)</div></div>
 <div class="ttc" id="group___hardware_information_html_ga3a16edf66331011b5fb4f3d4073cdcb6"><div class="ttname"><a href="group___hardware_information.html#ga3a16edf66331011b5fb4f3d4073cdcb6">acl::getMaxItemSize</a></div><div class="ttdeci">size_t getMaxItemSize(const CommandQueue &amp;queue)</div></div>
 <div class="ttc" id="namespaceacl_html_a40e55ae1aa7799ea12754653f8c0acfe"><div class="ttname"><a href="namespaceacl.html#a40e55ae1aa7799ea12754653f8c0acfe">acl::hardware</a></div><div class="ttdeci">Hardware hardware</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

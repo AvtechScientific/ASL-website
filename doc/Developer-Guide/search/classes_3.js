@@ -5,6 +5,7 @@ var searchData=
   ['datainterpolation',['DataInterpolation',['../classasl_1_1_data_interpolation.html',1,'asl']]],
   ['datawithghostnodes',['DataWithGhostNodes',['../singletonasl_1_1_data_with_ghost_nodes.html',1,'asl']]],
   ['datawrapper',['DataWrapper',['../singletonasl_1_1_data_wrapper.html',1,'asl']]],
+  ['device',['Device',['../classcl_1_1_device.html',1,'cl']]],
   ['dfoptimizer',['DFOptimizer',['../classasl_1_1_d_f_optimizer.html',1,'asl']]],
   ['distancefunction',['DistanceFunction',['../classasl_1_1_distance_function.html',1,'asl']]],
   ['distfbinaryoperation',['DistFBinaryOperation',['../classasl_1_1_dist_f_binary_operation.html',1,'asl']]],

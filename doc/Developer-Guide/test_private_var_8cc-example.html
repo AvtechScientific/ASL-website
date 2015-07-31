@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -128,35 +128,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a6"></a><a class="code" href="test_private_var_8cc.html#a72d34fb99131a991ae65d71225f8c2c2">testKernelUnoptimized</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;Simple kernel\&quot; function...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;Simple kernel\&quot; function...&quot;</span> &lt;&lt; <a name="a7"></a><a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">auto</span> vec1(acl::generateVEData&lt;float&gt;(<a class="code" href="test_private_var_8cc.html#a9fabbcd91133cec86d47d120d1bdd194">nLength</a>,1u));</div>
-<div class="line">  <a name="_a7"></a><a class="code" href="classacl_1_1_kernel.html">acl::Kernel</a> k(<a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>);</div>
+<div class="line">  <a name="_a8"></a><a class="code" href="classacl_1_1_kernel.html">acl::Kernel</a> k(<a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>);</div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">auto</span> res(<a name="a8"></a><a class="code" href="group__generate_v_e.html#ga7e967aaeab8dc4f251a94c89a9568fb9">acl::generateVEPrivateVariable</a>(1u, <a name="a9"></a><a class="code" href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39a92b3f0084f72834856827f7533785bfc">acl::TYPE_FLOAT</a>));</div>
-<div class="line">  k &lt;&lt; (res = <a name="a10"></a><a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(0.));</div>
+<div class="line">  <span class="keyword">auto</span> res(<a name="a9"></a><a class="code" href="group__generate_v_e.html#ga7e967aaeab8dc4f251a94c89a9568fb9">acl::generateVEPrivateVariable</a>(1u, <a name="a10"></a><a class="code" href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39a92b3f0084f72834856827f7533785bfc">acl::TYPE_FLOAT</a>));</div>
+<div class="line">  k &lt;&lt; (res = <a name="a11"></a><a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(0.));</div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i(0); i&lt;<a class="code" href="test_private_var_8cc.html#a2f99fd46c16c83f806e2bb51e4b80890">nOperations</a>; ++i)</div>
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">auto</span> tempRes(<a class="code" href="group__generate_v_e.html#ga7e967aaeab8dc4f251a94c89a9568fb9">acl::generateVEPrivateVariable</a>(1u, <a class="code" href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39a92b3f0084f72834856827f7533785bfc">acl::TYPE_FLOAT</a>));</div>
-<div class="line">    k &lt;&lt; (tempRes=<a name="a11"></a><a class="code" href="group__generate_v_e.html#gae1c0e6378cf261b2c8ae74f09f386a31">acl::generateVEIndex</a>() * i+5.*i*i+7./(i+1.));</div>
-<div class="line">    k &lt;&lt; (res+=tempRes*tempRes+<a name="a12"></a><a class="code" href="group___vector_of_elements_vector_of_elements_op.html#gaa3feaecb0af0debf640caf7ab4ca7fe8">rsqrt</a>(.2*tempRes)+ 1./tempRes);</div>
+<div class="line">    k &lt;&lt; (tempRes=<a name="a12"></a><a class="code" href="group__generate_v_e.html#gae1c0e6378cf261b2c8ae74f09f386a31">acl::generateVEIndex</a>() * i+5.*i*i+7./(i+1.));</div>
+<div class="line">    k &lt;&lt; (res+=tempRes*tempRes+<a name="a13"></a><a class="code" href="group___vector_of_elements_vector_of_elements_op.html#gaa3feaecb0af0debf640caf7ab4ca7fe8">rsqrt</a>(.2*tempRes)+ 1./tempRes);</div>
 <div class="line">  }</div>
 <div class="line">  k &lt;&lt; (vec1=res);</div>
 <div class="line">  k.setup();</div>
 <div class="line"></div>
-<div class="line">  <a name="_a13"></a><a class="code" href="classasl_1_1_timer.html">asl::Timer</a> timer;</div>
-<div class="line">  timer.<a name="a14"></a><a class="code" href="classasl_1_1_timer.html#aa60805a0b350da39279189e0d9cb18d5">start</a>();</div>
+<div class="line">  <a name="_a14"></a><a class="code" href="classasl_1_1_timer.html">asl::Timer</a> timer;</div>
+<div class="line">  timer.<a name="a15"></a><a class="code" href="classasl_1_1_timer.html#aa60805a0b350da39279189e0d9cb18d5">start</a>();</div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i(0); i&lt;<a class="code" href="test_private_var_8cc.html#af4cdc578d7d39fa1a2e2e2c33a15c895">nCycles</a>; ++i)</div>
 <div class="line">    k.compute();</div>
-<div class="line">  timer.<a name="a15"></a><a class="code" href="classasl_1_1_timer.html#a369f85c48a8588b48e2ba0f754d43bf2">stop</a>();</div>
-<div class="line">  std::cout&lt;&lt;<span class="stringliteral">&quot;Unoptimized: &quot;</span>&lt;&lt;timer.<a name="a16"></a><a class="code" href="classasl_1_1_timer.html#abf443d5aa8aef22089f56673105bc934">getTime</a>()&lt;&lt;endl;</div>
+<div class="line">  timer.<a name="a16"></a><a class="code" href="classasl_1_1_timer.html#a369f85c48a8588b48e2ba0f754d43bf2">stop</a>();</div>
+<div class="line">  std::cout&lt;&lt;<span class="stringliteral">&quot;Unoptimized: &quot;</span>&lt;&lt;timer.<a name="a17"></a><a class="code" href="classasl_1_1_timer.html#abf443d5aa8aef22089f56673105bc934">getTime</a>()&lt;&lt;endl;</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">return</span> <span class="keyword">true</span>;    </div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a17"></a><a class="code" href="test_private_var_8cc.html#a9f591b8b9e4a287b2e24bd448392a803">testKernelUnoptimizedPlus</a>()</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a18"></a><a class="code" href="test_private_var_8cc.html#a9f591b8b9e4a287b2e24bd448392a803">testKernelUnoptimizedPlus</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;Simple kernel\&quot; function...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;Simple kernel\&quot; function...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">auto</span> vec1(acl::generateVEData&lt;float&gt;(<a class="code" href="test_private_var_8cc.html#a9fabbcd91133cec86d47d120d1bdd194">nLength</a>,1u));</div>
 <div class="line">  <a class="code" href="classacl_1_1_kernel.html">acl::Kernel</a> k(<a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>);</div>
@@ -166,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  vector&lt;acl::VectorOfElements&gt; tempRes(nOperations);</div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i(0); i&lt;<a class="code" href="test_private_var_8cc.html#a2f99fd46c16c83f806e2bb51e4b80890">nOperations</a>; ++i)</div>
 <div class="line">  {</div>
-<div class="line">    <a name="a18"></a><a class="code" href="classacl_1_1_complex_num_of_elements.html#a0c6c3812e1f79789887c6040b3970ef1">copy</a>(<a class="code" href="group__generate_v_e.html#ga7e967aaeab8dc4f251a94c89a9568fb9">acl::generateVEPrivateVariable</a>(1u, <a class="code" href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39a92b3f0084f72834856827f7533785bfc">acl::TYPE_FLOAT</a>), tempRes[i]);</div>
+<div class="line">    <a name="a19"></a><a class="code" href="classacl_1_1_complex_num_of_elements.html#a0c6c3812e1f79789887c6040b3970ef1">copy</a>(<a class="code" href="group__generate_v_e.html#ga7e967aaeab8dc4f251a94c89a9568fb9">acl::generateVEPrivateVariable</a>(1u, <a class="code" href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39a92b3f0084f72834856827f7533785bfc">acl::TYPE_FLOAT</a>), tempRes[i]);</div>
 <div class="line">    k &lt;&lt; (tempRes[i]=<a class="code" href="group__generate_v_e.html#gae1c0e6378cf261b2c8ae74f09f386a31">acl::generateVEIndex</a>() * i+5.*i*i+7./(i+1.));</div>
 <div class="line">  }</div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i(0); i&lt;<a class="code" href="test_private_var_8cc.html#a2f99fd46c16c83f806e2bb51e4b80890">nOperations</a>; ++i)</div>
@@ -183,9 +184,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">return</span> <span class="keyword">true</span>;    </div>
 <div class="line">}</div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a19"></a><a class="code" href="test_private_var_8cc.html#a11051d126433c4b1d7f6b26e253b35aa">testKernelOptimized</a>()</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a20"></a><a class="code" href="test_private_var_8cc.html#a11051d126433c4b1d7f6b26e253b35aa">testKernelOptimized</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;Simple kernel\&quot; function...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;Simple kernel\&quot; function...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">auto</span> vec1(acl::generateVEData&lt;float&gt;(<a class="code" href="test_private_var_8cc.html#a9fabbcd91133cec86d47d120d1bdd194">nLength</a>,1u));</div>
 <div class="line">  <a class="code" href="classacl_1_1_kernel.html">acl::Kernel</a> k(<a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>);</div>
@@ -214,7 +217,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> <a name="a20"></a><a class="code" href="test_private_var_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a21"></a><a class="code" href="test_private_var_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
 <div class="line">  <a class="code" href="test_private_var_8cc.html#a72d34fb99131a991ae65d71225f8c2c2">testKernelUnoptimized</a>();</div>
 <div class="line">  <a class="code" href="test_private_var_8cc.html#a9f591b8b9e4a287b2e24bd448392a803">testKernelUnoptimizedPlus</a>();</div>
@@ -225,7 +228,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

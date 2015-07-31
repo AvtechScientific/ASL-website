@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -119,76 +119,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a0"></a><a class="code" href="test_a_b_d_format_8cc.html#a933725a5635039e38bdb885bb07290ee">testNumbers</a>()</div>
 <div class="line">{</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Numbers...&quot;</span> &lt;&lt; <a name="a1"></a><a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> aui(3);</div>
 <div class="line">  <span class="keywordtype">int</span> ai(-2); </div>
 <div class="line">  <span class="keywordtype">float</span> af(5);</div>
 <div class="line">  <span class="keywordtype">double</span> ad(4); </div>
 <div class="line">  </div>
-<div class="line">  <a name="_a1"></a><a class="code" href="classasl_1_1_a_b_d_file_out.html">asl::ABDFileOut</a> afO(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
-<div class="line">  afO&lt;&lt;aui&lt;&lt;ai&lt;&lt;af&lt;&lt;ad;</div>
+<div class="line">  <a name="_a2"></a><a class="code" href="classasl_1_1_a_b_d_file_out.html">asl::ABDFileOut</a> afO(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
+<div class="line">  afO &lt;&lt; aui &lt;&lt; ai &lt;&lt; af &lt;&lt; ad;</div>
 <div class="line">  afO.close();</div>
 <div class="line">    </div>
-<div class="line">  <a name="_a2"></a><a class="code" href="classasl_1_1_a_b_d_file_in.html">asl::ABDFileIn</a> afI(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
+<div class="line">  <a name="_a3"></a><a class="code" href="classasl_1_1_a_b_d_file_in.html">asl::ABDFileIn</a> afI(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bui(0);</div>
 <div class="line">  <span class="keywordtype">int</span> bi(0);  </div>
 <div class="line">  <span class="keywordtype">float</span> bf(0);</div>
 <div class="line">  <span class="keywordtype">double</span> bd(0); </div>
 <div class="line"></div>
-<div class="line">  afI&gt;&gt;bui&gt;&gt;bi&gt;&gt;bf&gt;&gt;bd;</div>
+<div class="line">  afI &gt;&gt; bui &gt;&gt; bi &gt;&gt; bf &gt;&gt; bd;</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">bool</span> status((aui==bui) &amp;&amp; (ai==bi) &amp;&amp; (af==bf) &amp;&amp; (ad==bd));</div>
-<div class="line">  <a name="a3"></a><a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">asl::errorMessage</a>(status);</div>
+<div class="line">  <a name="a4"></a><a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">asl::errorMessage</a>(status);</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordflow">return</span> status;    </div>
+<div class="line">  <span class="keywordflow">return</span> status;</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a4"></a><a class="code" href="test_a_b_d_format_8cc.html#afb615c437783d9fe4a5511b27b674a51">testAVec</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a5"></a><a class="code" href="test_a_b_d_format_8cc.html#afb615c437783d9fe4a5511b27b674a51">testAVec</a>()</div>
 <div class="line">{</div>
-<div class="line">  <a name="_a5"></a><a class="code" href="classasl_1_1_block.html">asl::Block</a> b(<a name="a6"></a><a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a> (10,15),0.1,<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a> (.1,1.));</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of AVec...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
+<div class="line">  <a name="_a6"></a><a class="code" href="classasl_1_1_block.html">asl::Block</a> b(<a name="a7"></a><a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a> (10,15),0.1,<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a> (.1,1.));</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classasl_1_1_a_b_d_file_out.html">asl::ABDFileOut</a> afO(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
-<div class="line">  afO&lt;&lt;b;</div>
+<div class="line">  afO &lt;&lt; b;</div>
 <div class="line">  afO.close();</div>
 <div class="line">    </div>
 <div class="line">  <a class="code" href="classasl_1_1_a_b_d_file_in.html">asl::ABDFileIn</a> afI(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
 <div class="line">  <a class="code" href="classasl_1_1_block.html">asl::Block</a> bn;</div>
 <div class="line"></div>
-<div class="line">  afI&gt;&gt;bn;</div>
+<div class="line">  afI &gt;&gt; bn;</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">bool</span> status((b.getSize()==bn.getSize()) &amp;&amp; (b.dx==bn.dx) &amp;&amp; (b.position==bn.position));</div>
+<div class="line">  <span class="keywordtype">bool</span> status((b.getSize() == bn.getSize()) &amp;&amp;</div>
+<div class="line">              (b.dx == bn.dx) &amp;&amp;</div>
+<div class="line">              (b.position == bn.position));</div>
 <div class="line">  <a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">asl::errorMessage</a>(status);</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">return</span> status;    </div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a7"></a><a class="code" href="test_a_b_d_format_8cc.html#ac541579598b6149a611af976ecaad9fb">testString</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a8"></a><a class="code" href="test_a_b_d_format_8cc.html#ac541579598b6149a611af976ecaad9fb">testString</a>()</div>
 <div class="line">{</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of String...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line">  std::string b(<span class="stringliteral">&quot;Hello!!&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classasl_1_1_a_b_d_file_out.html">asl::ABDFileOut</a> afO(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
-<div class="line">  afO&lt;&lt;b;</div>
+<div class="line">  afO &lt;&lt; b;</div>
 <div class="line">  afO.close();</div>
 <div class="line">    </div>
 <div class="line">  <a class="code" href="classasl_1_1_a_b_d_file_in.html">asl::ABDFileIn</a> afI(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
 <div class="line">  std::string bn;</div>
 <div class="line"></div>
-<div class="line">  afI&gt;&gt;bn;</div>
+<div class="line">  afI &gt;&gt; bn;</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">bool</span> status(b==bn);</div>
+<div class="line">  <span class="keywordtype">bool</span> status(b == bn);</div>
 <div class="line">  <a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">asl::errorMessage</a>(status);</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">return</span> status;    </div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a8"></a><a class="code" href="test_a_b_d_format_8cc.html#a6bd226ea9b0354c6dfb0a06f4843e8e1">testBlock</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a9"></a><a class="code" href="test_a_b_d_format_8cc.html#a6bd226ea9b0354c6dfb0a06f4843e8e1">testBlock</a>()</div>
 <div class="line">{</div>
-<div class="line">  <a name="_a9"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;int&gt;</a> ai(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(2,3));  </div>
-<div class="line">  <a name="_a10"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;float&gt;</a> af(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(2.f,3.f));  </div>
-<div class="line">  <a name="_a11"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;double&gt;</a> ad(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(4.,5.)); </div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Block...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
+<div class="line">  <a name="_a10"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;int&gt;</a> ai(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(2,3));  </div>
+<div class="line">  <a name="_a11"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;float&gt;</a> af(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(2.f,3.f));  </div>
+<div class="line">  <a name="_a12"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;double&gt;</a> ad(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(4.,5.)); </div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classasl_1_1_a_b_d_file_out.html">asl::ABDFileOut</a> afO(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
-<div class="line">  afO&lt;&lt;ai&lt;&lt;af&lt;&lt;ad;</div>
+<div class="line">  afO &lt;&lt; ai &lt;&lt; af &lt;&lt; ad;</div>
 <div class="line">  afO.close();</div>
 <div class="line">    </div>
 <div class="line">  <a class="code" href="classasl_1_1_a_b_d_file_in.html">asl::ABDFileIn</a> afI(<span class="stringliteral">&quot;test.abd&quot;</span>);</div>
@@ -196,34 +202,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  <a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;float&gt;</a> bf(1);</div>
 <div class="line">  <a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;double&gt;</a> bd(1);  </div>
 <div class="line"></div>
-<div class="line">  afI&gt;&gt;bi&gt;&gt;bf&gt;&gt;bd;</div>
+<div class="line">  afI &gt;&gt; bi &gt;&gt; bf &gt;&gt; bd;</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">bool</span> status((ai==bi) &amp;&amp; (af==bf) &amp;&amp; (ad==bd));</div>
+<div class="line">  <span class="keywordtype">bool</span> status((ai == bi) &amp;&amp; (af == bf) &amp;&amp; (ad == bd));</div>
 <div class="line">  <a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">asl::errorMessage</a>(status);</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordflow">return</span> status;    </div>
+<div class="line">  <span class="keywordflow">return</span> status;</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> <a name="a12"></a><a class="code" href="test_a_b_d_format_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a13"></a><a class="code" href="test_a_b_d_format_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout&lt;&lt;<span class="stringliteral">&quot;Test of Numbers...&quot;</span>;</div>
-<div class="line">  <a class="code" href="test_a_b_d_format_8cc.html#a933725a5635039e38bdb885bb07290ee">testNumbers</a>();</div>
+<div class="line">  <span class="keywordtype">bool</span> allTestsPassed(<span class="keyword">true</span>);</div>
 <div class="line"></div>
-<div class="line">  cout&lt;&lt;<span class="stringliteral">&quot;Test of String...&quot;</span>;</div>
-<div class="line">  <a class="code" href="test_a_b_d_format_8cc.html#ac541579598b6149a611af976ecaad9fb">testString</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_a_b_d_format_8cc.html#a933725a5635039e38bdb885bb07290ee">testNumbers</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_a_b_d_format_8cc.html#afb615c437783d9fe4a5511b27b674a51">testAVec</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_a_b_d_format_8cc.html#ac541579598b6149a611af976ecaad9fb">testString</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_a_b_d_format_8cc.html#a6bd226ea9b0354c6dfb0a06f4843e8e1">testBlock</a>();</div>
 <div class="line"></div>
-<div class="line">  cout&lt;&lt;<span class="stringliteral">&quot;Test of AVec...&quot;</span>;  </div>
-<div class="line">  <a class="code" href="test_a_b_d_format_8cc.html#afb615c437783d9fe4a5511b27b674a51">testAVec</a>();</div>
-<div class="line"></div>
-<div class="line">  cout&lt;&lt;<span class="stringliteral">&quot;Test of Block...&quot;</span>; </div>
-<div class="line">  <a class="code" href="test_a_b_d_format_8cc.html#a6bd226ea9b0354c6dfb0a06f4843e8e1">testBlock</a>();</div>
-<div class="line"></div>
-<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">  <span class="keywordflow">return</span> allTestsPassed ? EXIT_SUCCESS : EXIT_FAILURE;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -3,7 +3,6 @@ var searchData=
   ['testabdformat_2ecc',['testABDFormat.cc',['../test_a_b_d_format_8cc.html',1,'']]],
   ['testasldata_2ecc',['testASLData.cc',['../test_a_s_l_data_8cc.html',1,'']]],
   ['testdistancefunction_2ecc',['testDistanceFunction.cc',['../test_distance_function_8cc.html',1,'']]],
-  ['testhardware_2ecc',['testHardware.cc',['../test_hardware_8cc.html',1,'']]],
   ['testkernel_2ecc',['testKernel.cc',['../test_kernel_8cc.html',1,'']]],
   ['testkernelmerger_2ecc',['testKernelMerger.cc',['../test_kernel_merger_8cc.html',1,'']]],
   ['testmatrixofelements_2ecc',['testMatrixOfElements.cc',['../test_matrix_of_elements_8cc.html',1,'']]],

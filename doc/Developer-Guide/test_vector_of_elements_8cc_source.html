@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="test_vector_of_elements_8cc.html#a6d2dcab8f4d350f04382d95e94254d97">   40</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="test_vector_of_elements_8cc.html#a6d2dcab8f4d350f04382d95e94254d97">testSimpleKernel</a>()</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;Simple kernel\&quot; function...&quot;</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;Simple kernel\&quot; function...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classacl_1_1_vector_of_elements.html">VectorOfElements</a> vec0(3);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classacl_1_1_vector_of_elements.html">VectorOfElements</a> vec1(1);</div>
@@ -159,16 +159,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(vec0[2], output2);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(vec1[0], output3);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">bool</span> testResult(output0[9]&lt;0.101 &amp;&amp; output1[2] ==1 &amp;&amp; output2[5] ==2. &amp;&amp; output3[1] ==6.);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">if</span> (testResult) cout &lt;&lt; <span class="stringliteral">&quot; Ok&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">else</span> cout &lt;&lt; <span class="stringliteral">&quot; Error&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> testResult;    </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">bool</span> status(output0[9]&lt;0.101 &amp;&amp; output1[2] ==1 &amp;&amp; output2[5] ==2. &amp;&amp; output3[1] ==6.);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">errorMessage</a>(status);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> status;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="test_vector_of_elements_8cc.html#a195448afb22af736199593b1bcddd31c">   72</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="test_vector_of_elements_8cc.html#a195448afb22af736199593b1bcddd31c">testAdvancedOperations</a>()</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of advanced operations...&quot;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of advanced operations...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="classacl_1_1_vector_of_elements.html">VectorOfElements</a> vec0(2);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classacl_1_1_vector_of_elements.html">VectorOfElements</a> vec1(2);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classacl_1_1_vector_of_elements.html">VectorOfElements</a> res(2);</div>
@@ -208,11 +208,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="test_vector_of_elements_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  112</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="test_vector_of_elements_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="test_vector_of_elements_8cc.html#a6d2dcab8f4d350f04382d95e94254d97">testSimpleKernel</a>();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="test_vector_of_elements_8cc.html#a195448afb22af736199593b1bcddd31c">testAdvancedOperations</a>();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">bool</span> allTestsPassed(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  allTestsPassed &amp;= <a class="code" href="test_vector_of_elements_8cc.html#a6d2dcab8f4d350f04382d95e94254d97">testSimpleKernel</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  allTestsPassed &amp;= <a class="code" href="test_vector_of_elements_8cc.html#a195448afb22af736199593b1bcddd31c">testAdvancedOperations</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">return</span> allTestsPassed ? EXIT_SUCCESS : EXIT_FAILURE;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 <div class="ttc" id="acl_vector_of_elements_8h_html"><div class="ttname"><a href="acl_vector_of_elements_8h.html">aclVectorOfElements.h</a></div></div>
 <div class="ttc" id="group__generate_v_e_html_ga832bc89f3ea4289142d37811a8ffb2fb"><div class="ttname"><a href="group__generate_v_e.html#ga832bc89f3ea4289142d37811a8ffb2fb">acl::generateVEVariableSP</a></div><div class="ttdeci">VectorOfElements generateVEVariableSP(std::shared_ptr&lt; T &gt; a)</div><div class="ttdoc">Generates VectorOfElements with 1 Element acl::VariableReference with reference on a...</div></div>
 <div class="ttc" id="test_vector_of_elements_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="test_vector_of_elements_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="test_vector_of_elements_8cc_source.html#l00112">testVectorOfElements.cc:112</a></div></div>
@@ -220,9 +222,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespaceacl_html"><div class="ttname"><a href="namespaceacl.html">acl</a></div><div class="ttdoc">Advanced Computational Language. </div><div class="ttdef"><b>Definition:</b> <a href="acl_8h_source.html#l00040">acl.h:40</a></div></div>
 <div class="ttc" id="group___error_messaging_html_ga80696dde698d52ecc666765a654aa282"><div class="ttname"><a href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">asl::errorMessage</a></div><div class="ttdeci">void errorMessage(cl_int status, const char *errorMessage)</div><div class="ttdoc">Prints errorMessage and exits depending on the status. </div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
-<div class="ttc" id="classacl_1_1_kernel_html"><div class="ttname"><a href="classacl_1_1_kernel.html">acl::Kernel</a></div><div class="ttdoc">OpenCl Kernel generator. </div><div class="ttdef"><b>Definition:</b> <a href="acl_kernel_8h_source.html#l00045">aclKernel.h:45</a></div></div>
+<div class="ttc" id="classacl_1_1_kernel_html"><div class="ttname"><a href="classacl_1_1_kernel.html">acl::Kernel</a></div><div class="ttdoc">OpenCl Kernel generator. </div><div class="ttdef"><b>Definition:</b> <a href="acl_kernel_8h_source.html#l00048">aclKernel.h:48</a></div></div>
 <div class="ttc" id="acl_8h_html"><div class="ttname"><a href="acl_8h.html">acl.h</a></div></div>
 <div class="ttc" id="group___control_structures_html_gab2b7269b4d92e57dcb0ba836e098f4f5"><div class="ttname"><a href="group___control_structures.html#gab2b7269b4d92e57dcb0ba836e098f4f5">acl::elementOperators::select</a></div><div class="ttdeci">Element select(Element e1, Element e2, Element e3)</div></div>
+<div class="ttc" id="namespacecl_html_aec3275453ec57a74dfa7a34653cfa194"><div class="ttname"><a href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">cl::flush</a></div><div class="ttdeci">cl_int flush(void)</div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l07141">cl.hpp:7141</a></div></div>
 <div class="ttc" id="classacl_1_1_vector_of_elements_html"><div class="ttname"><a href="classacl_1_1_vector_of_elements.html">acl::VectorOfElements</a></div><div class="ttdoc">The class represents several Element. </div><div class="ttdef"><b>Definition:</b> <a href="acl_vector_of_elements_def_8h_source.html#l00091">aclVectorOfElementsDef.h:91</a></div></div>
 <div class="ttc" id="singletonasl_1_1_u_value_html_a7465663f83fb9adee91fa87975f78627"><div class="ttname"><a href="singletonasl_1_1_u_value.html#a7465663f83fb9adee91fa87975f78627">asl::UValue::p</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; p</div><div class="ttdef"><b>Definition:</b> <a href="asl_u_value_8h_source.html#l00037">aslUValue.h:37</a></div></div>
 <div class="ttc" id="acl_generators_8h_html"><div class="ttname"><a href="acl_generators_8h.html">aclGenerators.h</a></div></div>
@@ -240,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:26 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

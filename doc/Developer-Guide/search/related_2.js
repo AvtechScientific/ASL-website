@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['swapbuffers',['swapBuffers',['../classacl_1_1_mem_block.html#ade1ea086b8d641d3a5afb75cecc76fa3',1,'acl::MemBlock']]]
+  ['nummethodsmerger',['NumMethodsMerger',['../classasl_1_1_single_kernel_n_m.html#ab017529957976f964510667e86daba21',1,'asl::SingleKernelNM']]]
 ];

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -139,42 +139,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a0"></a><a class="code" href="test_kernel_8cc.html#afac4cb94e90b4f14c92269ba3b253f42">testCopy</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;copy\&quot; function...&quot;</span>;</div>
-<div class="line">  <a name="_a1"></a><a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a name="_a2"></a><a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (10));</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;copy\&quot; function...&quot;</span> &lt;&lt; <a name="a1"></a><a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
+<div class="line">  <a name="_a2"></a><a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a name="_a3"></a><a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (10));</div>
 <div class="line">  </div>
 <div class="line">  vector&lt;cl_float&gt; input(10, 3);</div>
 <div class="line">  vector&lt;cl_float&gt; output(10, 1);</div>
 <div class="line"></div>
-<div class="line">  <a name="a3"></a><a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input, vec0);</div>
+<div class="line">  <a name="a4"></a><a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input, vec0);</div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(vec0, output);</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">bool</span> status(output[3] == 3);</div>
-<div class="line">  <a name="a4"></a><a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">errorMessage</a>(status);</div>
+<div class="line">  <a name="a5"></a><a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">errorMessage</a>(status);</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">return</span> status;    </div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a5"></a><a class="code" href="test_kernel_8cc.html#a467ba291036c69ab1cb98ff259e65255">testKernel</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a6"></a><a class="code" href="test_kernel_8cc.html#a467ba291036c69ab1cb98ff259e65255">testKernel</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Kernel with double...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Kernel with double...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_double&gt;</a>(10));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec1(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_double&gt;</a>(10));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec2(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_double&gt;</a>(10));</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c(<span class="keyword">new</span> <a name="_a6"></a><a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_double&gt;</a>(2.));</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> ind(<span class="keyword">new</span> <a name="_a7"></a><a class="code" href="classacl_1_1_index.html">Index</a>());</div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c(<span class="keyword">new</span> <a name="_a7"></a><a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_double&gt;</a>(2.));</div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> ind(<span class="keyword">new</span> <a name="_a8"></a><a class="code" href="classacl_1_1_index.html">Index</a>());</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line">  <a name="_a8"></a><a class="code" href="classacl_1_1_kernel.html">Kernel</a> k;</div>
+<div class="line">  <a name="_a9"></a><a class="code" href="classacl_1_1_kernel.html">Kernel</a> k;</div>
 <div class="line">  { </div>
 <div class="line">    <span class="keyword">using namespace </span>elementOperators;</div>
-<div class="line">    k.<a name="a9"></a><a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a name="a10"></a><a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a>(vec2, c ));</div>
-<div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a>(vec0, c + <a name="a11"></a><a class="code" href="group___math_functions.html#gaf4f6291ada8350cb1d9ee496b2ee634c">powI</a>(vec2, 3)));</div>
+<div class="line">    k.<a name="a10"></a><a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a name="a11"></a><a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a>(vec2, c ));</div>
+<div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a>(vec0, c + <a name="a12"></a><a class="code" href="group___math_functions.html#gaf4f6291ada8350cb1d9ee496b2ee634c">powI</a>(vec2, 3)));</div>
 <div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a>(vec1, ind));</div>
 <div class="line">  }</div>
-<div class="line">  k.<a name="a12"></a><a class="code" href="classacl_1_1_kernel.html#a3d5731a2b6a3583ade4819dfc8538a2a">setup</a>();</div>
-<div class="line">  k.<a name="a13"></a><a class="code" href="classacl_1_1_kernel.html#a6488c68e0ab5eefbdd070b89dd99dc6a">compute</a>();</div>
+<div class="line">  k.<a name="a13"></a><a class="code" href="classacl_1_1_kernel.html#a3d5731a2b6a3583ade4819dfc8538a2a">setup</a>();</div>
+<div class="line">  k.<a name="a14"></a><a class="code" href="classacl_1_1_kernel.html#a6488c68e0ab5eefbdd070b89dd99dc6a">compute</a>();</div>
 <div class="line"></div>
 <div class="line">  vector&lt;cl_double&gt; output0(10), output1(10);</div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(vec0, output0);  </div>
@@ -187,9 +187,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a14"></a><a class="code" href="test_kernel_8cc.html#abc584836beb6ae7e664e6bf14a4b6891">testKernelSIMD</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a15"></a><a class="code" href="test_kernel_8cc.html#abc584836beb6ae7e664e6bf14a4b6891">testKernelSIMD</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of KernelSIMD...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of KernelSIMD...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(11));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec1(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(11));</div>
@@ -201,10 +201,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input0, vec0);</div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input1, vec1);</div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="classacl_1_1_kernel.html">Kernel</a> k(<a name="a15"></a><a class="code" href="group___kernel_gen.html#gad8c5abd782418a5d51f9fa3bf5718eba">KERNEL_SIMD</a>);</div>
+<div class="line">  <a class="code" href="classacl_1_1_kernel.html">Kernel</a> k(<a name="a16"></a><a class="code" href="group___kernel_gen.html#gad8c5abd782418a5d51f9fa3bf5718eba">KERNEL_SIMD</a>);</div>
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">using namespace </span>elementOperators;</div>
-<div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a name="a16"></a><a class="code" href="group___assignment_operators.html#gadb3617e4cd3716a2411e1ef21674d688">operatorAssignmentSafe</a>(vec1, vec0 + vec1));</div>
+<div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a name="a17"></a><a class="code" href="group___assignment_operators.html#gadb3617e4cd3716a2411e1ef21674d688">operatorAssignmentSafe</a>(vec1, vec0 + vec1));</div>
 <div class="line">  }</div>
 <div class="line"></div>
 <div class="line">  k.<a class="code" href="classacl_1_1_kernel.html#a3d5731a2b6a3583ade4819dfc8538a2a">setup</a>();</div>
@@ -219,9 +219,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a17"></a><a class="code" href="test_kernel_8cc.html#a168553beba628acf31ca3659647f8bd3">testKernelSIMDUA</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a18"></a><a class="code" href="test_kernel_8cc.html#a168553beba628acf31ca3659647f8bd3">testKernelSIMDUA</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of KernelSIMDUA...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of KernelSIMDUA...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (11));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec1(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (11));</div>
@@ -233,7 +233,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input0, vec0);</div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input1, vec1);</div>
 <div class="line"></div>
-<div class="line">  <a name="_a18"></a><a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> <a name="a19"></a><a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>(<a name="a20"></a><a class="code" href="group___kernel_gen.html#gaf6d09800e7250de4a79008b9543301ef">KERNEL_SIMDUA</a>);</div>
+<div class="line">  <a name="_a19"></a><a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> <a name="a20"></a><a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>(<a name="a21"></a><a class="code" href="group___kernel_gen.html#gaf6d09800e7250de4a79008b9543301ef">KERNEL_SIMDUA</a>);</div>
 <div class="line"><span class="comment">//  kConf.extensions.push_back(&quot;cl_amd_printf&quot;);</span></div>
 <div class="line">  <a class="code" href="classacl_1_1_kernel.html">Kernel</a> k(<a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>);</div>
 <div class="line">  {</div>
@@ -254,13 +254,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a21"></a><a class="code" href="test_kernel_8cc.html#a10b021362a4964ebdfebe63d7301f8a1">testPrivateVariable</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a22"></a><a class="code" href="test_kernel_8cc.html#a10b021362a4964ebdfebe63d7301f8a1">testPrivateVariable</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of kernel with PrivateVariable...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of kernel with PrivateVariable...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(10));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec1(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(10));</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> loc(<span class="keyword">new</span> <a name="_a22"></a><a class="code" href="classacl_1_1_private_variable.html">PrivateVariable&lt;cl_float&gt;</a>());</div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> loc(<span class="keyword">new</span> <a name="_a23"></a><a class="code" href="classacl_1_1_private_variable.html">PrivateVariable&lt;cl_float&gt;</a>());</div>
 <div class="line">  </div>
 <div class="line">  vector&lt;cl_float&gt; input1(10, 3);</div>
 <div class="line">  vector&lt;cl_float&gt; input2(10, 5);</div>
@@ -289,9 +289,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a23"></a><a class="code" href="test_kernel_8cc.html#acd6ca9079b5c349979990641964eddfd">testPrivateArray</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a24"></a><a class="code" href="test_kernel_8cc.html#acd6ca9079b5c349979990641964eddfd">testPrivateArray</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of kernel with PrivateArray...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of kernel with PrivateArray...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line">  </div>
 <div class="line">  vector&lt;cl_int&gt; inputGaIn({0, 4, 5});</div>
 <div class="line">  vector&lt;cl_float&gt; inputGaOut(3, 0);</div>
@@ -301,8 +301,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> gaIn(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_int&gt;</a>(3));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> gaOut(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(3));</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> pa(<span class="keyword">new</span> <a name="_a24"></a><a class="code" href="classacl_1_1_private_array.html">PrivateArray&lt;cl_float&gt;</a>(inputPa));</div>
-<div class="line">  <a name="_a25"></a><a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;ElementExcerpt&gt;</a> ex(<span class="keyword">new</span> <a name="_a26"></a><a class="code" href="classacl_1_1_element_excerpt.html">ElementExcerpt</a>(pa, gaIn));</div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> pa(<span class="keyword">new</span> <a name="_a25"></a><a class="code" href="classacl_1_1_private_array.html">PrivateArray&lt;cl_float&gt;</a>(inputPa));</div>
+<div class="line">  <a name="_a26"></a><a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;ElementExcerpt&gt;</a> ex(<span class="keyword">new</span> <a name="_a27"></a><a class="code" href="classacl_1_1_element_excerpt.html">ElementExcerpt</a>(pa, gaIn));</div>
 <div class="line">  </div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(inputGaIn, gaIn);</div>
 <div class="line"></div>
@@ -325,12 +325,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a27"></a><a class="code" href="test_kernel_8cc.html#a7b2be1fef38cc4c339d0680dbd80eb42">testVariable</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a28"></a><a class="code" href="test_kernel_8cc.html#a7b2be1fef38cc4c339d0680dbd80eb42">testVariable</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Variable functionality...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Variable functionality...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (10));</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;Variable&lt;cl_float&gt;</a> &gt; a(<span class="keyword">new</span> <a name="_a28"></a><a class="code" href="classacl_1_1_variable.html">Variable&lt;cl_float&gt;</a> (1.)); </div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;Variable&lt;cl_float&gt;</a> &gt; a(<span class="keyword">new</span> <a name="_a29"></a><a class="code" href="classacl_1_1_variable.html">Variable&lt;cl_float&gt;</a> (1.)); </div>
 <div class="line">  </div>
 <div class="line">  vector&lt;cl_float&gt; output(10, 1);</div>
 <div class="line"></div>
@@ -350,13 +350,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  <span class="keywordflow">return</span> status;    </div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a29"></a><a class="code" href="test_kernel_8cc.html#ab9e353760326fed2b395758e805f4da2">testVariableReference</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a30"></a><a class="code" href="test_kernel_8cc.html#ab9e353760326fed2b395758e805f4da2">testVariableReference</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of VariableReference functionality...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of VariableReference functionality...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (10));</div>
 <div class="line">  <span class="keywordtype">float</span> v(1.);</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> a(<span class="keyword">new</span> <a name="_a30"></a><a class="code" href="classacl_1_1_variable_reference.html">VariableReference&lt;cl_float&gt;</a> (v)); </div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> a(<span class="keyword">new</span> <a name="_a31"></a><a class="code" href="classacl_1_1_variable_reference.html">VariableReference&lt;cl_float&gt;</a> (v)); </div>
 <div class="line">  </div>
 <div class="line">  vector&lt;cl_float&gt; output(10, 1);</div>
 <div class="line"></div>
@@ -377,9 +377,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a31"></a><a class="code" href="test_kernel_8cc.html#a243b89f7bbe55ba448d71e178c4555e0">testSelect</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a32"></a><a class="code" href="test_kernel_8cc.html#a243b89f7bbe55ba448d71e178c4555e0">testSelect</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of select function...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of select function...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_double&gt;</a> (10));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c0(<span class="keyword">new</span> <a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_double&gt;</a> (2.1));</div>
@@ -393,9 +393,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">using namespace </span>elementOperators;</div>
 <div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a>(vec0, </div>
-<div class="line">                                       <a name="a32"></a><a class="code" href="group___control_structures.html#gab2b7269b4d92e57dcb0ba836e098f4f5">select</a>(vec0-c0, </div>
+<div class="line">                                       <a name="a33"></a><a class="code" href="group___control_structures.html#gab2b7269b4d92e57dcb0ba836e098f4f5">select</a>(vec0-c0, </div>
 <div class="line">                                              vec0*vec0, </div>
-<div class="line">                                              <a name="a33"></a><a class="code" href="group___special_purpose_functions.html#ga503299825349e28f4eb0b866394620cc">convert</a>(<a name="a34"></a><a class="code" href="namespaceacl.html#abe03dff21b9b9de8c557ca28bb5387f3">TYPE_SELECT</a>[<a name="a35"></a><a class="code" href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39a55b58f3a3af1567a8c596291f1bc3867">TYPE_DOUBLE</a>],</div>
+<div class="line">                                              <a name="a34"></a><a class="code" href="group___special_purpose_functions.html#ga503299825349e28f4eb0b866394620cc">convert</a>(<a name="a35"></a><a class="code" href="namespaceacl.html#abe03dff21b9b9de8c557ca28bb5387f3">TYPE_SELECT</a>[<a name="a36"></a><a class="code" href="namespaceacl.html#a8845e9018d129e24abd4bbb0c941ae39a55b58f3a3af1567a8c596291f1bc3867">TYPE_DOUBLE</a>],</div>
 <div class="line">                                                      vec0 &gt; c0,</div>
 <div class="line">                                                      <span class="keyword">false</span>))));</div>
 <div class="line">  } </div>
@@ -411,9 +411,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a36"></a><a class="code" href="test_kernel_8cc.html#a07f81023f7e4c2138adeef4c09160306">testSubvector</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a37"></a><a class="code" href="test_kernel_8cc.html#a07f81023f7e4c2138adeef4c09160306">testSubvector</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Subvector...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Subvector...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line">  cl_float init[] = {16, 2, 77, 29, 23, 16, 2, 77, 29, 23};</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;Array&lt;cl_float&gt;</a> &gt; vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(10));</div>
 <div class="line">  </div>
@@ -421,7 +421,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  vector&lt;cl_float&gt; output(2);</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input, vec0);</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> subvec0(<span class="keyword">new</span> <a name="_a37"></a><a class="code" href="classacl_1_1_subvector.html">Subvector&lt;cl_float&gt;</a> (vec0, 2, 0));</div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> subvec0(<span class="keyword">new</span> <a name="_a38"></a><a class="code" href="classacl_1_1_subvector.html">Subvector&lt;cl_float&gt;</a> (vec0, 2, 0));</div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(subvec0, output);</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">bool</span> status(output[0]==16);</div>
@@ -431,9 +431,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a38"></a><a class="code" href="test_kernel_8cc.html#ae9ce93580d95a41f3e0402084773fadc">testSwapBuffers</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a39"></a><a class="code" href="test_kernel_8cc.html#ae9ce93580d95a41f3e0402084773fadc">testSwapBuffers</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Swap functionality...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Swap functionality...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;Array&lt;cl_float&gt;</a> &gt; vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(10));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;Array&lt;cl_float&gt;</a> &gt; vec1(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(10));</div>
 <div class="line">  </div>
@@ -443,7 +443,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input0, vec0);</div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input1, vec1);</div>
-<div class="line">  <a name="a39"></a><a class="code" href="namespaceacl.html#ad9b111e6468c65c80b088de8d676a59c">swapBuffers</a>(*vec1,*vec0);</div>
+<div class="line">  <a name="a40"></a><a class="code" href="namespaceacl.html#ad9b111e6468c65c80b088de8d676a59c">swapBuffers</a>(*vec1,*vec0);</div>
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(vec0, output);</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">bool</span> status(output[3] == 2);</div>
@@ -453,21 +453,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">bool</span> <a name="a40"></a><a class="code" href="test_kernel_8cc.html#a87dff3e7011c2b2776736fa7c7a60b58">testLocalArray</a>()</div>
+<div class="line"><span class="keywordtype">bool</span> <a name="a41"></a><a class="code" href="test_kernel_8cc.html#a87dff3e7011c2b2776736fa7c7a60b58">testLocalArray</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of LocalArray and syncCopy with barrier()...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of LocalArray and syncCopy with barrier()...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> <a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>(<a name="a41"></a><a class="code" href="group___kernel_gen.html#gad3c50512deb3cd20bef55603b2816edd">KERNEL_BASIC</a>);</div>
-<div class="line">  <a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>.<a name="a42"></a><a class="code" href="classacl_1_1_kernel_configuration.html#af3c8e3ff88a3c40d457f8ddfc53ad9cb">local</a> = <span class="keyword">true</span>;</div>
+<div class="line">  <a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> <a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>(<a name="a42"></a><a class="code" href="group___kernel_gen.html#gad3c50512deb3cd20bef55603b2816edd">KERNEL_BASIC</a>);</div>
+<div class="line">  <a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>.<a name="a43"></a><a class="code" href="classacl_1_1_kernel_configuration.html#af3c8e3ff88a3c40d457f8ddfc53ad9cb">local</a> = <span class="keyword">true</span>;</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> groupsNumber = 5;</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> groupSize = 2;</div>
 <div class="line">  </div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec0(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(groupSize * groupsNumber));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> vec1(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a>(groupSize * groupsNumber));</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> loc0(<span class="keyword">new</span> <a name="_a43"></a><a class="code" href="classacl_1_1_local_array.html">LocalArray&lt;cl_float&gt;</a>(groupSize));</div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> loc0(<span class="keyword">new</span> <a name="_a44"></a><a class="code" href="classacl_1_1_local_array.html">LocalArray&lt;cl_float&gt;</a>(groupSize));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> loc1(<span class="keyword">new</span> <a class="code" href="classacl_1_1_local_array.html">LocalArray&lt;cl_float&gt;</a>(groupSize));</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> groupID(<span class="keyword">new</span> <a name="_a44"></a><a class="code" href="classacl_1_1_group_i_d.html">GroupID</a>());</div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> groupID(<span class="keyword">new</span> <a name="_a45"></a><a class="code" href="classacl_1_1_group_i_d.html">GroupID</a>());</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> cGroupSize(<span class="keyword">new</span> <a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_uint&gt;</a>(groupSize));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c0(<span class="keyword">new</span> <a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_uint&gt;</a>(0));</div>
 <div class="line">  </div>
@@ -479,12 +479,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  <a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(input1, vec1);</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classacl_1_1_kernel.html">Kernel</a> k(<a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>);</div>
-<div class="line">  k.<a name="a45"></a><a class="code" href="classacl_1_1_kernel.html#a36a7ebdf2ba3aeecf996ce7ce649abae">setGroupsNumber</a>(groupsNumber);</div>
+<div class="line">  k.<a name="a46"></a><a class="code" href="classacl_1_1_kernel.html#a36a7ebdf2ba3aeecf996ce7ce649abae">setGroupsNumber</a>(groupsNumber);</div>
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">using namespace </span>elementOperators;</div>
-<div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a name="a46"></a><a class="code" href="group___synchronization_functions.html#ga11056b9b4c55afe89eb6abc341c670d0">syncCopy</a>(vec0, loc0, cGroupSize * groupID, c0, cGroupSize));</div>
+<div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a name="a47"></a><a class="code" href="group___synchronization_functions.html#ga11056b9b4c55afe89eb6abc341c670d0">syncCopy</a>(vec0, loc0, cGroupSize * groupID, c0, cGroupSize));</div>
 <div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a class="code" href="group___synchronization_functions.html#ga11056b9b4c55afe89eb6abc341c670d0">syncCopy</a>(vec1, loc1, cGroupSize * groupID, c0, cGroupSize));</div>
-<div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a name="a47"></a><a class="code" href="group___synchronization_functions.html#ga8e5d9f48d2c70aafdb6d987cb213721d">barrier</a>());</div>
+<div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a name="a48"></a><a class="code" href="group___synchronization_functions.html#ga8e5d9f48d2c70aafdb6d987cb213721d">barrier</a>());</div>
 <div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a>(loc1, loc1 - loc0));</div>
 <div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a class="code" href="group___synchronization_functions.html#ga8e5d9f48d2c70aafdb6d987cb213721d">barrier</a>(<span class="stringliteral">&quot;CLK_LOCAL_MEM_FENCE | CLK_GLOBAL_MEM_FENCE&quot;</span>));</div>
 <div class="line">    k.<a class="code" href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">addExpression</a>(<a class="code" href="group___synchronization_functions.html#ga11056b9b4c55afe89eb6abc341c670d0">syncCopy</a>(loc1, vec1, c0, cGroupSize * groupID, cGroupSize));</div>
@@ -503,27 +503,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> <a name="a48"></a><a class="code" href="test_kernel_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a49"></a><a class="code" href="test_kernel_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#afac4cb94e90b4f14c92269ba3b253f42">testCopy</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#a467ba291036c69ab1cb98ff259e65255">testKernel</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#abc584836beb6ae7e664e6bf14a4b6891">testKernelSIMD</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#a168553beba628acf31ca3659647f8bd3">testKernelSIMDUA</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#a10b021362a4964ebdfebe63d7301f8a1">testPrivateVariable</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#acd6ca9079b5c349979990641964eddfd">testPrivateArray</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#a7b2be1fef38cc4c339d0680dbd80eb42">testVariable</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#ab9e353760326fed2b395758e805f4da2">testVariableReference</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#a243b89f7bbe55ba448d71e178c4555e0">testSelect</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#ae9ce93580d95a41f3e0402084773fadc">testSwapBuffers</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#a87dff3e7011c2b2776736fa7c7a60b58">testLocalArray</a>();</div>
-<div class="line">  <a class="code" href="test_kernel_8cc.html#a07f81023f7e4c2138adeef4c09160306">testSubvector</a>();</div>
+<div class="line">  <span class="keywordtype">bool</span> allTestsPassed(<span class="keyword">true</span>);</div>
+<div class="line"></div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#afac4cb94e90b4f14c92269ba3b253f42">testCopy</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#a467ba291036c69ab1cb98ff259e65255">testKernel</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#abc584836beb6ae7e664e6bf14a4b6891">testKernelSIMD</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#a168553beba628acf31ca3659647f8bd3">testKernelSIMDUA</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#a10b021362a4964ebdfebe63d7301f8a1">testPrivateVariable</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#acd6ca9079b5c349979990641964eddfd">testPrivateArray</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#a7b2be1fef38cc4c339d0680dbd80eb42">testVariable</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#ab9e353760326fed2b395758e805f4da2">testVariableReference</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#a243b89f7bbe55ba448d71e178c4555e0">testSelect</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#ae9ce93580d95a41f3e0402084773fadc">testSwapBuffers</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#a87dff3e7011c2b2776736fa7c7a60b58">testLocalArray</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_8cc.html#a07f81023f7e4c2138adeef4c09160306">testSubvector</a>();</div>
 <div class="line">  </div>
-<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">  <span class="keywordflow">return</span> allTestsPassed ? EXIT_SUCCESS : EXIT_FAILURE;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

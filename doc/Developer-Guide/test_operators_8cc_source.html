@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -145,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="test_operators_8cc.html#ada0e9a073bf0327a7e47342192f0d7a1">   50</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="test_operators_8cc.html#ada0e9a073bf0327a7e47342192f0d7a1">testIfElse</a>()</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of If-Else...&quot;</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of If-Else...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">using namespace </span>elementOperators;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;Variable&lt;cl_int&gt;</a> &gt; a(<span class="keyword">new</span> <a class="code" href="classacl_1_1_variable.html">Variable&lt;cl_int&gt;</a> (15));</div>
@@ -185,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="test_operators_8cc.html#a525b21bbbb75222dcaf7c7c9d083ef35">   90</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="test_operators_8cc.html#a525b21bbbb75222dcaf7c7c9d083ef35">testParser</a>()</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of Parser...&quot;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of Parser...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">using namespace </span>elementOperators;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="classstd_1_1shared__ptr.html">shared_ptr&lt;Variable&lt;cl_int&gt;</a> &gt; a(<span class="keyword">new</span> <a class="code" href="classacl_1_1_variable.html">Variable&lt;cl_int&gt;</a> (15));</div>
@@ -222,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="test_operators_8cc.html#ae4bcab757f98d02aacc9852c3328a825">  127</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="test_operators_8cc.html#ae4bcab757f98d02aacc9852c3328a825">testAtomicSum</a>()</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of Atomic Sum...&quot;</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of Atomic Sum...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keyword">using namespace </span>elementOperators;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c(<span class="keyword">new</span> <a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_int&gt;</a> (6));</div>
@@ -249,13 +249,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="test_operators_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">  154</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="test_operators_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="code" href="test_operators_8cc.html#ada0e9a073bf0327a7e47342192f0d7a1">testIfElse</a>();</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <a class="code" href="test_operators_8cc.html#a525b21bbbb75222dcaf7c7c9d083ef35">testParser</a>();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <a class="code" href="test_operators_8cc.html#ae4bcab757f98d02aacc9852c3328a825">testAtomicSum</a>();</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">bool</span> allTestsPassed(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  allTestsPassed &amp;= <a class="code" href="test_operators_8cc.html#ada0e9a073bf0327a7e47342192f0d7a1">testIfElse</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  allTestsPassed &amp;= <a class="code" href="test_operators_8cc.html#a525b21bbbb75222dcaf7c7c9d083ef35">testParser</a>();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  allTestsPassed &amp;= <a class="code" href="test_operators_8cc.html#ae4bcab757f98d02aacc9852c3328a825">testAtomicSum</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">return</span> allTestsPassed ? EXIT_SUCCESS : EXIT_FAILURE;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
 <div class="ttc" id="classacl_1_1_element_if_else_html"><div class="ttname"><a href="classacl_1_1_element_if_else.html">acl::ElementIfElse</a></div><div class="ttdoc">If-Else conditional structure. </div><div class="ttdef"><b>Definition:</b> <a href="acl_element_if_else_8h_source.html#l00034">aclElementIfElse.h:34</a></div></div>
 <div class="ttc" id="test_operators_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="test_operators_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="test_operators_8cc_source.html#l00154">testOperators.cc:154</a></div></div>
 <div class="ttc" id="acl_element_if_else_8h_html"><div class="ttname"><a href="acl_element_if_else_8h.html">aclElementIfElse.h</a></div></div>
@@ -268,7 +269,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="acl_subvector_8h_html"><div class="ttname"><a href="acl_subvector_8h.html">aclSubvector.h</a></div></div>
 <div class="ttc" id="acl_variable_reference_8h_html"><div class="ttname"><a href="acl_variable_reference_8h.html">aclVariableReference.h</a></div></div>
 <div class="ttc" id="singletonacl_1_1_array_html"><div class="ttname"><a href="singletonacl_1_1_array.html">acl::Array</a></div><div class="ttdoc">Global array. </div><div class="ttdef"><b>Definition:</b> <a href="acl_8h_source.html#l00047">acl.h:47</a></div></div>
-<div class="ttc" id="classacl_1_1_kernel_html"><div class="ttname"><a href="classacl_1_1_kernel.html">acl::Kernel</a></div><div class="ttdoc">OpenCl Kernel generator. </div><div class="ttdef"><b>Definition:</b> <a href="acl_kernel_8h_source.html#l00045">aclKernel.h:45</a></div></div>
+<div class="ttc" id="classacl_1_1_kernel_html"><div class="ttname"><a href="classacl_1_1_kernel.html">acl::Kernel</a></div><div class="ttdoc">OpenCl Kernel generator. </div><div class="ttdef"><b>Definition:</b> <a href="acl_kernel_8h_source.html#l00048">aclKernel.h:48</a></div></div>
 <div class="ttc" id="acl_local_array_8h_html"><div class="ttname"><a href="acl_local_array_8h.html">aclLocalArray.h</a></div></div>
 <div class="ttc" id="acl_variable_8h_html"><div class="ttname"><a href="acl_variable_8h.html">aclVariable.h</a></div></div>
 <div class="ttc" id="classacl_1_1_constant_html"><div class="ttname"><a href="classacl_1_1_constant.html">acl::Constant</a></div><div class="ttdef"><b>Definition:</b> <a href="acl_constant_8h_source.html#l00033">aclConstant.h:33</a></div></div>
@@ -276,6 +277,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="acl_8h_html"><div class="ttname"><a href="acl_8h.html">acl.h</a></div></div>
 <div class="ttc" id="classacl_1_1_expression_container_html_a9fa8958c18ddc64b23a1502dfaf55de2"><div class="ttname"><a href="classacl_1_1_expression_container.html#a9fa8958c18ddc64b23a1502dfaf55de2">acl::ExpressionContainer::addExpression</a></div><div class="ttdeci">void addExpression(Element expression_)</div></div>
 <div class="ttc" id="group___assignment_operators_html_ga662119fe364519375afd03faa347e426"><div class="ttname"><a href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">acl::elementOperators::operatorAssignment</a></div><div class="ttdeci">Element operatorAssignment(Element e1, Element e2)</div></div>
+<div class="ttc" id="namespacecl_html_aec3275453ec57a74dfa7a34653cfa194"><div class="ttname"><a href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">cl::flush</a></div><div class="ttdeci">cl_int flush(void)</div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l07141">cl.hpp:7141</a></div></div>
 <div class="ttc" id="group___atomic_functions_html_ga513a373e53ae16ffea2d4668a024b0f8"><div class="ttname"><a href="group___atomic_functions.html#ga513a373e53ae16ffea2d4668a024b0f8">acl::elementOperators::atomic_add</a></div><div class="ttdeci">Element atomic_add(Element e1, Element e2)</div></div>
 <div class="ttc" id="acl_element_for_8h_html"><div class="ttname"><a href="acl_element_for_8h.html">aclElementFor.h</a></div></div>
 <div class="ttc" id="test_operators_8cc_html_ae4bcab757f98d02aacc9852c3328a825"><div class="ttname"><a href="test_operators_8cc.html#ae4bcab757f98d02aacc9852c3328a825">testAtomicSum</a></div><div class="ttdeci">bool testAtomicSum()</div><div class="ttdef"><b>Definition:</b> <a href="test_operators_8cc_source.html#l00127">testOperators.cc:127</a></div></div>
@@ -298,7 +300,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:26 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

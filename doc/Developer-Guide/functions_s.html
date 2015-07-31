@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -132,6 +132,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>Sampler()
+: <a class="el" href="classcl_1_1_sampler.html#a1c8395b386e3b1c09dc43f4134909390">cl::Sampler</a>
+</li>
 <li>ScalarField
 : <a class="el" href="classasl_1_1_f_d_advection_diffusion2.html#a3393e610351a7983b02eb985b3c85ee9">asl::FDAdvectionDiffusion2</a>
 , <a class="el" href="classasl_1_1_f_d_advection_diffusion_extended.html#a1455d151e78fbcc751de252e0ad9183a">asl::FDAdvectionDiffusionExtended</a>
@@ -144,10 +147,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classasl_1_1_dist_f_normalization.html#aaee383c8f3dc6cf201f64e01af32b01c">asl::DistFNormalization</a>
 </li>
 <li>select()
-: <a class="el" href="group___vector_of_elements_vector_of_elements_op.html#ga77e5ae29eabf12fc5c47c55c585c8028">acl::VectorOfElements</a>
+: <a class="el" href="group___vector_of_elements_vector_of_elements_op.html#ga8f50750f51d12a626abbbcd7e195f554">acl::VectorOfElements</a>
+</li>
+<li>set()
+: <a class="el" href="structcl_1_1detail_1_1_set_arg.html#a946f6fbcb4a05b37437c9493466f4855">cl::detail::SetArg&lt; index, T0 &gt;</a>
+, <a class="el" href="structcl_1_1detail_1_1_set_arg_3_01index_00_01_null_type_01_4.html#a7e357f4b353eb6576b2f484e2ae43a47">cl::detail::SetArg&lt; index, NullType &gt;</a>
 </li>
 <li>setAcceleration()
 : <a class="el" href="classasl_1_1_b_c_acceleration_source2.html#a90eb41fe35963b6cd711fdf8b91a9411">asl::BCAccelerationSource2</a>
+</li>
+<li>setArg()
+: <a class="el" href="classcl_1_1_kernel.html#ae8fd90bcf9d6783a132c59aa228c6077">cl::Kernel</a>
 </li>
 <li>setAsArgument()
 : <a class="el" href="singletonacl_1_1_array.html#a9a16b9d1dc84fa3c80ac83764a1b05f9">acl::Array&lt; T &gt;</a>
@@ -321,7 +331,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="group___vector_of_elements_vector_of_elements_op.html#ga9574f3e5c13a0942d642463d39509890">acl::VectorOfElements</a>
 </li>
 <li>SingleKernelMapNM()
-: <a class="el" href="classasl_1_1_single_kernel_map_n_m.html#a2aad2a3e9f7c3ee06bf83439a2e984f5">asl::SingleKernelMapNM</a>
+: <a class="el" href="classasl_1_1_single_kernel_map_n_m.html#ac48ee71a666df80c1f3ad2aed78e2455">asl::SingleKernelMapNM</a>
 </li>
 <li>SingleKernelNM()
 : <a class="el" href="classasl_1_1_single_kernel_n_m.html#a53616735f32e484821eb609c5288d7ef">asl::SingleKernelNM</a>
@@ -331,7 +341,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classacl_1_1_expression_container.html#ae70758ebdb9369400fa8e23eff48da7c">acl::ExpressionContainer</a>
 , <a class="el" href="classasl_1_1_box.html#af6a81430ed34cc34a6fe880c2d27a8b0">asl::Box</a>
 , <a class="el" href="classasl_1_1_mem_element_base.html#ad93d71d3e12e43012667d04911e20d14">asl::MemElementBase</a>
+, <a class="el" href="structcl_1_1detail_1_1_kernel_argument_handler.html#af00fa9216acedd38b900354a98da021b">cl::detail::KernelArgumentHandler&lt; T &gt;</a>
+, <a class="el" href="structcl_1_1detail_1_1_kernel_argument_handler_3_01_local_space_arg_01_4.html#aea2580b6252b1e2b07c80545d1504734">cl::detail::KernelArgumentHandler&lt; LocalSpaceArg &gt;</a>
 , <a class="el" href="class_parameters.html#a9023d1301188513260655d908f0e09c0">Parameters</a>
+</li>
+<li>size_
+: <a class="el" href="structcl_1_1_local_space_arg.html#a71bf0871d5858308682f80f98668849e">cl::LocalSpaceArg</a>
+</li>
+<li>size_t()
+: <a class="el" href="classcl_1_1size__t.html#affceb07342079204f78e01b34fdcdc1f">cl::size_t&lt; N &gt;</a>
 </li>
 <li>sliceDimentions
 : <a class="el" href="classasl_1_1_b_cond_slice.html#a73c3b1871eddb6a981f3bbb161e710f9">asl::BCondSlice</a>
@@ -358,6 +376,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classacl_1_1_element_excerpt.html#a082231aca2ddd5683b64481a808ac969">acl::ElementExcerpt</a>
 , <a class="el" href="classacl_1_1_element_sync_copy.html#a77052d3beb7d9246bb815b81f9c6d0df">acl::ElementSyncCopy</a>
 , <a class="el" href="classasl_1_1_b_c_direct_copier.html#a9f99d18735571178d5b8ed87a0111872">asl::BCDirectCopier</a>
+</li>
+<li>Sources
+: <a class="el" href="classcl_1_1_program.html#a5a9894f09322a68303c9de8729ae722d">cl::Program</a>
 </li>
 <li>SPKernel
 : <a class="el" href="classacl_1_1_kernel.html#ab84723432959c1175be417b59c241009">acl::Kernel</a>
@@ -418,7 +439,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classacl_1_1_variable_s_p.html#a7498bc95eacac1ce80ecd35a2bea6ab1">acl::VariableSP&lt; T &gt;</a>
 </li>
 <li>subVE()
-: <a class="el" href="classacl_1_1_vector_of_elements.html#ab5a90465acc26a0c8ffd683112cd5c50">acl::VectorOfElements</a>
+: <a class="el" href="classacl_1_1_vector_of_elements.html#ae398825a74a6d767b397fcd7a75834c4">acl::VectorOfElements</a>
 </li>
 <li>Subvector()
 : <a class="el" href="classacl_1_1_subvector.html#aa1331dfed25665cdeaa43b6e97e30ed6">acl::Subvector&lt; T &gt;</a>
@@ -442,7 +463,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:29 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

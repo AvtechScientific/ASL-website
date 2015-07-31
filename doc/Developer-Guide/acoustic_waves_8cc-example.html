@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -249,57 +249,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  <a class="code" href="class_parameters.html">Parameters</a> params;</div>
 <div class="line">  params.<a class="code" href="class_parameters.html#af6bf13652a29e32c9719ac54515f6eee">load</a>(argc, argv);</div>
 <div class="line">    </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Data initialization... &quot;</span> &lt;&lt; flush;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Data initialization... &quot;</span> &lt;&lt; <a name="a44"></a><a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classasl_1_1_block.html">asl::Block</a> block(params.<a class="code" href="class_parameters.html#a9023d1301188513260655d908f0e09c0">size</a>, params.<a class="code" href="class_parameters.html#aba3330c265914f0f52cec564a7d05572">dx</a>.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>());</div>
 <div class="line">  <span class="keyword">auto</span> displacement(asl::generateDataContainerACL_SP&lt;FlT&gt;(block, 3, 1u));</div>
-<div class="line">  <a name="a44"></a><a class="code" href="namespaceasl.html#ae3b3b98d75c6c72e40160cdaa40cdbc9">asl::initData</a>(displacement, <a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(0.,0.,0.));</div>
+<div class="line">  <a name="a45"></a><a class="code" href="namespaceasl.html#ae3b3b98d75c6c72e40160cdaa40cdbc9">asl::initData</a>(displacement, <a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(0.,0.,0.));</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">auto</span> mapMem(asl::generateDataContainerACL_SP&lt;FlT&gt;(block, 1, 1u));</div>
 <div class="line">  <a class="code" href="namespaceasl.html#ae3b3b98d75c6c72e40160cdaa40cdbc9">asl::initData</a>(mapMem, <a class="code" href="acoustic_waves_8cc.html#aa4baf6c219793bfda50428a0b2b857f9">generatePipe</a>(block, params));</div>
 <div class="line"></div>
 <div class="line">  </div>
-<div class="line">  <a name="_a45"></a><a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html">asl::WriterVTKXML</a> writer(params.<a class="code" href="class_parameters.html#ad8d8543b6299aa7fb19c1a03dfb9863d">appParamsManager</a>.<a name="a46"></a><a class="code" href="classasl_1_1_parameters_manager.html#a2b6b8a34e28b0e8d0ff06b8d7dbc49dd">getDir</a>() + <span class="stringliteral">&quot;acousticWaves&quot;</span>);</div>
-<div class="line">  writer.<a name="a47"></a><a class="code" href="classasl_1_1_writer.html#af26c67a142065f85b44ac280a71e61b7">addScalars</a>(<span class="stringliteral">&quot;map&quot;</span>, *mapMem);</div>
+<div class="line">  <a name="_a46"></a><a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html">asl::WriterVTKXML</a> writer(params.<a class="code" href="class_parameters.html#ad8d8543b6299aa7fb19c1a03dfb9863d">appParamsManager</a>.<a name="a47"></a><a class="code" href="classasl_1_1_parameters_manager.html#a2b6b8a34e28b0e8d0ff06b8d7dbc49dd">getDir</a>() + <span class="stringliteral">&quot;acousticWaves&quot;</span>);</div>
+<div class="line">  writer.<a name="a48"></a><a class="code" href="classasl_1_1_writer.html#af26c67a142065f85b44ac280a71e61b7">addScalars</a>(<span class="stringliteral">&quot;map&quot;</span>, *mapMem);</div>
 <div class="line">  writer.addVector(<span class="stringliteral">&quot;displacement&quot;</span>, *displacement);</div>
 <div class="line">  writer.write();</div>
 <div class="line"></div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl;</div>
 <div class="line">  </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Numerics initialization... &quot;</span> &lt;&lt; flush;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Numerics initialization... &quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">auto</span> elasticity(<a name="a48"></a><a class="code" href="namespaceasl.html#ae89805dc740d5c5daff786ee96ad611c">generateFDElasticityRelax</a>(displacement,</div>
+<div class="line">  <span class="keyword">auto</span> elasticity(<a name="a49"></a><a class="code" href="namespaceasl.html#ae89805dc740d5c5daff786ee96ad611c">generateFDElasticityRelax</a>(displacement,</div>
 <div class="line">                                            params.<a class="code" href="class_parameters.html#a8de28fae84d6c4a425d95415b9974a6b">bulkMNum</a>.<a class="code" href="singletonasl_1_1_u_value.html#ab332ee5af306aee74dbae575f53a88e8">v</a>(),</div>
 <div class="line">                                            params.<a class="code" href="class_parameters.html#af5b18fb79da656e3fd1271b03a24643d">shearMNum</a>.<a class="code" href="singletonasl_1_1_u_value.html#ab332ee5af306aee74dbae575f53a88e8">v</a>(), </div>
 <div class="line">                                            params.<a class="code" href="class_parameters.html#aa44bbab3e0c0d11d4e547eb991b23823">dt</a>.<a class="code" href="singletonasl_1_1_u_value.html#ab332ee5af306aee74dbae575f53a88e8">v</a>(),</div>
-<div class="line">                                            &amp;<a name="a49"></a><a class="code" href="group___templates_n_n_p.html#gac3b382858554f926fbdf1964daa741d3">asl::d3q19</a>()));</div>
+<div class="line">                                            &amp;<a name="a50"></a><a class="code" href="group___templates_n_n_p.html#gac3b382858554f926fbdf1964daa741d3">asl::d3q19</a>()));</div>
 <div class="line"><span class="comment">/*  auto elasticity(generateFDElasticity(displacement,</span></div>
 <div class="line"><span class="comment">                                       params.bulkMNum.v(),</span></div>
 <div class="line"><span class="comment">                                       params.shearMNum.v(), </span></div>
 <div class="line"><span class="comment">                                       params.dt.v(),</span></div>
 <div class="line"><span class="comment">                                       &amp;asl::d3q19()));*/</span></div>
-<div class="line">  elasticity-&gt;setDumpingFactor(<a name="a50"></a><a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(.9999));</div>
+<div class="line">  elasticity-&gt;setDumpingFactor(<a name="a51"></a><a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(.9999));</div>
 <div class="line">  elasticity-&gt;init();</div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line">  std::vector&lt;asl::SPNumMethod&gt; bc;</div>
 <div class="line"></div>
-<div class="line">  bc.push_back(<a name="a51"></a><a class="code" href="group___elasticity_b_c.html#ga7967f861711533df227e49c4724b554a">generateBCZeroStress</a>(elasticity, mapMem));</div>
+<div class="line">  bc.push_back(<a name="a52"></a><a class="code" href="group___elasticity_b_c.html#ga7967f861711533df227e49c4724b554a">generateBCZeroStress</a>(elasticity, mapMem));</div>
 <div class="line"><span class="comment">//    bc.push_back(generateBCConstantGradient(displacement,asl::makeAVec(0.,0.,0.),mapMem,&amp;asl::d3q19()));</span></div>
 <div class="line"><span class="comment">//    bc.push_back(generateBCConstantGradient(elasticity-&gt;getPressureData(),0.,mapMem,&amp;asl::d3q19()));</span></div>
 <div class="line"><span class="comment">//  bc.push_back(generateBCZeroStressP(elasticity, mapMem));</span></div>
-<div class="line">  <a name="_a52"></a><a class="code" href="singletonasl_1_1_u_value.html">asl::UValue&lt;asl::AVec&lt;float&gt;</a>&gt; pres(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(0.f,0.f,0.f));</div>
-<div class="line">  bc.push_back(<a name="a53"></a><a class="code" href="group___generic_b_c.html#gaa8e8f891c430054d1ad0b547011e11e9">asl::generateBCConstantValue</a>(displacement, pres, {<a name="a54"></a><a class="code" href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129ad0b48b19e82d76d7b78e5ba676782e92">asl::X0</a>}));</div>
+<div class="line">  <a name="_a53"></a><a class="code" href="singletonasl_1_1_u_value.html">asl::UValue&lt;asl::AVec&lt;float&gt;</a>&gt; pres(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(0.f,0.f,0.f));</div>
+<div class="line">  bc.push_back(<a name="a54"></a><a class="code" href="group___generic_b_c.html#gaa8e8f891c430054d1ad0b547011e11e9">asl::generateBCConstantValue</a>(displacement, pres, {<a name="a55"></a><a class="code" href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129ad0b48b19e82d76d7b78e5ba676782e92">asl::X0</a>}));</div>
 <div class="line"></div>
-<div class="line">  <a name="a55"></a><a class="code" href="namespaceasl.html#a43ad4513d2baf1208d772cb46c23ed98">initAll</a>(bc);</div>
+<div class="line">  <a name="a56"></a><a class="code" href="namespaceasl.html#a43ad4513d2baf1208d772cb46c23ed98">initAll</a>(bc);</div>
 <div class="line"></div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl;</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Computing...&quot;</span> &lt;&lt; endl;</div>
-<div class="line">  <a name="_a56"></a><a class="code" href="classasl_1_1_timer.html">asl::Timer</a> timer;</div>
+<div class="line">  <a name="_a57"></a><a class="code" href="classasl_1_1_timer.html">asl::Timer</a> timer;</div>
 <div class="line"></div>
-<div class="line">  <a name="a57"></a><a class="code" href="namespaceasl.html#affa721cec9e33d916206b8e12f7cd5ed">executeAll</a>(bc);</div>
+<div class="line">  <a name="a58"></a><a class="code" href="namespaceasl.html#affa721cec9e33d916206b8e12f7cd5ed">executeAll</a>(bc);</div>
 <div class="line"></div>
-<div class="line">  timer.<a name="a58"></a><a class="code" href="classasl_1_1_timer.html#aa60805a0b350da39279189e0d9cb18d5">start</a>();</div>
+<div class="line">  timer.<a name="a59"></a><a class="code" href="classasl_1_1_timer.html#aa60805a0b350da39279189e0d9cb18d5">start</a>();</div>
 <div class="line">  <span class="keywordtype">double</span> tOutPrev(0);</div>
 <div class="line">  cout &lt;&lt; params.<a class="code" href="class_parameters.html#aa44bbab3e0c0d11d4e547eb991b23823">dt</a>.<a class="code" href="singletonasl_1_1_u_value.html#ab332ee5af306aee74dbae575f53a88e8">v</a>() &lt;&lt; endl;</div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">double</span> t(0); t &lt; params.<a class="code" href="class_parameters.html#a7891924aec02059b493d2820f9bd4563">tSimulation</a>.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>(); t+=params.<a class="code" href="class_parameters.html#aa44bbab3e0c0d11d4e547eb991b23823">dt</a>.<a class="code" href="singletonasl_1_1_u_value.html#ab332ee5af306aee74dbae575f53a88e8">v</a>())</div>
@@ -309,12 +309,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <a class="code" href="namespaceasl.html#affa721cec9e33d916206b8e12f7cd5ed">executeAll</a>(bc);</div>
 <div class="line">    <span class="keywordflow">if</span>(t - params.<a class="code" href="class_parameters.html#a3ac5eed3f7f26a09226298351fa8dc38">tOutput</a>.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()&gt;=tOutPrev)</div>
 <div class="line">    {</div>
-<div class="line">      timer.<a name="a59"></a><a class="code" href="classasl_1_1_timer.html#a369f85c48a8588b48e2ba0f754d43bf2">stop</a>();</div>
+<div class="line">      timer.<a name="a60"></a><a class="code" href="classasl_1_1_timer.html#a369f85c48a8588b48e2ba0f754d43bf2">stop</a>();</div>
 <div class="line">      tOutPrev=t;</div>
 <div class="line">      cout &lt;&lt; t &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; params.<a class="code" href="class_parameters.html#a7891924aec02059b493d2820f9bd4563">tSimulation</a>.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>() &lt;&lt; <span class="stringliteral">&quot;; expected left time: &quot;</span> &lt;&lt;  </div>
-<div class="line">          timer.<a name="a60"></a><a class="code" href="classasl_1_1_timer.html#ae69f3baa898012336acbe2f71ac98e89">getLeftTime</a>(t/params.<a class="code" href="class_parameters.html#a7891924aec02059b493d2820f9bd4563">tSimulation</a>.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>())  &lt;&lt; endl;</div>
+<div class="line">          timer.<a name="a61"></a><a class="code" href="classasl_1_1_timer.html#ae69f3baa898012336acbe2f71ac98e89">getLeftTime</a>(t/params.<a class="code" href="class_parameters.html#a7891924aec02059b493d2820f9bd4563">tSimulation</a>.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>())  &lt;&lt; endl;</div>
 <div class="line">      writer.write();</div>
-<div class="line">      timer.<a name="a61"></a><a class="code" href="classasl_1_1_timer.html#a98daace81b61fbfc13003b948ec11db2">resume</a>();</div>
+<div class="line">      timer.<a name="a62"></a><a class="code" href="classasl_1_1_timer.html#a98daace81b61fbfc13003b948ec11db2">resume</a>();</div>
 <div class="line"></div>
 <div class="line">    }</div>
 <div class="line">  }</div>
@@ -322,9 +322,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  </div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl;  </div>
 <div class="line"></div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;time=&quot;</span> &lt;&lt; timer.<a name="a62"></a><a class="code" href="classasl_1_1_timer.html#abf443d5aa8aef22089f56673105bc934">getTime</a>() &lt;&lt; <span class="stringliteral">&quot;; clockTime=&quot;</span></div>
-<div class="line">     &lt;&lt;  timer.<a name="a63"></a><a class="code" href="classasl_1_1_timer.html#aa5bc1d723edf4f0437aaf0d6d97428d3">getClockTime</a>()  &lt;&lt;  <span class="stringliteral">&quot;; load=&quot;</span> </div>
-<div class="line">     &lt;&lt;  timer.<a name="a64"></a><a class="code" href="classasl_1_1_timer.html#ac821731f7b773f660d95de311505e30c">getProcessorLoad</a>() * 100 &lt;&lt; <span class="stringliteral">&quot;%&quot;</span> &lt;&lt; endl;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;time=&quot;</span> &lt;&lt; timer.<a name="a63"></a><a class="code" href="classasl_1_1_timer.html#abf443d5aa8aef22089f56673105bc934">getTime</a>() &lt;&lt; <span class="stringliteral">&quot;; clockTime=&quot;</span></div>
+<div class="line">     &lt;&lt;  timer.<a name="a64"></a><a class="code" href="classasl_1_1_timer.html#aa5bc1d723edf4f0437aaf0d6d97428d3">getClockTime</a>()  &lt;&lt;  <span class="stringliteral">&quot;; load=&quot;</span> </div>
+<div class="line">     &lt;&lt;  timer.<a name="a65"></a><a class="code" href="classasl_1_1_timer.html#ac821731f7b773f660d95de311505e30c">getProcessorLoad</a>() * 100 &lt;&lt; <span class="stringliteral">&quot;%&quot;</span> &lt;&lt; endl;</div>
 <div class="line"></div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Output...&quot;</span>;</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl;  </div>
@@ -335,7 +335,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -126,7 +126,7 @@ Collaboration diagram for acl::MemBlock:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaeff8ae214b58208be9a658ef86a5536"><td class="memItemLeft" align="right" valign="top">virtual cl::Buffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_mem_block.html#aaeff8ae214b58208be9a658ef86a5536">getBuffer</a> ()</td></tr>
+<tr class="memitem:aaeff8ae214b58208be9a658ef86a5536"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classcl_1_1_buffer.html">cl::Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_mem_block.html#aaeff8ae214b58208be9a658ef86a5536">getBuffer</a> ()</td></tr>
 <tr class="separator:aaeff8ae214b58208be9a658ef86a5536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6dc03efcb5b93580ea4b31499b27dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstd_1_1shared__ptr.html">shared_ptr</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_mem_block.html#a7f6dc03efcb5b93580ea4b31499b27dd">map</a> ()</td></tr>
 <tr class="separator:a7f6dc03efcb5b93580ea4b31499b27dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,7 +150,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36fadae0fcabda334046a0537ba6726a inherit pub_methods_classacl_1_1_element_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_element_base.html#a36fadae0fcabda334046a0537ba6726a">addToKernelSource</a> (vector&lt; <a class="el" href="classstd_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="classacl_1_1_element_base.html">ElementBase</a> &gt; &gt; &amp;arguments, vector&lt; <a class="el" href="classstd_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="classacl_1_1_element_base.html">ElementBase</a> &gt; &gt; &amp;localDeclarations) const =0</td></tr>
 <tr class="memdesc:a36fadae0fcabda334046a0537ba6726a inherit pub_methods_classacl_1_1_element_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="classacl_1_1_element_base.html">ElementBase</a> to the kernel source either as an argument or as a local declaration.  <a href="#a36fadae0fcabda334046a0537ba6726a">More...</a><br /></td></tr>
 <tr class="separator:a36fadae0fcabda334046a0537ba6726a inherit pub_methods_classacl_1_1_element_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9676a2cfda3a451acbe8005fbf978a86 inherit pub_methods_classacl_1_1_element_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_element_base.html#a9676a2cfda3a451acbe8005fbf978a86">setAsArgument</a> (cl::Kernel &amp;kernel, unsigned int argumentIndex) const =0</td></tr>
+<tr class="memitem:a9676a2cfda3a451acbe8005fbf978a86 inherit pub_methods_classacl_1_1_element_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_element_base.html#a9676a2cfda3a451acbe8005fbf978a86">setAsArgument</a> (<a class="el" href="classcl_1_1_kernel.html">cl::Kernel</a> &amp;kernel, unsigned int argumentIndex) const =0</td></tr>
 <tr class="separator:a9676a2cfda3a451acbe8005fbf978a86 inherit pub_methods_classacl_1_1_element_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83d54ea093d6d0e8ce824c551e9f3253 inherit pub_methods_classacl_1_1_element_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_element_base.html#a83d54ea093d6d0e8ce824c551e9f3253">~ElementBase</a> ()</td></tr>
 <tr class="separator:a83d54ea093d6d0e8ce824c551e9f3253 inherit pub_methods_classacl_1_1_element_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +171,7 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa2b1fc6672578300b7293d32c5f2763f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstd_1_1shared__ptr.html">shared_ptr</a>&lt; cl::Buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_mem_block.html#aa2b1fc6672578300b7293d32c5f2763f">buffer</a></td></tr>
+<tr class="memitem:aa2b1fc6672578300b7293d32c5f2763f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstd_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="classcl_1_1_buffer.html">cl::Buffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_mem_block.html#aa2b1fc6672578300b7293d32c5f2763f">buffer</a></td></tr>
 <tr class="separator:aa2b1fc6672578300b7293d32c5f2763f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3607e824012baa392bd76c7d3d44cb2"><td class="memItemLeft" align="right" valign="top">weak_ptr&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classacl_1_1_mem_block.html#ae3607e824012baa392bd76c7d3d44cb2">region</a></td></tr>
 <tr class="separator:ae3607e824012baa392bd76c7d3d44cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,7 +316,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual cl::Buffer&amp; acl::MemBlock::getBuffer </td>
+          <td class="memname">virtual <a class="el" href="classcl_1_1_buffer.html">cl::Buffer</a>&amp; acl::MemBlock::getBuffer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -418,7 +418,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classstd_1_1shared__ptr.html">shared_ptr</a>&lt;cl::Buffer&gt; acl::MemBlock::buffer</td>
+          <td class="memname"><a class="el" href="classstd_1_1shared__ptr.html">shared_ptr</a>&lt;<a class="el" href="classcl_1_1_buffer.html">cl::Buffer</a>&gt; acl::MemBlock::buffer</td>
         </tr>
       </table>
   </td>
@@ -460,7 +460,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:27 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

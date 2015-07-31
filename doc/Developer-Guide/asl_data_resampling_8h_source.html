@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -127,132 +127,136 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="asl_single_kernel_n_m_8h.html">aslSingleKernelNM.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="asl_vectors_8h.html">math/aslVectors.h</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;CL/cl.hpp&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceacl.html">acl</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">class </span>VectorOfElementsData;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceasl.html">asl</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">class </span>VectorTemplate;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> V&gt; <span class="keyword">class </span>DataWithGhostNodes;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">typedef</span> DataWithGhostNodes&lt;acl::VectorOfElementsData&gt; <a class="code" href="namespaceasl.html#a06b21440eee3eab373c6597226944815">DataWithGhostNodesACLData</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;DataWithGhostNodesACLData&gt;</a> <a class="code" href="namespaceasl.html#ad550b5b52efe71d373477f0e4e8419a4">SPDataWithGhostNodesACLData</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">class </span>AbstractDataWithGhostNodes;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;AbstractDataWithGhostNodes&gt;</a> <a class="code" href="namespaceasl.html#a746cb96b74084c00439dd63d87711fbd">SPAbstractDataWithGhostNodes</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classasl_1_1_data_coarser.html">   51</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classasl_1_1_data_coarser.html">DataCoarser</a>: <span class="keyword">public</span> <a class="code" href="classasl_1_1_single_kernel_n_m.html">SingleKernelNM</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classasl_1_1_data_coarser.html#afa147bf329cd8925a8996dbdfe9fcab6">   54</a></span>&#160;      <span class="keyword">typedef</span> SPDataWithGhostNodesACLData <a class="code" href="classasl_1_1_data_coarser.html#afa147bf329cd8925a8996dbdfe9fcab6">Data</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">private</span>:  </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      Data dataIn;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      Data dataOut;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">const</span> <a class="code" href="classasl_1_1_vector_template.html">VectorTemplate</a>* vectorTemplate;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> init0();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span>:     </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <a class="code" href="classasl_1_1_data_coarser.html#add32de5e8d7358ec5757cc4b7a2b9e09">DataCoarser</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <a class="code" href="classasl_1_1_data_coarser.html#add32de5e8d7358ec5757cc4b7a2b9e09">DataCoarser</a>(Data dIn);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">inline</span> Data <a class="code" href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">getDataOut</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  };</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespaceasl.html#a6365020ffcdac3d6fd7575acd12a4c99">   68</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;DataCoarser&gt;</a> <a class="code" href="namespaceasl.html#a6365020ffcdac3d6fd7575acd12a4c99">SPDataCoarser</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  SPDataWithGhostNodesACLData <a class="code" href="group___data_utilities.html#gaa352e09cb38fc7493266d6a09831f61e">coarseData</a>(SPDataWithGhostNodesACLData d);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//#include &lt;CL/cl.hpp&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Supply &quot;cl.hpp&quot; with ASL, since it is not present in OpenCL 2.0</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Remove the file after switching to OpenCL 2.1</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cl_8hpp.html">acl/cl.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceacl.html">acl</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">class </span>VectorOfElementsData;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceasl.html">asl</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">class </span>VectorTemplate;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> V&gt; <span class="keyword">class </span>DataWithGhostNodes;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">typedef</span> DataWithGhostNodes&lt;acl::VectorOfElementsData&gt; <a class="code" href="namespaceasl.html#a06b21440eee3eab373c6597226944815">DataWithGhostNodesACLData</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;DataWithGhostNodesACLData&gt;</a> <a class="code" href="namespaceasl.html#ad550b5b52efe71d373477f0e4e8419a4">SPDataWithGhostNodesACLData</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">class </span>AbstractDataWithGhostNodes;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;AbstractDataWithGhostNodes&gt;</a> <a class="code" href="namespaceasl.html#a746cb96b74084c00439dd63d87711fbd">SPAbstractDataWithGhostNodes</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classasl_1_1_data_coarser.html">   54</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classasl_1_1_data_coarser.html">DataCoarser</a>: <span class="keyword">public</span> <a class="code" href="classasl_1_1_single_kernel_n_m.html">SingleKernelNM</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classasl_1_1_data_coarser.html#afa147bf329cd8925a8996dbdfe9fcab6">   57</a></span>&#160;      <span class="keyword">typedef</span> SPDataWithGhostNodesACLData <a class="code" href="classasl_1_1_data_coarser.html#afa147bf329cd8925a8996dbdfe9fcab6">Data</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">private</span>:  </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      Data dataIn;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      Data dataOut;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">const</span> <a class="code" href="classasl_1_1_vector_template.html">VectorTemplate</a>* vectorTemplate;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> init0();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">public</span>:     </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <a class="code" href="classasl_1_1_data_coarser.html#add32de5e8d7358ec5757cc4b7a2b9e09">DataCoarser</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classasl_1_1_data_coarser.html#add32de5e8d7358ec5757cc4b7a2b9e09">DataCoarser</a>(Data dIn);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keyword">inline</span> Data <a class="code" href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">getDataOut</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  };</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespaceasl.html#a6365020ffcdac3d6fd7575acd12a4c99">   71</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;DataCoarser&gt;</a> <a class="code" href="namespaceasl.html#a6365020ffcdac3d6fd7575acd12a4c99">SPDataCoarser</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classasl_1_1_data_clipper.html">   79</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classasl_1_1_data_clipper.html">DataClipper</a>: <span class="keyword">public</span> <a class="code" href="classasl_1_1_single_kernel_n_m.html">SingleKernelNM</a></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classasl_1_1_data_clipper.html#a73d99fe11ec520adf85e64b1a92b2287">   82</a></span>&#160;      <span class="keyword">typedef</span> SPDataWithGhostNodesACLData <a class="code" href="classasl_1_1_data_clipper.html#a73d99fe11ec520adf85e64b1a92b2287">Data</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">private</span>:  </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      Data dataIn;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      Data dataOut;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> a0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> aE;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> init0();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">public</span>:     </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <a class="code" href="classasl_1_1_data_clipper.html#a37937852a398254dd99e829d632af2fb">DataClipper</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <a class="code" href="classasl_1_1_data_clipper.html#a37937852a398254dd99e829d632af2fb">DataClipper</a>(Data dIn, <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> a0, <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> aE);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">inline</span> Data <a class="code" href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">getDataOut</a>();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  };</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="namespaceasl.html#a22296c956ec53cef056da5706dc15e9f">   97</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;DataClipper&gt;</a> <a class="code" href="namespaceasl.html#a22296c956ec53cef056da5706dc15e9f">SPDataClipper</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">inline</span> SPDataWithGhostNodesACLData <a class="code" href="group___data_utilities.html#gaabd1980a66a7ea46af27d60fa16dc38a">clipData</a>(SPDataWithGhostNodesACLData d,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                               <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> a0, </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                               <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> aE);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//----------------------------- Implementation -----------------------</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">  106</a></span>&#160;  <a class="code" href="classstd_1_1shared__ptr.html">DataCoarser::Data</a> <a class="code" href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">DataCoarser::getDataOut</a>()</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> dataOut;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">  111</a></span>&#160;  <a class="code" href="classstd_1_1shared__ptr.html">DataClipper::Data</a> <a class="code" href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">DataClipper::getDataOut</a>()</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> dataOut;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="group___data_utilities.html#gaa352e09cb38fc7493266d6a09831f61e">  116</a></span>&#160;  <span class="keyword">inline</span> SPDataWithGhostNodesACLData <a class="code" href="group___data_utilities.html#gaa352e09cb38fc7493266d6a09831f61e">coarseData</a>(SPDataWithGhostNodesACLData d)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="classasl_1_1_data_coarser.html">DataCoarser</a> dc(d);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    dc.<a class="code" href="classasl_1_1_single_kernel_n_m.html#a773b902f9c108414a934ca1defe6e3b7">init</a>();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    dc.<a class="code" href="classasl_1_1_single_kernel_n_m.html#a3be48ee8e5b945e68792a24677c66952">execute</a>();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> dc.<a class="code" href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">getDataOut</a>();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="group___data_utilities.html#gaabd1980a66a7ea46af27d60fa16dc38a">  125</a></span>&#160;  <span class="keyword">inline</span> SPDataWithGhostNodesACLData <a class="code" href="group___data_utilities.html#gaabd1980a66a7ea46af27d60fa16dc38a">clipData</a>(SPDataWithGhostNodesACLData d,</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                       <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> a0, </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                       <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> aE)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="classasl_1_1_data_clipper.html">asl::DataClipper</a> dcl(d, a0,aE);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    dcl.<a class="code" href="classasl_1_1_single_kernel_n_m.html#a773b902f9c108414a934ca1defe6e3b7">init</a>();</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    dcl.<a class="code" href="classasl_1_1_single_kernel_n_m.html#a3be48ee8e5b945e68792a24677c66952">execute</a>();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> dcl.<a class="code" href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">getDataOut</a>();</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// asl</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif // ASLDATARESAMPLING_H</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  SPDataWithGhostNodesACLData <a class="code" href="group___data_utilities.html#gaa352e09cb38fc7493266d6a09831f61e">coarseData</a>(SPDataWithGhostNodesACLData d);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classasl_1_1_data_clipper.html">   82</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classasl_1_1_data_clipper.html">DataClipper</a>: <span class="keyword">public</span> <a class="code" href="classasl_1_1_single_kernel_n_m.html">SingleKernelNM</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classasl_1_1_data_clipper.html#a73d99fe11ec520adf85e64b1a92b2287">   85</a></span>&#160;      <span class="keyword">typedef</span> SPDataWithGhostNodesACLData <a class="code" href="classasl_1_1_data_clipper.html#a73d99fe11ec520adf85e64b1a92b2287">Data</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">private</span>:  </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      Data dataIn;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      Data dataOut;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> a0;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> aE;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> init0();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">public</span>:     </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="classasl_1_1_data_clipper.html#a37937852a398254dd99e829d632af2fb">DataClipper</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="classasl_1_1_data_clipper.html#a37937852a398254dd99e829d632af2fb">DataClipper</a>(Data dIn, <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> a0, <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> aE);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keyword">inline</span> Data <a class="code" href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">getDataOut</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  };</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="namespaceasl.html#a22296c956ec53cef056da5706dc15e9f">  100</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classstd_1_1shared__ptr.html">std::shared_ptr&lt;DataClipper&gt;</a> <a class="code" href="namespaceasl.html#a22296c956ec53cef056da5706dc15e9f">SPDataClipper</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">inline</span> SPDataWithGhostNodesACLData <a class="code" href="group___data_utilities.html#gaabd1980a66a7ea46af27d60fa16dc38a">clipData</a>(SPDataWithGhostNodesACLData d,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                               <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> a0, </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                               <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> aE);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//----------------------------- Implementation -----------------------</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">  109</a></span>&#160;  <a class="code" href="classstd_1_1shared__ptr.html">DataCoarser::Data</a> <a class="code" href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">DataCoarser::getDataOut</a>()</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> dataOut;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">  114</a></span>&#160;  <a class="code" href="classstd_1_1shared__ptr.html">DataClipper::Data</a> <a class="code" href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">DataClipper::getDataOut</a>()</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> dataOut;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="group___data_utilities.html#gaa352e09cb38fc7493266d6a09831f61e">  119</a></span>&#160;  <span class="keyword">inline</span> SPDataWithGhostNodesACLData <a class="code" href="group___data_utilities.html#gaa352e09cb38fc7493266d6a09831f61e">coarseData</a>(SPDataWithGhostNodesACLData d)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="classasl_1_1_data_coarser.html">DataCoarser</a> dc(d);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    dc.<a class="code" href="classasl_1_1_single_kernel_n_m.html#a773b902f9c108414a934ca1defe6e3b7">init</a>();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    dc.<a class="code" href="classasl_1_1_single_kernel_n_m.html#a3be48ee8e5b945e68792a24677c66952">execute</a>();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> dc.<a class="code" href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">getDataOut</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="group___data_utilities.html#gaabd1980a66a7ea46af27d60fa16dc38a">  128</a></span>&#160;  <span class="keyword">inline</span> SPDataWithGhostNodesACLData <a class="code" href="group___data_utilities.html#gaabd1980a66a7ea46af27d60fa16dc38a">clipData</a>(SPDataWithGhostNodesACLData d,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                       <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> a0, </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                       <a class="code" href="singletonasl_1_1_a_vec.html">AVec&lt;int&gt;</a> aE)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classasl_1_1_data_clipper.html">asl::DataClipper</a> dcl(d, a0,aE);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    dcl.<a class="code" href="classasl_1_1_single_kernel_n_m.html#a773b902f9c108414a934ca1defe6e3b7">init</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    dcl.<a class="code" href="classasl_1_1_single_kernel_n_m.html#a3be48ee8e5b945e68792a24677c66952">execute</a>();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> dcl.<a class="code" href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">getDataOut</a>();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;} <span class="comment">// asl</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#endif // ASLDATARESAMPLING_H</span></div>
 <div class="ttc" id="asl_single_kernel_n_m_8h_html"><div class="ttname"><a href="asl_single_kernel_n_m_8h.html">aslSingleKernelNM.h</a></div></div>
 <div class="ttc" id="namespaceasl_html"><div class="ttname"><a href="namespaceasl.html">asl</a></div><div class="ttdoc">Advanced Simulation Library. </div><div class="ttdef"><b>Definition:</b> <a href="asl_data_inc_8h_source.html#l00030">aslDataInc.h:30</a></div></div>
 <div class="ttc" id="namespaceacl_html"><div class="ttname"><a href="namespaceacl.html">acl</a></div><div class="ttdoc">Advanced Computational Language. </div><div class="ttdef"><b>Definition:</b> <a href="acl_8h_source.html#l00040">acl.h:40</a></div></div>
-<div class="ttc" id="classasl_1_1_data_coarser_html_a54fb429d2668dca7bbf7b1558e484542"><div class="ttname"><a href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">asl::DataCoarser::getDataOut</a></div><div class="ttdeci">Data getDataOut()</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00106">aslDataResampling.h:106</a></div></div>
-<div class="ttc" id="group___data_utilities_html_gaa352e09cb38fc7493266d6a09831f61e"><div class="ttname"><a href="group___data_utilities.html#gaa352e09cb38fc7493266d6a09831f61e">asl::coarseData</a></div><div class="ttdeci">SPDataWithGhostNodesACLData coarseData(SPDataWithGhostNodesACLData d)</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00116">aslDataResampling.h:116</a></div></div>
+<div class="ttc" id="classasl_1_1_data_coarser_html_a54fb429d2668dca7bbf7b1558e484542"><div class="ttname"><a href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">asl::DataCoarser::getDataOut</a></div><div class="ttdeci">Data getDataOut()</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00109">aslDataResampling.h:109</a></div></div>
+<div class="ttc" id="group___data_utilities_html_gaa352e09cb38fc7493266d6a09831f61e"><div class="ttname"><a href="group___data_utilities.html#gaa352e09cb38fc7493266d6a09831f61e">asl::coarseData</a></div><div class="ttdeci">SPDataWithGhostNodesACLData coarseData(SPDataWithGhostNodesACLData d)</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00119">aslDataResampling.h:119</a></div></div>
 <div class="ttc" id="namespaceasl_html_ad550b5b52efe71d373477f0e4e8419a4"><div class="ttname"><a href="namespaceasl.html#ad550b5b52efe71d373477f0e4e8419a4">asl::SPDataWithGhostNodesACLData</a></div><div class="ttdeci">std::shared_ptr&lt; DataWithGhostNodesACLData &gt; SPDataWithGhostNodesACLData</div><div class="ttdef"><b>Definition:</b> <a href="asl_generators_8h_source.html#l00047">aslGenerators.h:47</a></div></div>
-<div class="ttc" id="classasl_1_1_data_coarser_html_afa147bf329cd8925a8996dbdfe9fcab6"><div class="ttname"><a href="classasl_1_1_data_coarser.html#afa147bf329cd8925a8996dbdfe9fcab6">asl::DataCoarser::Data</a></div><div class="ttdeci">SPDataWithGhostNodesACLData Data</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00054">aslDataResampling.h:54</a></div></div>
-<div class="ttc" id="namespaceasl_html_a6365020ffcdac3d6fd7575acd12a4c99"><div class="ttname"><a href="namespaceasl.html#a6365020ffcdac3d6fd7575acd12a4c99">asl::SPDataCoarser</a></div><div class="ttdeci">std::shared_ptr&lt; DataCoarser &gt; SPDataCoarser</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00068">aslDataResampling.h:68</a></div></div>
-<div class="ttc" id="classasl_1_1_data_clipper_html_a73d99fe11ec520adf85e64b1a92b2287"><div class="ttname"><a href="classasl_1_1_data_clipper.html#a73d99fe11ec520adf85e64b1a92b2287">asl::DataClipper::Data</a></div><div class="ttdeci">SPDataWithGhostNodesACLData Data</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00082">aslDataResampling.h:82</a></div></div>
+<div class="ttc" id="classasl_1_1_data_coarser_html_afa147bf329cd8925a8996dbdfe9fcab6"><div class="ttname"><a href="classasl_1_1_data_coarser.html#afa147bf329cd8925a8996dbdfe9fcab6">asl::DataCoarser::Data</a></div><div class="ttdeci">SPDataWithGhostNodesACLData Data</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00057">aslDataResampling.h:57</a></div></div>
+<div class="ttc" id="namespaceasl_html_a6365020ffcdac3d6fd7575acd12a4c99"><div class="ttname"><a href="namespaceasl.html#a6365020ffcdac3d6fd7575acd12a4c99">asl::SPDataCoarser</a></div><div class="ttdeci">std::shared_ptr&lt; DataCoarser &gt; SPDataCoarser</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00071">aslDataResampling.h:71</a></div></div>
+<div class="ttc" id="classasl_1_1_data_clipper_html_a73d99fe11ec520adf85e64b1a92b2287"><div class="ttname"><a href="classasl_1_1_data_clipper.html#a73d99fe11ec520adf85e64b1a92b2287">asl::DataClipper::Data</a></div><div class="ttdeci">SPDataWithGhostNodesACLData Data</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00085">aslDataResampling.h:85</a></div></div>
 <div class="ttc" id="singletonasl_1_1_a_vec_html"><div class="ttname"><a href="singletonasl_1_1_a_vec.html">asl::AVec&lt; int &gt;</a></div></div>
 <div class="ttc" id="classasl_1_1_single_kernel_n_m_html"><div class="ttname"><a href="classasl_1_1_single_kernel_n_m.html">asl::SingleKernelNM</a></div><div class="ttdef"><b>Definition:</b> <a href="asl_single_kernel_n_m_8h_source.html#l00046">aslSingleKernelNM.h:46</a></div></div>
 <div class="ttc" id="namespaceasl_html_a06b21440eee3eab373c6597226944815"><div class="ttname"><a href="namespaceasl.html#a06b21440eee3eab373c6597226944815">asl::DataWithGhostNodesACLData</a></div><div class="ttdeci">DataWithGhostNodes&lt; acl::VectorOfElementsData &gt; DataWithGhostNodesACLData</div><div class="ttdef"><b>Definition:</b> <a href="asl_generators_8h_source.html#l00045">aslGenerators.h:45</a></div></div>
 <div class="ttc" id="classasl_1_1_single_kernel_n_m_html_a3be48ee8e5b945e68792a24677c66952"><div class="ttname"><a href="classasl_1_1_single_kernel_n_m.html#a3be48ee8e5b945e68792a24677c66952">asl::SingleKernelNM::execute</a></div><div class="ttdeci">virtual void execute()</div><div class="ttdoc">Executes the numerical procedure. </div></div>
+<div class="ttc" id="cl_8hpp_html"><div class="ttname"><a href="cl_8hpp.html">cl.hpp</a></div><div class="ttdoc">C++ bindings for OpenCL 1.0 (rev 48), OpenCL 1.1 (rev 33) and OpenCL 1.2 (rev 15) ...</div></div>
 <div class="ttc" id="classstd_1_1shared__ptr_html"><div class="ttname"><a href="classstd_1_1shared__ptr.html">std::shared_ptr&lt; DataWithGhostNodesACLData &gt;</a></div></div>
-<div class="ttc" id="namespaceasl_html_a22296c956ec53cef056da5706dc15e9f"><div class="ttname"><a href="namespaceasl.html#a22296c956ec53cef056da5706dc15e9f">asl::SPDataClipper</a></div><div class="ttdeci">std::shared_ptr&lt; DataClipper &gt; SPDataClipper</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00097">aslDataResampling.h:97</a></div></div>
+<div class="ttc" id="namespaceasl_html_a22296c956ec53cef056da5706dc15e9f"><div class="ttname"><a href="namespaceasl.html#a22296c956ec53cef056da5706dc15e9f">asl::SPDataClipper</a></div><div class="ttdeci">std::shared_ptr&lt; DataClipper &gt; SPDataClipper</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00100">aslDataResampling.h:100</a></div></div>
 <div class="ttc" id="classasl_1_1_data_clipper_html_a37937852a398254dd99e829d632af2fb"><div class="ttname"><a href="classasl_1_1_data_clipper.html#a37937852a398254dd99e829d632af2fb">asl::DataClipper::DataClipper</a></div><div class="ttdeci">DataClipper()</div></div>
-<div class="ttc" id="classasl_1_1_data_coarser_html"><div class="ttname"><a href="classasl_1_1_data_coarser.html">asl::DataCoarser</a></div><div class="ttdoc">Algorithm for generation of coarsed dataset. </div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00051">aslDataResampling.h:51</a></div></div>
-<div class="ttc" id="classasl_1_1_data_clipper_html_a8ab047bf0d9a2f29c8c8ea3d04c8d624"><div class="ttname"><a href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">asl::DataClipper::getDataOut</a></div><div class="ttdeci">Data getDataOut()</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00111">aslDataResampling.h:111</a></div></div>
+<div class="ttc" id="classasl_1_1_data_coarser_html"><div class="ttname"><a href="classasl_1_1_data_coarser.html">asl::DataCoarser</a></div><div class="ttdoc">Algorithm for generation of coarsed dataset. </div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00054">aslDataResampling.h:54</a></div></div>
+<div class="ttc" id="classasl_1_1_data_clipper_html_a8ab047bf0d9a2f29c8c8ea3d04c8d624"><div class="ttname"><a href="classasl_1_1_data_clipper.html#a8ab047bf0d9a2f29c8c8ea3d04c8d624">asl::DataClipper::getDataOut</a></div><div class="ttdeci">Data getDataOut()</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00114">aslDataResampling.h:114</a></div></div>
 <div class="ttc" id="asl_vectors_8h_html"><div class="ttname"><a href="asl_vectors_8h.html">aslVectors.h</a></div><div class="ttdoc">definition of class АVec<T> </div></div>
-<div class="ttc" id="classasl_1_1_data_clipper_html"><div class="ttname"><a href="classasl_1_1_data_clipper.html">asl::DataClipper</a></div><div class="ttdoc">Algorithm for generation of coarsed dataset. </div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00079">aslDataResampling.h:79</a></div></div>
+<div class="ttc" id="classasl_1_1_data_clipper_html"><div class="ttname"><a href="classasl_1_1_data_clipper.html">asl::DataClipper</a></div><div class="ttdoc">Algorithm for generation of coarsed dataset. </div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00082">aslDataResampling.h:82</a></div></div>
 <div class="ttc" id="namespaceasl_html_a746cb96b74084c00439dd63d87711fbd"><div class="ttname"><a href="namespaceasl.html#a746cb96b74084c00439dd63d87711fbd">asl::SPAbstractDataWithGhostNodes</a></div><div class="ttdeci">std::shared_ptr&lt; AbstractDataWithGhostNodes &gt; SPAbstractDataWithGhostNodes</div><div class="ttdef"><b>Definition:</b> <a href="asl_generators_8h_source.html#l00050">aslGenerators.h:50</a></div></div>
 <div class="ttc" id="classasl_1_1_single_kernel_n_m_html_a773b902f9c108414a934ca1defe6e3b7"><div class="ttname"><a href="classasl_1_1_single_kernel_n_m.html#a773b902f9c108414a934ca1defe6e3b7">asl::SingleKernelNM::init</a></div><div class="ttdeci">virtual void init()</div><div class="ttdoc">Builds the necesery internal data and kernels. </div></div>
 <div class="ttc" id="classasl_1_1_data_coarser_html_add32de5e8d7358ec5757cc4b7a2b9e09"><div class="ttname"><a href="classasl_1_1_data_coarser.html#add32de5e8d7358ec5757cc4b7a2b9e09">asl::DataCoarser::DataCoarser</a></div><div class="ttdeci">DataCoarser()</div></div>
 <div class="ttc" id="classasl_1_1_vector_template_html"><div class="ttname"><a href="classasl_1_1_vector_template.html">asl::VectorTemplate</a></div><div class="ttdoc">Defines set of vectros with several properties. </div><div class="ttdef"><b>Definition:</b> <a href="asl_templates_8h_source.html#l00087">aslTemplates.h:87</a></div></div>
-<div class="ttc" id="group___data_utilities_html_gaabd1980a66a7ea46af27d60fa16dc38a"><div class="ttname"><a href="group___data_utilities.html#gaabd1980a66a7ea46af27d60fa16dc38a">asl::clipData</a></div><div class="ttdeci">SPDataWithGhostNodesACLData clipData(SPDataWithGhostNodesACLData d, AVec&lt; int &gt; a0, AVec&lt; int &gt; aE)</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00125">aslDataResampling.h:125</a></div></div>
+<div class="ttc" id="group___data_utilities_html_gaabd1980a66a7ea46af27d60fa16dc38a"><div class="ttname"><a href="group___data_utilities.html#gaabd1980a66a7ea46af27d60fa16dc38a">asl::clipData</a></div><div class="ttdeci">SPDataWithGhostNodesACLData clipData(SPDataWithGhostNodesACLData d, AVec&lt; int &gt; a0, AVec&lt; int &gt; aE)</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00128">aslDataResampling.h:128</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:26 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

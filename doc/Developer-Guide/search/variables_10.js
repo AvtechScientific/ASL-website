@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['referencecountable_5f',['referenceCountable_',['../classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4.html#a6bf49a144579823e03d4e88cafc4fb9d',1,'cl::detail::Wrapper&lt; cl_device_id &gt;']]],
   ['regeneratekernelsource',['regenerateKernelSource',['../classacl_1_1_expression_container.html#ab73e5cd25cc359dc193c1217ad7c2e9d',1,'acl::ExpressionContainer']]],
   ['region',['region',['../classacl_1_1_mem_block.html#ae3607e824012baa392bd76c7d3d44cb2',1,'acl::MemBlock']]],
   ['res',['res',['../classacl_1_1_reduction_alg_generator.html#aaa35b4e9aaac37718986ac81324fc8f6',1,'acl::ReductionAlgGenerator']]],

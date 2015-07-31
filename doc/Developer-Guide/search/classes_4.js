@@ -23,5 +23,7 @@ var searchData=
   ['elementsubtraction',['ElementSubtraction',['../classacl_1_1_element_subtraction.html',1,'acl']]],
   ['elementsum',['ElementSum',['../classacl_1_1_element_sum.html',1,'acl']]],
   ['elementsynccopy',['ElementSyncCopy',['../classacl_1_1_element_sync_copy.html',1,'acl']]],
+  ['enqueueargs',['EnqueueArgs',['../structcl_1_1_enqueue_args.html',1,'cl']]],
+  ['event',['Event',['../classcl_1_1_event.html',1,'cl']]],
   ['expressioncontainer',['ExpressionContainer',['../classacl_1_1_expression_container.html',1,'acl']]]
 ];

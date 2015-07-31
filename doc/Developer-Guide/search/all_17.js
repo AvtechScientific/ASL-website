@@ -1,5 +1,28 @@
 var searchData=
 [
-  ['x0',['X0',['../group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129ad0b48b19e82d76d7b78e5ba676782e92',1,'asl']]],
-  ['xe',['XE',['../group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129a2fbd0dee21a48fe4c642b231d0e3aacd',1,'asl']]]
+  ['wait',['wait',['../classcl_1_1_event.html#abb1dccd98dc3cee29bd6638bc71005cb',1,'cl::Event']]],
+  ['waitforevents',['waitForEvents',['../classcl_1_1_event.html#ac28c9c7bec902c477913945f7dcecf42',1,'cl::Event']]],
+  ['warningmessage',['warningMessage',['../group___error_messaging.html#ga092343c078a7e41ff38a320fd0febf54',1,'asl::warningMessage(const char *warningMessage)'],['../group___error_messaging.html#ga236161aa720b9a0ec13e2466ebb44ee8',1,'asl::warningMessage(const std::string &amp;warningMessage)']]],
+  ['warningstring',['warningString',['../group___error_messaging.html#ga25afbeff697c99ea43521f89bafdf4f5',1,'asl']]],
+  ['waterinvel',['waterInVel',['../class_parameters.html#a85dd7457f782af928853fba547109839',1,'Parameters']]],
+  ['wrapper',['Wrapper',['../classcl_1_1detail_1_1_wrapper.html#aa1b916a75114fe3217018378d5f1eb71',1,'cl::detail::Wrapper::Wrapper()'],['../classcl_1_1detail_1_1_wrapper.html#a514167f4ed7af4cc0ff0002bf082798f',1,'cl::detail::Wrapper::Wrapper(const cl_type &amp;obj)'],['../classcl_1_1detail_1_1_wrapper.html#af91bafdf8593c34e0d0722cdd93010be',1,'cl::detail::Wrapper::Wrapper(const Wrapper&lt; cl_type &gt; &amp;rhs)'],['../classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4.html#a6881f47b159f53e2efefc3325127bdc5',1,'cl::detail::Wrapper&lt; cl_device_id &gt;::Wrapper()'],['../classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4.html#a1987e1fd937f2cbfc53f68bb8289fb5f',1,'cl::detail::Wrapper&lt; cl_device_id &gt;::Wrapper(const cl_type &amp;obj)'],['../classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4.html#a0abf5113a5123b8de94685ddfa214bd0',1,'cl::detail::Wrapper&lt; cl_device_id &gt;::Wrapper(const Wrapper&lt; cl_type &gt; &amp;rhs)']]],
+  ['wrapper',['Wrapper',['../classcl_1_1detail_1_1_wrapper.html',1,'cl::detail']]],
+  ['wrapper_3c_20cl_5fcommand_5fqueue_20_3e',['Wrapper&lt; cl_command_queue &gt;',['../classcl_1_1detail_1_1_wrapper.html',1,'cl::detail']]],
+  ['wrapper_3c_20cl_5fcontext_20_3e',['Wrapper&lt; cl_context &gt;',['../classcl_1_1detail_1_1_wrapper.html',1,'cl::detail']]],
+  ['wrapper_3c_20cl_5fdevice_5fid_20_3e',['Wrapper&lt; cl_device_id &gt;',['../classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4.html',1,'cl::detail']]],
+  ['wrapper_3c_20cl_5fevent_20_3e',['Wrapper&lt; cl_event &gt;',['../classcl_1_1detail_1_1_wrapper.html',1,'cl::detail']]],
+  ['wrapper_3c_20cl_5fkernel_20_3e',['Wrapper&lt; cl_kernel &gt;',['../classcl_1_1detail_1_1_wrapper.html',1,'cl::detail']]],
+  ['wrapper_3c_20cl_5fmem_20_3e',['Wrapper&lt; cl_mem &gt;',['../classcl_1_1detail_1_1_wrapper.html',1,'cl::detail']]],
+  ['wrapper_3c_20cl_5fplatform_5fid_20_3e',['Wrapper&lt; cl_platform_id &gt;',['../classcl_1_1detail_1_1_wrapper.html',1,'cl::detail']]],
+  ['wrapper_3c_20cl_5fprogram_20_3e',['Wrapper&lt; cl_program &gt;',['../classcl_1_1detail_1_1_wrapper.html',1,'cl::detail']]],
+  ['wrapper_3c_20cl_5fsampler_20_3e',['Wrapper&lt; cl_sampler &gt;',['../classcl_1_1detail_1_1_wrapper.html',1,'cl::detail']]],
+  ['write',['write',['../classasl_1_1_writer_v_t_k_x_m_l.html#a37a0d9925b6cc954876aa14da9689cea',1,'asl::WriterVTKXML::write()'],['../classasl_1_1_writer.html#a02ec6854bb7b60c66d7da9c2af634f0a',1,'asl::Writer::write()']]],
+  ['writeabd',['writeABD',['../group___a_b_d_format.html#ga9291692dfe5b56c74b60264e0004889d',1,'asl']]],
+  ['writemat',['writeMAT',['../group___i_o.html#gacdde4939837704aeca0f0192ffe0b27e',1,'asl::writeMAT(const string &amp;fileName, const AbstractData &amp;data, const string &amp;name)'],['../group___i_o.html#gaad12355b67615e14f9181cb7ad830945',1,'asl::writeMAT(const string &amp;fileName, vector&lt; pair&lt; SPAbstractData, string &gt;&gt; data)'],['../group___i_o.html#ga5665d9297662aa35ee63628c6a4e7e3b',1,'asl::writeMAT(const string &amp;fileName, vector&lt; pair&lt; acl::Element, string &gt;&gt; data)'],['../group___i_o.html#gac6f83e45562379bbf4bbc61468efea73',1,'asl::writeMAT(const string &amp;fileName, Probe &amp;probe, unsigned int component, const string &amp;name)']]],
+  ['writeparametersfile',['writeParametersFile',['../classasl_1_1_parameters_manager.html#ae89231bf877c79dafd5fc352a1d4101c',1,'asl::ParametersManager']]],
+  ['writer',['Writer',['../classasl_1_1_writer.html#a15cb756a49083570e6eda2a2e71d92e1',1,'asl::Writer']]],
+  ['writer',['Writer',['../classasl_1_1_writer.html',1,'asl']]],
+  ['writervtkxml',['WriterVTKXML',['../classasl_1_1_writer_v_t_k_x_m_l.html#aaede5384b6918dfe6c3b694b02e4bba2',1,'asl::WriterVTKXML']]],
+  ['writervtkxml',['WriterVTKXML',['../classasl_1_1_writer_v_t_k_x_m_l.html',1,'asl']]],
+  ['writevtkxml',['writeVTKXML',['../group___i_o.html#ga56db95c5ff1b5843f9211379eaaf4a4e',1,'asl']]]
 ];

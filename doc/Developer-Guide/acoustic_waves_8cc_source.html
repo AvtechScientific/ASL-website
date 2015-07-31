@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -259,7 +259,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <a class="code" href="class_parameters.html">Parameters</a> params;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  params.<a class="code" href="class_parameters.html#af6bf13652a29e32c9719ac54515f6eee">load</a>(argc, argv);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Data initialization... &quot;</span> &lt;&lt; flush;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Data initialization... &quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <a class="code" href="classasl_1_1_block.html">asl::Block</a> block(params.<a class="code" href="class_parameters.html#a9023d1301188513260655d908f0e09c0">size</a>, params.<a class="code" href="class_parameters.html#aba3330c265914f0f52cec564a7d05572">dx</a>.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>());</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">auto</span> displacement(asl::generateDataContainerACL_SP&lt;FlT&gt;(block, 3, 1u));</div>
@@ -276,7 +276,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Numerics initialization... &quot;</span> &lt;&lt; flush;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Numerics initialization... &quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keyword">auto</span> elasticity(<a class="code" href="namespaceasl.html#ae89805dc740d5c5daff786ee96ad611c">generateFDElasticityRelax</a>(displacement,</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                            params.<a class="code" href="class_parameters.html#a8de28fae84d6c4a425d95415b9974a6b">bulkMNum</a>.<a class="code" href="singletonasl_1_1_u_value.html#ab332ee5af306aee74dbae575f53a88e8">v</a>(),</div>
@@ -379,6 +379,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="acoustic_waves_8cc_html_a0a7cc2ad80c8f8a5487fb5a6b625f1db"><div class="ttname"><a href="acoustic_waves_8cc.html#a0a7cc2ad80c8f8a5487fb5a6b625f1db">getAmplitude</a></div><div class="ttdeci">asl::AVec&lt; float &gt; getAmplitude(double it)</div><div class="ttdef"><b>Definition:</b> <a href="acoustic_waves_8cc_source.html#l00153">acousticWaves.cc:153</a></div></div>
 <div class="ttc" id="classasl_1_1_parameter_html_a15c9f23e12d27c70293e03b6fa6c598e"><div class="ttname"><a href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">asl::Parameter::v</a></div><div class="ttdeci">const T &amp; v() const </div><div class="ttdef"><b>Definition:</b> <a href="asl_parameters_manager_8h_source.html#l00177">aslParametersManager.h:177</a></div></div>
 <div class="ttc" id="class_parameters_html_af5b18fb79da656e3fd1271b03a24643d"><div class="ttname"><a href="class_parameters.html#af5b18fb79da656e3fd1271b03a24643d">Parameters::shearMNum</a></div><div class="ttdeci">asl::UValue&lt; double &gt; shearMNum</div><div class="ttdef"><b>Definition:</b> <a href="acoustic_waves_8cc_source.html#l00070">acousticWaves.cc:70</a></div></div>
+<div class="ttc" id="namespacecl_html_aec3275453ec57a74dfa7a34653cfa194"><div class="ttname"><a href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">cl::flush</a></div><div class="ttdeci">cl_int flush(void)</div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l07141">cl.hpp:7141</a></div></div>
 <div class="ttc" id="class_parameters_html_a7891924aec02059b493d2820f9bd4563"><div class="ttname"><a href="class_parameters.html#a7891924aec02059b493d2820f9bd4563">Parameters::tSimulation</a></div><div class="ttdeci">asl::Parameter&lt; double &gt; tSimulation</div><div class="ttdef"><b>Definition:</b> <a href="acoustic_waves_8cc_source.html#l00065">acousticWaves.cc:65</a></div></div>
 <div class="ttc" id="group___differential_opperators_html_ga20eb1654876b10e1f752eb0f22e68dad"><div class="ttname"><a href="group___differential_opperators.html#ga20eb1654876b10e1f752eb0f22e68dad">asl::dx</a></div><div class="ttdeci">acl::VectorOfElements dx(const TemplateVE &amp;a)</div><div class="ttdoc">differential operator  </div></div>
 <div class="ttc" id="class_parameters_html_ae1b32d5eb3f33ba2ba886660e39db97a"><div class="ttname"><a href="class_parameters.html#ae1b32d5eb3f33ba2ba886660e39db97a">Parameters::rho</a></div><div class="ttdeci">asl::Parameter&lt; double &gt; rho</div><div class="ttdef"><b>Definition:</b> <a href="acoustic_waves_8cc_source.html#l00056">acousticWaves.cc:56</a></div></div>
@@ -417,7 +418,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

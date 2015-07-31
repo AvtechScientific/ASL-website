@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -142,7 +142,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classacl_1_1_operator_binary.html#ae7776e7ced1320f981edee2ef6d60612">getLocalDeclaration</a>(<span class="keyword">const</span> <a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> &amp; kernelConfig) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_operator_binary.html#a9a1e2e3c91cc54b1f654fe01823e1812">addToKernelSource</a>(vector&lt;Element&gt; &amp; arguments,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                     vector&lt;Element&gt; &amp; localDeclarations) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_operator_binary.html#a6b7a98176c63b4763ee59aad24d61820">setAsArgument</a>(cl::Kernel &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_operator_binary.html#a6b7a98176c63b4763ee59aad24d61820">setAsArgument</a>(<a class="code" href="classcl_1_1_kernel.html">cl::Kernel</a> &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  };</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace acl</span></div>
@@ -157,13 +157,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classacl_1_1_kernel_configuration_html"><div class="ttname"><a href="classacl_1_1_kernel_configuration.html">acl::KernelConfiguration</a></div><div class="ttdoc">ACL Kernel configuration class. </div><div class="ttdef"><b>Definition:</b> <a href="acl_kernel_configuration_8h_source.html#l00034">aclKernelConfiguration.h:34</a></div></div>
 <div class="ttc" id="classacl_1_1_operator_binary_html"><div class="ttname"><a href="classacl_1_1_operator_binary.html">acl::OperatorBinary</a></div><div class="ttdef"><b>Definition:</b> <a href="acl_operator_binary_8h_source.html#l00032">aclOperatorBinary.h:32</a></div></div>
 <div class="ttc" id="classacl_1_1_operator_binary_html_a76b63259e843c9049baadf66651fe91c"><div class="ttname"><a href="classacl_1_1_operator_binary.html#a76b63259e843c9049baadf66651fe91c">acl::OperatorBinary::OperatorBinary</a></div><div class="ttdeci">OperatorBinary(Element a1, Element a2, const string &amp;description=&quot;&quot;)</div></div>
+<div class="ttc" id="classcl_1_1_kernel_html"><div class="ttname"><a href="classcl_1_1_kernel.html">cl::Kernel</a></div><div class="ttdoc">Class interface for cl_kernel. </div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l04820">cl.hpp:4820</a></div></div>
 <div class="ttc" id="classacl_1_1_operator_binary_html_ae7776e7ced1320f981edee2ef6d60612"><div class="ttname"><a href="classacl_1_1_operator_binary.html#ae7776e7ced1320f981edee2ef6d60612">acl::OperatorBinary::getLocalDeclaration</a></div><div class="ttdeci">virtual string getLocalDeclaration(const KernelConfiguration &amp;kernelConfig) const </div></div>
 <div class="ttc" id="classacl_1_1_operator_binary_html_ae34abb4bdc5510b33f4f3a30671d2f38"><div class="ttname"><a href="classacl_1_1_operator_binary.html#ae34abb4bdc5510b33f4f3a30671d2f38">acl::OperatorBinary::e2</a></div><div class="ttdeci">Element e2</div><div class="ttdef"><b>Definition:</b> <a href="acl_operator_binary_8h_source.html#l00036">aclOperatorBinary.h:36</a></div></div>
 <div class="ttc" id="classacl_1_1_operator_binary_html_a9a1e2e3c91cc54b1f654fe01823e1812"><div class="ttname"><a href="classacl_1_1_operator_binary.html#a9a1e2e3c91cc54b1f654fe01823e1812">acl::OperatorBinary::addToKernelSource</a></div><div class="ttdeci">virtual void addToKernelSource(vector&lt; Element &gt; &amp;arguments, vector&lt; Element &gt; &amp;localDeclarations) const </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:26 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

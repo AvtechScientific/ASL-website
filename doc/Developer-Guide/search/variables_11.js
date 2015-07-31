@@ -5,6 +5,7 @@ var searchData=
   ['shearmnum',['shearMNum',['../class_parameters.html#af5b18fb79da656e3fd1271b03a24643d',1,'Parameters']]],
   ['shearmodulus',['shearModulus',['../class_parameters.html#a89b94f966b0d911ed39dae1a0e5e2dd7',1,'Parameters::shearModulus()'],['../classasl_1_1_elasticity_common_a.html#a5f711ce4afa91f4e1cffac4ad81e9f00',1,'asl::ElasticityCommonA::shearModulus()']]],
   ['size',['size',['../class_parameters.html#a9023d1301188513260655d908f0e09c0',1,'Parameters::size()'],['../classacl_1_1_element_base.html#aba59cc43f5bf18786fe0421544e8f6f6',1,'acl::ElementBase::size()'],['../classacl_1_1_expression_container.html#ae70758ebdb9369400fa8e23eff48da7c',1,'acl::ExpressionContainer::size()'],['../classasl_1_1_box.html#af6a81430ed34cc34a6fe880c2d27a8b0',1,'asl::Box::size()'],['../classasl_1_1_mem_element_base.html#ad93d71d3e12e43012667d04911e20d14',1,'asl::MemElementBase::size()']]],
+  ['size_5f',['size_',['../structcl_1_1_local_space_arg.html#a71bf0871d5858308682f80f98668849e',1,'cl::LocalSpaceArg']]],
   ['slicedimentions',['sliceDimentions',['../classasl_1_1_b_cond_slice.html#a73c3b1871eddb6a981f3bbb161e710f9',1,'asl::BCondSlice']]],
   ['slicedimentions1',['sliceDimentions1',['../classasl_1_1_b_cond_connector_slice.html#a1e8e40426409e4265933b1ba844bb4d5',1,'asl::BCondConnectorSlice']]],
   ['slicedimentions2',['sliceDimentions2',['../classasl_1_1_b_cond_connector_slice.html#a93f9e5fbab4d7885b61253945049211b',1,'asl::BCondConnectorSlice']]],

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="test_v_t_k___i_o_8cc.html#a44ebdd3d19b8b90f9f689ef1349a3197">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="test_v_t_k___i_o_8cc.html#a44ebdd3d19b8b90f9f689ef1349a3197">testMINC</a>()</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of MINC files reader...&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of MINC files reader...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">auto</span> data(<a class="code" href="group___i_o.html#ga9f3320322a28535ffb08d4fec69aff57">asl::read</a>(<span class="stringliteral">&quot;subject04_crisp_v.mnc&quot;</span>, 0));</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  </div>
@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="test_v_t_k___i_o_8cc.html#aa2886c327d8f5a80916080e8128dfcc6">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="test_v_t_k___i_o_8cc.html#aa2886c327d8f5a80916080e8128dfcc6">testMINCplus</a>()</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of MINC files reader +...&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of MINC files reader +...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">auto</span> data(<a class="code" href="group___i_o.html#ga9f3320322a28535ffb08d4fec69aff57">asl::read</a>(<span class="stringliteral">&quot;subject04_crisp_v.mnc&quot;</span>, 0));</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  </div>
@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="test_v_t_k___i_o_8cc.html#a362a12c12ea41e53ea90da1874e56476">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="test_v_t_k___i_o_8cc.html#a362a12c12ea41e53ea90da1874e56476">testSurfaceSTL</a>()</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of Surface STL files reader...&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Test of Surface STL files reader...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">auto</span> data(<a class="code" href="group___i_o.html#ga5a389f6ba49562eff4929f84eb1c53be">asl::readSurface</a>(<span class="stringliteral">&quot;bus.stl&quot;</span>, 5));</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//  auto data(asl::readSurface(&quot;xx.vtp&quot;, .01));</span></div>
@@ -176,15 +176,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="ttc" id="group___i_o_html_ga9f3320322a28535ffb08d4fec69aff57"><div class="ttname"><a href="group___i_o.html#ga9f3320322a28535ffb08d4fec69aff57">asl::read</a></div><div class="ttdeci">SPDataWithGhostNodesACLData read(const string &amp;fileName, unsigned int arrayNum, acl::CommandQueue queue=acl::hardware.defaultQueue)</div></div>
-<div class="ttc" id="classasl_1_1_data_coarser_html_a54fb429d2668dca7bbf7b1558e484542"><div class="ttname"><a href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">asl::DataCoarser::getDataOut</a></div><div class="ttdeci">Data getDataOut()</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00106">aslDataResampling.h:106</a></div></div>
+<div class="ttc" id="classasl_1_1_data_coarser_html_a54fb429d2668dca7bbf7b1558e484542"><div class="ttname"><a href="classasl_1_1_data_coarser.html#a54fb429d2668dca7bbf7b1558e484542">asl::DataCoarser::getDataOut</a></div><div class="ttdeci">Data getDataOut()</div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00109">aslDataResampling.h:109</a></div></div>
 <div class="ttc" id="asl_v_t_k_format_writers_8h_html"><div class="ttname"><a href="asl_v_t_k_format_writers_8h.html">aslVTKFormatWriters.h</a></div></div>
 <div class="ttc" id="group___i_o_html_ga5a389f6ba49562eff4929f84eb1c53be"><div class="ttname"><a href="group___i_o.html#ga5a389f6ba49562eff4929f84eb1c53be">asl::readSurface</a></div><div class="ttdeci">SPDataWithGhostNodesACLData readSurface(const string &amp;fileName, double dx, acl::CommandQueue queue=acl::hardware.defaultQueue)</div></div>
 <div class="ttc" id="classasl_1_1_single_kernel_n_m_html_a3be48ee8e5b945e68792a24677c66952"><div class="ttname"><a href="classasl_1_1_single_kernel_n_m.html#a3be48ee8e5b945e68792a24677c66952">asl::SingleKernelNM::execute</a></div><div class="ttdeci">virtual void execute()</div><div class="ttdoc">Executes the numerical procedure. </div></div>
 <div class="ttc" id="test_v_t_k___i_o_8cc_html_aa2886c327d8f5a80916080e8128dfcc6"><div class="ttname"><a href="test_v_t_k___i_o_8cc.html#aa2886c327d8f5a80916080e8128dfcc6">testMINCplus</a></div><div class="ttdeci">void testMINCplus()</div><div class="ttdef"><b>Definition:</b> <a href="test_v_t_k___i_o_8cc_source.html#l00045">testVTK_IO.cc:45</a></div></div>
+<div class="ttc" id="namespacecl_html_aec3275453ec57a74dfa7a34653cfa194"><div class="ttname"><a href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">cl::flush</a></div><div class="ttdeci">cl_int flush(void)</div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l07141">cl.hpp:7141</a></div></div>
 <div class="ttc" id="asl_v_t_k_format_readers_8h_html"><div class="ttname"><a href="asl_v_t_k_format_readers_8h.html">aslVTKFormatReaders.h</a></div></div>
 <div class="ttc" id="test_v_t_k___i_o_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="test_v_t_k___i_o_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="test_v_t_k___i_o_8cc_source.html#l00074">testVTK_IO.cc:74</a></div></div>
 <div class="ttc" id="asl_data_with_ghost_nodes_8h_html"><div class="ttname"><a href="asl_data_with_ghost_nodes_8h.html">aslDataWithGhostNodes.h</a></div></div>
-<div class="ttc" id="classasl_1_1_data_coarser_html"><div class="ttname"><a href="classasl_1_1_data_coarser.html">asl::DataCoarser</a></div><div class="ttdoc">Algorithm for generation of coarsed dataset. </div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00051">aslDataResampling.h:51</a></div></div>
+<div class="ttc" id="classasl_1_1_data_coarser_html"><div class="ttname"><a href="classasl_1_1_data_coarser.html">asl::DataCoarser</a></div><div class="ttdoc">Algorithm for generation of coarsed dataset. </div><div class="ttdef"><b>Definition:</b> <a href="asl_data_resampling_8h_source.html#l00054">aslDataResampling.h:54</a></div></div>
 <div class="ttc" id="group___i_o_html_ga56db95c5ff1b5843f9211379eaaf4a4e"><div class="ttname"><a href="group___i_o.html#ga56db95c5ff1b5843f9211379eaaf4a4e">asl::writeVTKXML</a></div><div class="ttdeci">void writeVTKXML(const std::string &amp;fileName, const AbstractData &amp;data, const std::string &amp;name)</div></div>
 <div class="ttc" id="asl_data_resampling_8h_html"><div class="ttname"><a href="asl_data_resampling_8h.html">aslDataResampling.h</a></div></div>
 <div class="ttc" id="test_v_t_k___i_o_8cc_html_a362a12c12ea41e53ea90da1874e56476"><div class="ttname"><a href="test_v_t_k___i_o_8cc.html#a362a12c12ea41e53ea90da1874e56476">testSurfaceSTL</a></div><div class="ttdeci">void testSurfaceSTL()</div><div class="ttdef"><b>Definition:</b> <a href="test_v_t_k___i_o_8cc_source.html#l00060">testVTK_IO.cc:60</a></div></div>
@@ -194,7 +195,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:26 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

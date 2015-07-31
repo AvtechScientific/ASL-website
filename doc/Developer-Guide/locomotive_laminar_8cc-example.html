@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -133,25 +133,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="keyword">using</span> <a name="_a3"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec</a>;</div>
 <div class="line"><span class="keyword">using</span> <a name="a4"></a><a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>;</div>
 <div class="line"></div>
-<div class="line"><a name="_a5"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPDistanceFunction</a> <a name="a6"></a><a class="code" href="locomotive__laminar_8cc.html#a94c43884c83d67dc1b1cdc420947e038">generateTunel</a>(<a name="_a7"></a><a class="code" href="classasl_1_1_block.html">asl::Block</a> &amp; bl)</div>
+<div class="line"><a name="_a5"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPDistanceFunction</a> <a name="a6"></a><a class="code" href="locomotive__laminar_8cc.html#ac538454aff26234149dd5ba010a1fdde">generateTunnel</a>(<a name="_a7"></a><a class="code" href="classasl_1_1_block.html">asl::Block</a> &amp; bl)</div>
 <div class="line">{</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">double</span> l(bl.<a name="a8"></a><a class="code" href="classasl_1_1_block.html#a9e0a775d08c20bf7692ca08b988e3fb2">getBPosition</a>()[0]-bl.<a name="a9"></a><a class="code" href="classasl_1_1_block.html#a9bbbc50a6f44ae48a6a0b1b9bffb7d3c">position</a>[0]+bl.<a name="a10"></a><a class="code" href="classasl_1_1_block.html#a2050d31510749200e34c48d63f58becd">dx</a>);</div>
-<div class="line">  <span class="keywordtype">double</span> rTunel((bl.<a class="code" href="classasl_1_1_block.html#a9e0a775d08c20bf7692ca08b988e3fb2">getBPosition</a>()[2]-bl.<a class="code" href="classasl_1_1_block.html#a9bbbc50a6f44ae48a6a0b1b9bffb7d3c">position</a>[2])/2.);</div>
+<div class="line">  <span class="keywordtype">double</span> rTunnel((bl.<a class="code" href="classasl_1_1_block.html#a9e0a775d08c20bf7692ca08b988e3fb2">getBPosition</a>()[2]-bl.<a class="code" href="classasl_1_1_block.html#a9bbbc50a6f44ae48a6a0b1b9bffb7d3c">position</a>[2])/2.);</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">double</span> <a name="a11"></a><a class="code" href="group___differential_opperators.html#ga20eb1654876b10e1f752eb0f22e68dad">dx</a>(bl.<a class="code" href="classasl_1_1_block.html#a2050d31510749200e34c48d63f58becd">dx</a>);</div>
 <div class="line"></div>
 <div class="line">  <a name="_a12"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;int&gt;</a> size(bl.<a name="a13"></a><a class="code" href="classasl_1_1_block.html#aa378eaa1812fee0683685841e2170462">getSize</a>());</div>
 <div class="line"></div>
 <div class="line">  <a name="_a14"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;&gt;</a> center(.5*(bl.<a class="code" href="classasl_1_1_block.html#a9e0a775d08c20bf7692ca08b988e3fb2">getBPosition</a>()+bl.<a class="code" href="classasl_1_1_block.html#a9bbbc50a6f44ae48a6a0b1b9bffb7d3c">position</a>)); </div>
-<div class="line">  center[1]=bl.<a class="code" href="classasl_1_1_block.html#a9bbbc50a6f44ae48a6a0b1b9bffb7d3c">position</a>[1]+.25*rTunel;</div>
+<div class="line">  center[1]=bl.<a class="code" href="classasl_1_1_block.html#a9bbbc50a6f44ae48a6a0b1b9bffb7d3c">position</a>[1]+.25*rTunnel;</div>
 <div class="line">  <a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;&gt;</a> centerG(center); </div>
 <div class="line">  centerG[1]=bl.<a class="code" href="classasl_1_1_block.html#a9bbbc50a6f44ae48a6a0b1b9bffb7d3c">position</a>[1];</div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">auto</span> tunel(-(<a name="a15"></a><a class="code" href="group___geom.html#ga560fa8a2078dcbd20e64cf284c6dc295">generateDFCylinder</a>(rTunel, <a name="a16"></a><a class="code" href="singletonasl_1_1_a_vec.html#aea9dd1131b9abf6315ff5a01fe6beebd">makeAVec</a>(l,0.,0.), center) &amp;</div>
+<div class="line">  <span class="keyword">auto</span> tunnel(-(<a name="a15"></a><a class="code" href="group___geom.html#ga560fa8a2078dcbd20e64cf284c6dc295">generateDFCylinder</a>(rTunnel, <a name="a16"></a><a class="code" href="singletonasl_1_1_a_vec.html#aea9dd1131b9abf6315ff5a01fe6beebd">makeAVec</a>(l,0.,0.), center) &amp;</div>
 <div class="line">               <a name="a17"></a><a class="code" href="group___geom.html#ga6135c9c6948b35636a4eb6d5e3304e27">generateDFPlane</a>(<a class="code" href="singletonasl_1_1_a_vec.html#aea9dd1131b9abf6315ff5a01fe6beebd">makeAVec</a>(0.,-1.,0.), centerG)));</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordflow">return</span> <a name="a18"></a><a class="code" href="singletonasl_1_1_a_vec.html#ae72883648e697fb4e771495ef89c573f">normalize</a>(tunel, dx);</div>
+<div class="line">  <span class="keywordflow">return</span> <a name="a18"></a><a class="code" href="singletonasl_1_1_a_vec.html#ae72883648e697fb4e771495ef89c573f">normalize</a>(tunnel, dx);</div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"></div>
@@ -161,9 +161,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  <span class="comment">// hardware parameters(platform/device) through command line/parameters file</span></div>
 <div class="line">  <a name="_a20"></a><a class="code" href="classasl_1_1_application_parameters_manager.html">asl::ApplicationParametersManager</a> appParamsManager(<span class="stringliteral">&quot;locomotive_laminar&quot;</span>,</div>
 <div class="line">                                                     <span class="stringliteral">&quot;1.0&quot;</span>);</div>
+<div class="line">  <a name="_a21"></a><a class="code" href="classasl_1_1_parameter.html">asl::Parameter&lt;string&gt;</a> input(<span class="stringliteral">&quot;input&quot;</span>, <span class="stringliteral">&quot;path to the geometry input file&quot;</span>);</div>
 <div class="line">  appParamsManager.load(argc, argv);</div>
 <div class="line"></div>
-<div class="line">  <a name="_a21"></a><a class="code" href="singletonasl_1_1_u_value.html">Param</a> <a class="code" href="group___differential_opperators.html#ga20eb1654876b10e1f752eb0f22e68dad">dx</a>(0.5);</div>
+<div class="line">  <a name="_a22"></a><a class="code" href="singletonasl_1_1_u_value.html">Param</a> <a class="code" href="group___differential_opperators.html#ga20eb1654876b10e1f752eb0f22e68dad">dx</a>(0.5);</div>
 <div class="line">  <a class="code" href="singletonasl_1_1_u_value.html">Param</a> dt(1.);</div>
 <div class="line">  <a class="code" href="singletonasl_1_1_u_value.html">Param</a> nu(.01);</div>
 <div class="line"></div>
@@ -175,13 +176,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  </div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Data initialization...&quot;</span> &lt;&lt; endl;</div>
 <div class="line"></div>
-<div class="line"></div>
-<div class="line">  <span class="keyword">auto</span> object(<a name="a22"></a><a class="code" href="group___i_o.html#ga5a389f6ba49562eff4929f84eb1c53be">asl::readSurface</a>(<span class="stringliteral">&quot;locomotive.stl&quot;</span>, bl));</div>
+<div class="line">  <span class="keyword">auto</span> locomotive(<a name="a23"></a><a class="code" href="group___i_o.html#ga5a389f6ba49562eff4929f84eb1c53be">asl::readSurface</a>(input.v(), bl));</div>
 <div class="line">  </div>
-<div class="line">  <a class="code" href="classasl_1_1_block.html">asl::Block</a> block(object-&gt;getInternalBlock());</div>
+<div class="line">  <a class="code" href="classasl_1_1_block.html">asl::Block</a> block(locomotive-&gt;getInternalBlock());</div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">auto</span> tunelMap(asl::generateDataContainerACL_SP&lt;FlT&gt;(block, 1, 1u));</div>
-<div class="line">  <a name="a23"></a><a class="code" href="namespaceasl.html#ae3b3b98d75c6c72e40160cdaa40cdbc9">asl::initData</a>(tunelMap, <a class="code" href="locomotive__laminar_8cc.html#a94c43884c83d67dc1b1cdc420947e038">generateTunel</a>(block));</div>
+<div class="line">  <span class="keyword">auto</span> tunnelMap(asl::generateDataContainerACL_SP&lt;FlT&gt;(block, 1, 1u));</div>
+<div class="line">  <a name="a24"></a><a class="code" href="namespaceasl.html#ae3b3b98d75c6c72e40160cdaa40cdbc9">asl::initData</a>(tunnelMap, <a class="code" href="locomotive__laminar_8cc.html#ac538454aff26234149dd5ba010a1fdde">generateTunnel</a>(block));</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">auto</span> forceField(asl::generateDataContainerACL_SP&lt;FlT&gt;(block, 3, 1u));</div>
 <div class="line">  <a class="code" href="namespaceasl.html#ae3b3b98d75c6c72e40160cdaa40cdbc9">asl::initData</a>(forceField, <a class="code" href="singletonasl_1_1_a_vec.html#aea9dd1131b9abf6315ff5a01fe6beebd">makeAVec</a>(0.,0.,0.));</div>
@@ -190,51 +190,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  </div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Numerics initialization...&quot;</span> &lt;&lt; endl;</div>
 <div class="line"></div>
-<div class="line">  <a name="_a24"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPLBGK</a> lbgk(<span class="keyword">new</span> <a name="_a25"></a><a class="code" href="classasl_1_1_l_b_g_k.html">asl::LBGK</a>(block,</div>
-<div class="line">                                 <a name="a26"></a><a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(<a class="code" href="locomotive__laminar_8cc.html#a156389e6db263ae8fcf3458a7d8ae747">FlT</a>(nuNum.v())),</div>
-<div class="line">                                 &amp;<a name="a27"></a><a class="code" href="group___templates_n_n_p.html#gae9813acc6a475f48b205db7cd3ed625b">asl::d3q15</a>()));</div>
+<div class="line">  <a name="_a25"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPLBGK</a> lbgk(<span class="keyword">new</span> <a name="_a26"></a><a class="code" href="classasl_1_1_l_b_g_k.html">asl::LBGK</a>(block,</div>
+<div class="line">                                 <a name="a27"></a><a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(<a class="code" href="locomotive__laminar_8cc.html#a156389e6db263ae8fcf3458a7d8ae747">FlT</a>(nuNum.v())),</div>
+<div class="line">                                 &amp;<a name="a28"></a><a class="code" href="group___templates_n_n_p.html#gae9813acc6a475f48b205db7cd3ed625b">asl::d3q15</a>()));</div>
 <div class="line">  </div>
 <div class="line">  lbgk-&gt;init();</div>
-<div class="line">  <a name="_a28"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPLBGKUtilities</a> lbgkUtil(<span class="keyword">new</span> <a name="_a29"></a><a class="code" href="classasl_1_1_l_b_g_k_utilities.html">asl::LBGKUtilities</a>(lbgk));</div>
+<div class="line">  <a name="_a29"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPLBGKUtilities</a> lbgkUtil(<span class="keyword">new</span> <a name="_a30"></a><a class="code" href="classasl_1_1_l_b_g_k_utilities.html">asl::LBGKUtilities</a>(lbgk));</div>
 <div class="line">  lbgkUtil-&gt;initF(<a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(.1,.0,.0));</div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">auto</span> vfTunnel(<a name="a30"></a><a class="code" href="group___p_f.html#ga04270f9b93296b5fcf9ac0549fe25447">asl::generatePFConstant</a>(<a class="code" href="singletonasl_1_1_a_vec.html#aea9dd1131b9abf6315ff5a01fe6beebd">makeAVec</a>(0.1,0.,0.)));</div>
+<div class="line">  <span class="keyword">auto</span> vfTunnel(<a name="a31"></a><a class="code" href="group___p_f.html#ga04270f9b93296b5fcf9ac0549fe25447">asl::generatePFConstant</a>(<a class="code" href="singletonasl_1_1_a_vec.html#aea9dd1131b9abf6315ff5a01fe6beebd">makeAVec</a>(0.1,0.,0.)));</div>
 <div class="line"></div>
 <div class="line">  std::vector&lt;asl::SPNumMethod&gt; bc;</div>
 <div class="line">  std::vector&lt;asl::SPNumMethod&gt; bcV;</div>
 <div class="line"></div>
-<div class="line">  bc.push_back(<a name="a31"></a><a class="code" href="group___transport_processes_b_c.html#gacd8baa501791aa8096025b036d52ee1c">generateBCVelocity</a>(lbgk, vfTunnel, tunelMap));</div>
-<div class="line">  bcV.push_back(<a name="a32"></a><a class="code" href="group___transport_processes_b_c.html#ga43da6fef4a6f96ad4dd1a6f0a3d0a659">generateBCVelocityVel</a>(lbgk, vfTunnel, tunelMap));</div>
-<div class="line"><span class="comment">//  bcV.push_back(generateBCNoSlipRho(lbgk, tunelMap));</span></div>
-<div class="line">  bc.push_back(<a name="a33"></a><a class="code" href="group___transport_processes_b_c.html#gadf6f5accd6609fdcceec692132d562db">generateBCNoSlip</a>(lbgk,  <span class="keywordtype">object</span>));</div>
-<div class="line">  bcV.push_back(<a name="a34"></a><a class="code" href="group___transport_processes_b_c.html#ga6e05d9f4ba704240b5c4a9b58201a9ea">generateBCNoSlipVel</a>(lbgk, <span class="keywordtype">object</span>));</div>
-<div class="line"><span class="comment">//  bcV.push_back(generateBCNoSlipRho(lbgk, object));</span></div>
-<div class="line">  bc.push_back(<a name="a35"></a><a class="code" href="group___transport_processes_b_c.html#ga8f9186e97d2e6d9dcbb0a073b08de0aa">generateBCConstantPressureVelocity</a>(lbgk, 1., <a class="code" href="singletonasl_1_1_a_vec.html#aea9dd1131b9abf6315ff5a01fe6beebd">makeAVec</a>(0.1,0.,0.), {<a name="a36"></a><a class="code" href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129ad0b48b19e82d76d7b78e5ba676782e92">asl::X0</a>, <a name="a37"></a><a class="code" href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129a2fbd0dee21a48fe4c642b231d0e3aacd">asl::XE</a>}));</div>
+<div class="line">  bc.push_back(<a name="a32"></a><a class="code" href="group___transport_processes_b_c.html#gacd8baa501791aa8096025b036d52ee1c">generateBCVelocity</a>(lbgk, vfTunnel, tunnelMap));</div>
+<div class="line">  bcV.push_back(<a name="a33"></a><a class="code" href="group___transport_processes_b_c.html#ga43da6fef4a6f96ad4dd1a6f0a3d0a659">generateBCVelocityVel</a>(lbgk, vfTunnel, tunnelMap));</div>
+<div class="line"><span class="comment">//  bcV.push_back(generateBCNoSlipRho(lbgk, tunnelMap));</span></div>
+<div class="line">  bc.push_back(<a name="a34"></a><a class="code" href="group___transport_processes_b_c.html#gadf6f5accd6609fdcceec692132d562db">generateBCNoSlip</a>(lbgk,  locomotive));</div>
+<div class="line">  bcV.push_back(<a name="a35"></a><a class="code" href="group___transport_processes_b_c.html#ga6e05d9f4ba704240b5c4a9b58201a9ea">generateBCNoSlipVel</a>(lbgk, locomotive));</div>
+<div class="line"><span class="comment">//  bcV.push_back(generateBCNoSlipRho(lbgk, locomotive));</span></div>
+<div class="line">  bc.push_back(<a name="a36"></a><a class="code" href="group___transport_processes_b_c.html#ga8f9186e97d2e6d9dcbb0a073b08de0aa">generateBCConstantPressureVelocity</a>(lbgk, 1., <a class="code" href="singletonasl_1_1_a_vec.html#aea9dd1131b9abf6315ff5a01fe6beebd">makeAVec</a>(0.1,0.,0.), {<a name="a37"></a><a class="code" href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129ad0b48b19e82d76d7b78e5ba676782e92">asl::X0</a>, <a name="a38"></a><a class="code" href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129a2fbd0dee21a48fe4c642b231d0e3aacd">asl::XE</a>}));</div>
 <div class="line"></div>
-<div class="line">  <a name="a38"></a><a class="code" href="namespaceasl.html#a43ad4513d2baf1208d772cb46c23ed98">initAll</a>(bc);</div>
+<div class="line">  <a name="a39"></a><a class="code" href="namespaceasl.html#a43ad4513d2baf1208d772cb46c23ed98">initAll</a>(bc);</div>
 <div class="line">  <a class="code" href="namespaceasl.html#a43ad4513d2baf1208d772cb46c23ed98">initAll</a>(bcV);</div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">auto</span> computeForce(<a name="a39"></a><a class="code" href="group___transport_processes_b_c.html#ga041d143d9adf8b1a2e497335324965c8">generateComputeSurfaceForce</a>(lbgk, forceField, <span class="keywordtype">object</span>));</div>
+<div class="line">  <span class="keyword">auto</span> computeForce(<a name="a40"></a><a class="code" href="group___transport_processes_b_c.html#ga041d143d9adf8b1a2e497335324965c8">generateComputeSurfaceForce</a>(lbgk, forceField, locomotive));</div>
 <div class="line">  computeForce-&gt;init();</div>
 <div class="line">  </div>
 <div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl;</div>
 <div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Computing...&quot;</span> &lt;&lt; endl;</div>
-<div class="line">  <a name="_a40"></a><a class="code" href="classasl_1_1_timer.html">asl::Timer</a> timer;</div>
+<div class="line">  <a name="_a41"></a><a class="code" href="classasl_1_1_timer.html">asl::Timer</a> timer;</div>
 <div class="line"></div>
-<div class="line">  <a name="_a41"></a><a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html">asl::WriterVTKXML</a> writer(appParamsManager.getDir() + <span class="stringliteral">&quot;locomotive_laminar&quot;</span>);</div>
-<div class="line">  writer.<a name="a42"></a><a class="code" href="classasl_1_1_writer.html#af26c67a142065f85b44ac280a71e61b7">addScalars</a>(<span class="stringliteral">&quot;map&quot;</span>, *<span class="keywordtype">object</span>);</div>
-<div class="line">  writer.addScalars(<span class="stringliteral">&quot;tunel&quot;</span>, *tunelMap);</div>
+<div class="line">  <a name="_a42"></a><a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html">asl::WriterVTKXML</a> writer(appParamsManager.getDir() + <span class="stringliteral">&quot;locomotive_laminar&quot;</span>);</div>
+<div class="line">  writer.<a name="a43"></a><a class="code" href="classasl_1_1_writer.html#af26c67a142065f85b44ac280a71e61b7">addScalars</a>(<span class="stringliteral">&quot;locomotive&quot;</span>, *locomotive);</div>
+<div class="line">  writer.addScalars(<span class="stringliteral">&quot;tunnel&quot;</span>, *tunnelMap);</div>
 <div class="line">  writer.addScalars(<span class="stringliteral">&quot;rho&quot;</span>, *lbgk-&gt;getRho());</div>
 <div class="line">  writer.addVector(<span class="stringliteral">&quot;v&quot;</span>, *lbgk-&gt;getVelocity());</div>
 <div class="line">  writer.addVector(<span class="stringliteral">&quot;force&quot;</span>, *forceField);</div>
 <div class="line"></div>
-<div class="line">  <a name="a43"></a><a class="code" href="namespaceasl.html#affa721cec9e33d916206b8e12f7cd5ed">executeAll</a>(bc);</div>
+<div class="line">  <a name="a44"></a><a class="code" href="namespaceasl.html#affa721cec9e33d916206b8e12f7cd5ed">executeAll</a>(bc);</div>
 <div class="line">  <a class="code" href="namespaceasl.html#affa721cec9e33d916206b8e12f7cd5ed">executeAll</a>(bcV);</div>
 <div class="line">  computeForce-&gt;execute();</div>
 <div class="line"></div>
 <div class="line">  writer.write();</div>
 <div class="line"></div>
-<div class="line">  timer.<a name="a44"></a><a class="code" href="classasl_1_1_timer.html#aa60805a0b350da39279189e0d9cb18d5">start</a>();</div>
+<div class="line">  timer.<a name="a45"></a><a class="code" href="classasl_1_1_timer.html#aa60805a0b350da39279189e0d9cb18d5">start</a>();</div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i(1); i &lt; 2001; ++i)</div>
 <div class="line">  {</div>
 <div class="line">    lbgk-&gt;execute();</div>
@@ -247,21 +247,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">      writer.write();</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
-<div class="line">  timer.<a name="a45"></a><a class="code" href="classasl_1_1_timer.html#a369f85c48a8588b48e2ba0f754d43bf2">stop</a>();</div>
+<div class="line">  timer.<a name="a46"></a><a class="code" href="classasl_1_1_timer.html#a369f85c48a8588b48e2ba0f754d43bf2">stop</a>();</div>
 <div class="line">  </div>
 <div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl; </div>
 <div class="line"></div>
 <div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Computation statistic:&quot;</span> &lt;&lt; endl;</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;time = &quot;</span> &lt;&lt; timer.<a name="a46"></a><a class="code" href="classasl_1_1_timer.html#abf443d5aa8aef22089f56673105bc934">getTime</a>() &lt;&lt; <span class="stringliteral">&quot;; clockTime = &quot;</span></div>
-<div class="line">     &lt;&lt; timer.<a name="a47"></a><a class="code" href="classasl_1_1_timer.html#aa5bc1d723edf4f0437aaf0d6d97428d3">getClockTime</a>() &lt;&lt; <span class="stringliteral">&quot;; load = &quot;</span></div>
-<div class="line">     &lt;&lt; timer.<a name="a48"></a><a class="code" href="classasl_1_1_timer.html#ac821731f7b773f660d95de311505e30c">getProcessorLoad</a>() * 100 &lt;&lt; <span class="stringliteral">&quot;%&quot;</span> &lt;&lt; endl;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;time = &quot;</span> &lt;&lt; timer.<a name="a47"></a><a class="code" href="classasl_1_1_timer.html#abf443d5aa8aef22089f56673105bc934">getTime</a>() &lt;&lt; <span class="stringliteral">&quot;; clockTime = &quot;</span></div>
+<div class="line">     &lt;&lt; timer.<a name="a48"></a><a class="code" href="classasl_1_1_timer.html#aa5bc1d723edf4f0437aaf0d6d97428d3">getClockTime</a>() &lt;&lt; <span class="stringliteral">&quot;; load = &quot;</span></div>
+<div class="line">     &lt;&lt; timer.<a name="a49"></a><a class="code" href="classasl_1_1_timer.html#ac821731f7b773f660d95de311505e30c">getProcessorLoad</a>() * 100 &lt;&lt; <span class="stringliteral">&quot;%&quot;</span> &lt;&lt; endl;</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,9 +1,12 @@
 var searchData=
 [
+  ['sampler',['Sampler',['../classcl_1_1_sampler.html',1,'cl']]],
   ['scoped_5farray',['scoped_array',['../classboost_1_1scoped__array.html',1,'boost']]],
   ['scoped_5fptr',['scoped_ptr',['../classboost_1_1scoped__ptr.html',1,'boost']]],
-  ['shared_5farray',['shared_array',['../classstd_1_1shared__array.html',1,'std']]],
+  ['setarg',['SetArg',['../structcl_1_1detail_1_1_set_arg.html',1,'cl::detail']]],
+  ['setarg_3c_20index_2c_20nulltype_20_3e',['SetArg&lt; index, NullType &gt;',['../structcl_1_1detail_1_1_set_arg_3_01index_00_01_null_type_01_4.html',1,'cl::detail']]],
   ['shared_5farray',['shared_array',['../classboost_1_1shared__array.html',1,'boost']]],
+  ['shared_5farray',['shared_array',['../classstd_1_1shared__array.html',1,'std']]],
   ['shared_5fptr',['shared_ptr',['../classstd_1_1shared__ptr.html',1,'std']]],
   ['shared_5fptr',['shared_ptr',['../classboost_1_1shared__ptr.html',1,'boost']]],
   ['shared_5fptr_3c_20abstractdata_20_3e',['shared_ptr&lt; AbstractData &gt;',['../classstd_1_1shared__ptr.html',1,'std']]],
@@ -34,5 +37,7 @@ var searchData=
   ['shared_5fptr_3c_20vectorofelementsdata_20_3e',['shared_ptr&lt; VectorOfElementsData &gt;',['../classstd_1_1shared__ptr.html',1,'std']]],
   ['singlekernelmapnm',['SingleKernelMapNM',['../classasl_1_1_single_kernel_map_n_m.html',1,'asl']]],
   ['singlekernelnm',['SingleKernelNM',['../classasl_1_1_single_kernel_n_m.html',1,'asl']]],
+  ['size_5ft',['size_t',['../classcl_1_1size__t.html',1,'cl']]],
+  ['size_5ft_3c_203_20_3e',['size_t&lt; 3 &gt;',['../classcl_1_1size__t.html',1,'cl']]],
   ['subvector',['Subvector',['../classacl_1_1_subvector.html',1,'acl']]]
 ];

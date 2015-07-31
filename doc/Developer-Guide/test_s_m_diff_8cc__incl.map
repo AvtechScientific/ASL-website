@@ -1,31 +1,32 @@
 <map id="/home/zeev/AvtechScientific/Projects/ASL/asl&#45;dev/examples/massTransferSM/testSMDiff.cc" name="/home/zeev/AvtechScientific/Projects/ASL/asl&#45;dev/examples/massTransferSM/testSMDiff.cc">
-<area shape="rect" id="node2" href="$asl_parameters_manager_8h.html" title="utilities/aslParametersManager.h" alt="" coords="5,497,217,524"/>
-<area shape="rect" id="node9" href="$asl_templates_8h.html" title="math/aslTemplates.h" alt="" coords="490,184,634,211"/>
-<area shape="rect" id="node26" href="$asl_geom_inc_8h.html" title="aslGeomInc.h" alt="" coords="927,497,1029,524"/>
-<area shape="rect" id="node29" href="$asl_data_inc_8h.html" title="aslDataInc.h" alt="" coords="1538,109,1634,136"/>
-<area shape="rect" id="node36" href="$acl_generators_8h.html" title="acl/aclGenerators.h" alt="" coords="617,259,752,285"/>
-<area shape="rect" id="node39" href="$asl_v_t_k_format_writers_8h.html" title="writers/aslVTKFormatWriters.h" alt="" coords="1795,497,1998,524"/>
-<area shape="rect" id="node41" href="$asl_f_d_stefan_maxwell_8h.html" title="num/aslFDStefanMaxwell.h" alt="" coords="1189,109,1372,136"/>
-<area shape="rect" id="node44" href="$asl_basic_b_c_8h.html" title="num/aslBasicBC.h" alt="" coords="1034,109,1165,136"/>
-<area shape="rect" id="node46" href="$asl_timer_8h.html" title="utilities/aslTimer.h" alt="" coords="1846,109,1974,136"/>
-<area shape="rect" id="node3" href="$asl_u_value_8h.html" title="aslUValue.h" alt="" coords="361,572,454,599"/>
-<area shape="rect" id="node4" href="$asl_time_stamp_8h.html" title="aslTimeStamp.h" alt="" coords="227,647,345,673"/>
-<area shape="rect" id="node10" href="$asl_vectors_8h.html" title="definition of class АVec&lt;T&gt; " alt="" coords="523,415,617,442"/>
-<area shape="rect" id="node11" href="$asl_vectors_dynamic_length_8h.html" title="aslVectorsDynamicLength.h" alt="" coords="515,497,702,524"/>
-<area shape="rect" id="node25" href="$asl_vectors_dynamic_length_operations_8h.html" title="aslVectorsDynamicLengthOperations.h" alt="" coords="241,497,491,524"/>
-<area shape="rect" id="node12" href="$asl_utilities_8h.html" title="useful common utilities " alt="" coords="655,572,762,599"/>
-<area shape="rect" id="node13" href="$acl_std_includes_8h.html" title="acl/aclStdIncludes.h" alt="" coords="1059,647,1199,673"/>
-<area shape="rect" id="node27" href="$acl_hardware_8h.html" title="acl/aclHardware.h" alt="" coords="940,572,1067,599"/>
-<area shape="rect" id="node28" href="$acl_types_8h.html" title="aclTypes.h" alt="" coords="1317,647,1404,673"/>
-<area shape="rect" id="node30" href="$asl_generators_8h.html" title="aslGenerators.h" alt="" coords="1486,572,1601,599"/>
-<area shape="rect" id="node31" href="$asl_data_with_ghost_nodes_8h.html" title="data/aslDataWithGhostNodes.h" alt="" coords="1483,184,1689,211"/>
-<area shape="rect" id="node32" href="$asl_data_wrapper_8h.html" title="aslDataWrapper.h" alt="" coords="1492,259,1619,285"/>
-<area shape="rect" id="node33" href="$asl_blocks_8h.html" title="aslBlocks.h" alt="" coords="1377,333,1467,360"/>
-<area shape="rect" id="node35" href="$acl_vector_of_elements_def_8h.html" title="../acl/aclMath/aclVector\lOfElementsDef.h" alt="" coords="1001,408,1161,449"/>
-<area shape="rect" id="node37" href="$acl_matrix_of_elements_8h.html" title="aclMath/aclMatrixOfElements.h" alt="" coords="827,333,1033,360"/>
-<area shape="rect" id="node38" href="$asl_matrices_8h.html" title="Matrices. " alt="" coords="569,333,702,360"/>
-<area shape="rect" id="node40" href="$asl_writer_8h.html" title="aslWriter.h" alt="" coords="1777,572,1862,599"/>
-<area shape="rect" id="node42" href="$asl_single_kernel_n_m_8h.html" title="aslSingleKernelNM.h" alt="" coords="1209,333,1353,360"/>
-<area shape="rect" id="node43" href="$asl_num_method_8h.html" title="aslNumMethod.h" alt="" coords="1191,415,1312,442"/>
-<area shape="rect" id="node45" href="$asl_b_cond_8h.html" title="aslBCond.h" alt="" coords="1117,259,1207,285"/>
+<area shape="rect" id="node2" href="$asl_parameters_manager_8h.html" title="utilities/aslParametersManager.h" alt="" coords="123,497,335,524"/>
+<area shape="rect" id="node9" href="$asl_templates_8h.html" title="math/aslTemplates.h" alt="" coords="727,184,871,211"/>
+<area shape="rect" id="node29" href="$asl_geom_inc_8h.html" title="aslGeomInc.h" alt="" coords="946,497,1049,524"/>
+<area shape="rect" id="node32" href="$asl_data_inc_8h.html" title="aslDataInc.h" alt="" coords="1525,109,1621,136"/>
+<area shape="rect" id="node39" href="$acl_generators_8h.html" title="acl/aclGenerators.h" alt="" coords="786,259,921,285"/>
+<area shape="rect" id="node42" href="$asl_v_t_k_format_writers_8h.html" title="writers/aslVTKFormatWriters.h" alt="" coords="1757,497,1960,524"/>
+<area shape="rect" id="node44" href="$asl_f_d_stefan_maxwell_8h.html" title="num/aslFDStefanMaxwell.h" alt="" coords="1093,109,1275,136"/>
+<area shape="rect" id="node47" href="$asl_basic_b_c_8h.html" title="num/aslBasicBC.h" alt="" coords="1319,109,1449,136"/>
+<area shape="rect" id="node49" href="$asl_timer_8h.html" title="utilities/aslTimer.h" alt="" coords="1917,109,2045,136"/>
+<area shape="rect" id="node3" href="$asl_u_value_8h.html" title="aslUValue.h" alt="" coords="287,572,380,599"/>
+<area shape="rect" id="node4" href="$asl_time_stamp_8h.html" title="aslTimeStamp.h" alt="" coords="275,647,392,673"/>
+<area shape="rect" id="node10" href="$asl_vectors_8h.html" title="definition of class АVec&lt;T&gt; " alt="" coords="618,415,713,442"/>
+<area shape="rect" id="node11" href="$asl_vectors_dynamic_length_8h.html" title="aslVectorsDynamicLength.h" alt="" coords="360,497,547,524"/>
+<area shape="rect" id="node28" href="$asl_vectors_dynamic_length_operations_8h.html" title="aslVectorsDynamicLengthOperations.h" alt="" coords="571,497,821,524"/>
+<area shape="rect" id="node12" href="$asl_utilities_8h.html" title="useful common utilities " alt="" coords="715,572,821,599"/>
+<area shape="rect" id="node13" href="$cl_8hpp.html" title="C++ bindings for OpenCL 1.0 (rev 48), OpenCL 1.1 (rev 33) and OpenCL 1.2 (rev 15) ..." alt="" coords="690,647,769,673"/>
+<area shape="rect" id="node21" href="$acl_std_includes_8h.html" title="acl/aclStdIncludes.h" alt="" coords="997,647,1137,673"/>
+<area shape="rect" id="node30" href="$acl_hardware_8h.html" title="acl/aclHardware.h" alt="" coords="1047,572,1174,599"/>
+<area shape="rect" id="node31" href="$acl_types_8h.html" title="aclTypes.h" alt="" coords="1213,647,1299,673"/>
+<area shape="rect" id="node33" href="$asl_generators_8h.html" title="aslGenerators.h" alt="" coords="1543,572,1657,599"/>
+<area shape="rect" id="node34" href="$asl_data_with_ghost_nodes_8h.html" title="data/aslDataWithGhostNodes.h" alt="" coords="1470,184,1677,211"/>
+<area shape="rect" id="node35" href="$asl_data_wrapper_8h.html" title="aslDataWrapper.h" alt="" coords="1505,259,1631,285"/>
+<area shape="rect" id="node36" href="$asl_blocks_8h.html" title="aslBlocks.h" alt="" coords="1491,333,1581,360"/>
+<area shape="rect" id="node38" href="$acl_vector_of_elements_def_8h.html" title="../acl/aclMath/aclVector\lOfElementsDef.h" alt="" coords="1057,408,1217,449"/>
+<area shape="rect" id="node40" href="$acl_matrix_of_elements_8h.html" title="aclMath/aclMatrixOfElements.h" alt="" coords="891,333,1096,360"/>
+<area shape="rect" id="node41" href="$asl_matrices_8h.html" title="Matrices. " alt="" coords="683,333,816,360"/>
+<area shape="rect" id="node43" href="$asl_writer_8h.html" title="aslWriter.h" alt="" coords="1732,572,1817,599"/>
+<area shape="rect" id="node45" href="$asl_single_kernel_n_m_8h.html" title="aslSingleKernelNM.h" alt="" coords="1221,333,1365,360"/>
+<area shape="rect" id="node46" href="$asl_num_method_8h.html" title="aslNumMethod.h" alt="" coords="1249,415,1370,442"/>
+<area shape="rect" id="node48" href="$asl_b_cond_8h.html" title="aslBCond.h" alt="" coords="1353,259,1444,285"/>
 </map>

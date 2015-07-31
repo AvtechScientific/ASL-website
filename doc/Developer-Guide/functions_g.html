@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -170,6 +170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>get()
 : <a class="el" href="classasl_1_1_a_b_d_file_in.html#ae6e2263d37bb8c606337e8a0d3d48906">asl::ABDFileIn</a>
+, <a class="el" href="classcl_1_1_platform.html#af411de5b4cb0f553ea1dc2147e58d837">cl::Platform</a>
 </li>
 <li>getACLPosition()
 : <a class="el" href="classasl_1_1_block.html#ad4807c97d7a9332f2d0b80a962678016">asl::Block</a>
@@ -213,6 +214,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getBuffer()
 : <a class="el" href="classacl_1_1_mem_block.html#aaeff8ae214b58208be9a658ef86a5536">acl::MemBlock</a>
 , <a class="el" href="classacl_1_1_subvector.html#a1efb510696da66aa84415ccb78960ae2">acl::Subvector&lt; T &gt;</a>
+</li>
+<li>getBuildInfo()
+: <a class="el" href="classcl_1_1_program.html#a51c723551c01ef55f6222c84d58578fc">cl::Program</a>
 </li>
 <li>getBulkModulus()
 : <a class="el" href="classasl_1_1_elasticity_common_a.html#aa44c6605b4017f4d3de04b05f37613e1">asl::ElasticityCommonA</a>
@@ -258,12 +262,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="singletonasl_1_1_data_with_ghost_nodes.html#a80a08ce75b49f18b3256d28101516f2f">asl::DataWithGhostNodes&lt; V &gt;</a>
 , <a class="el" href="singletonasl_1_1_data_wrapper.html#af427cd80dddc87244f6139dd196f29f2">asl::DataWrapper&lt; V &gt;</a>
 </li>
+<li>getDefault()
+: <a class="el" href="classcl_1_1_command_queue.html#a24444b0dbd7cc0eb2bce126c9ccbac4c">cl::CommandQueue</a>
+, <a class="el" href="classcl_1_1_context.html#ad180f6f7d8b5a95710ab72f96162b051">cl::Context</a>
+, <a class="el" href="classcl_1_1_device.html#a0de0c069e06a2cbc5193d15c4f9ed27f">cl::Device</a>
+, <a class="el" href="classcl_1_1_platform.html#a01bea413d721189214cc59cfbc5d092d">cl::Platform</a>
+</li>
 <li>getDefaultDeviceInfo()
 : <a class="el" href="classacl_1_1_hardware.html#a485dcd9de6df7cae2ba99da8879f83cb">acl::Hardware</a>
 </li>
 <li>getDeltat()
 : <a class="el" href="classasl_1_1_f_d_elasticity2.html#a5d4f53c29dc1d4ec72c5661974c32f94">asl::FDElasticity2</a>
 , <a class="el" href="classasl_1_1_f_d_elasticity_relaxation.html#a8c79edf6def037cb285694af777a55a0">asl::FDElasticityRelaxation</a>
+</li>
+<li>getDevices()
+: <a class="el" href="classcl_1_1_platform.html#a51fe00b5314944b01327e374d760c516">cl::Platform</a>
 </li>
 <li>getDevicesInfo()
 : <a class="el" href="classacl_1_1_hardware.html#a0439f5f6345def19000385804e32d5e4">acl::Hardware</a>
@@ -342,8 +355,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getIm()
 : <a class="el" href="classacl_1_1_complex_num_of_elements.html#a504cadd4107dd5eb7ee9aa3a11f02af1">acl::ComplexNumOfElements</a>
 </li>
+<li>getImageInfo()
+: <a class="el" href="classcl_1_1_image.html#adb1460fcc7bf21da61c85f189704374e">cl::Image</a>
+</li>
 <li>getInData()
 : <a class="el" href="classasl_1_1_d_f_optimizer.html#a35a3bdd14035eade5b790822c23dd091">asl::DFOptimizer</a>
+</li>
+<li>getInfo()
+: <a class="el" href="classcl_1_1_command_queue.html#af1c035b324dfbf8dbe43c979e7cf4bbe">cl::CommandQueue</a>
+, <a class="el" href="classcl_1_1_context.html#aa5bf7593c0fd0a1b6bf35ad25f721cf5">cl::Context</a>
+, <a class="el" href="classcl_1_1_device.html#a44419a3c884a3b6f14b25eb0c5fe30b5">cl::Device</a>
+, <a class="el" href="classcl_1_1_event.html#a5f7bd7936bb69291f6e168ef00787e87">cl::Event</a>
+, <a class="el" href="classcl_1_1_kernel.html#acf708cfe8455e0a73190213c8cc7a2a7">cl::Kernel</a>
+, <a class="el" href="classcl_1_1_memory.html#a3ea007b6a9a3f26ca113a4ea21c42d6d">cl::Memory</a>
+, <a class="el" href="classcl_1_1_platform.html#a769497c442d5dde15cc76d97ff1dfbf0">cl::Platform</a>
+, <a class="el" href="classcl_1_1_program.html#a56f6f1b9905ee241c1483a76a9862b67">cl::Program</a>
+, <a class="el" href="classcl_1_1_sampler.html#aa7ad8b1a123d7878438200591a9ecb47">cl::Sampler</a>
+</li>
+<li>getInfoHelper
+: <a class="el" href="classcl_1_1detail_1_1_wrapper.html#a17726beb74f709c3ed5ac06ac2737c3e">cl::detail::Wrapper&lt; T &gt;</a>
+, <a class="el" href="classcl_1_1detail_1_1_wrapper_3_01cl__device__id_01_4.html#a17726beb74f709c3ed5ac06ac2737c3e">cl::detail::Wrapper&lt; cl_device_id &gt;</a>
 </li>
 <li>getInternalBlock()
 : <a class="el" href="classasl_1_1_abstract_data_with_ghost_nodes.html#ae159811dfe47c5bac0ece62c6725c986">asl::AbstractDataWithGhostNodes</a>
@@ -442,6 +473,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getNRows()
 : <a class="el" href="classacl_1_1_matrix_of_elements.html#ae6dccf289fb5dc66bd5c0fd29a0dcd0e">acl::MatrixOfElements</a>
 </li>
+<li>getObjectInfo()
+: <a class="el" href="classcl_1_1_buffer_g_l.html#ada9b870e058a54ccaf4789e045d1d570">cl::BufferGL</a>
+, <a class="el" href="classcl_1_1_buffer_render_g_l.html#a148deb18e39ee7553a96eb8e56557f5f">cl::BufferRenderGL</a>
+</li>
 <li>getOffDiagonalUp()
 : <a class="el" href="classacl_1_1_matrix_of_elements.html#a9742710d5b3a8f8b518e11f4493bbc8d">acl::MatrixOfElements</a>
 , <a class="el" href="classasl_1_1_a_matr.html#a3c6631872c12b5a4ab7cea7e142d18fe">asl::AMatr&lt; T &gt;</a>
@@ -453,6 +488,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>getProcessorLoad()
 : <a class="el" href="classasl_1_1_timer.html#ac821731f7b773f660d95de311505e30c">asl::Timer</a>
+</li>
+<li>getProfilingInfo()
+: <a class="el" href="classcl_1_1_event.html#a8d4610f4ce118208620fe88996970ffa">cl::Event</a>
 </li>
 <li>getQueue()
 : <a class="el" href="classacl_1_1_element_base.html#aa2cef5470785de6fe9653f41992ab883">acl::ElementBase</a>
@@ -488,6 +526,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getSubContainerSize()
 : <a class="el" href="classasl_1_1_abstract_data_with_ghost_nodes.html#a0222768bce85841b7f7a75b1ade29e7b">asl::AbstractDataWithGhostNodes</a>
 </li>
+<li>getSupportedImageFormats()
+: <a class="el" href="classcl_1_1_context.html#aa0373829958cb7b81b6d1598f8bc229c">cl::Context</a>
+</li>
 <li>getTime()
 : <a class="el" href="classasl_1_1_timer.html#abf443d5aa8aef22089f56673105bc934">asl::Timer</a>
 </li>
@@ -519,7 +560,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classacl_1_1_variable_s_p.html#a53fa57c60f534b09b673128e46fca7c0">acl::VariableSP&lt; T &gt;</a>
 </li>
 <li>getU()
-: <a class="el" href="classacl_1_1_quaternion_of_elements.html#a24993019d80614529a60713b04a26b18">acl::QuaternionOfElements</a>
+: <a class="el" href="classacl_1_1_quaternion_of_elements.html#a438da82d760d558f4ade1664cf136486">acl::QuaternionOfElements</a>
 </li>
 <li>getUElement()
 : <a class="el" href="classacl_1_1_quaternion_of_elements.html#a88d4e9c9b8a2599572c680b3e8aaabd1">acl::QuaternionOfElements</a>
@@ -565,8 +606,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getWElement()
 : <a class="el" href="classacl_1_1_quaternion_of_elements.html#a005d636b93005950581a3ded9167401f">acl::QuaternionOfElements</a>
 </li>
+<li>getWorkGroupInfo()
+: <a class="el" href="classcl_1_1_kernel.html#aa66d3ade55fad1c0bc94d05a7788aea0">cl::Kernel</a>
+</li>
 <li>ghostBorder
 : <a class="el" href="classasl_1_1_abstract_data_with_ghost_nodes.html#a702a459845e1d9213c92c93dc0c85ae5">asl::AbstractDataWithGhostNodes</a>
+</li>
+<li>global_
+: <a class="el" href="structcl_1_1_enqueue_args.html#a96fedf2bd42aaa8137e7e8c584c373c1">cl::EnqueueArgs</a>
 </li>
 <li>GlobalSpace()
 : <a class="el" href="classasl_1_1_global_space.html#a2f63d4c154645bcbd6d0ed2388836637">asl::GlobalSpace</a>
@@ -591,7 +638,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:29 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

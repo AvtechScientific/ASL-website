@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -153,7 +153,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classacl_1_1_element_sync_copy.html#afd0a6a189734695ec5d9886e7d724760">getLocalDeclaration</a>(<span class="keyword">const</span> <a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> &amp; kernelConfig) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_element_sync_copy.html#a2f0f5a86447d0230305fa18f5e542b80">addToKernelSource</a>(vector&lt;Element&gt; &amp; arguments,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                   vector&lt;Element&gt; &amp; localDeclarations) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_element_sync_copy.html#adfeca08bcf096decaed2fc2523f05be5">setAsArgument</a>(cl::Kernel &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_element_sync_copy.html#adfeca08bcf096decaed2fc2523f05be5">setAsArgument</a>(<a class="code" href="classcl_1_1_kernel.html">cl::Kernel</a> &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classacl_1_1_element_sync_copy.html#a8937009133e669b4cf65d067bbb62122">str</a>(<span class="keyword">const</span> <a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> &amp; kernelConfig) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
@@ -171,13 +171,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classacl_1_1_kernel_configuration_html"><div class="ttname"><a href="classacl_1_1_kernel_configuration.html">acl::KernelConfiguration</a></div><div class="ttdoc">ACL Kernel configuration class. </div><div class="ttdef"><b>Definition:</b> <a href="acl_kernel_configuration_8h_source.html#l00034">aclKernelConfiguration.h:34</a></div></div>
 <div class="ttc" id="classacl_1_1_element_sync_copy_html_a5dc8fc1c9c6efac990baa5d45ce1c988"><div class="ttname"><a href="classacl_1_1_element_sync_copy.html#a5dc8fc1c9c6efac990baa5d45ce1c988">acl::ElementSyncCopy::getName</a></div><div class="ttdeci">virtual string getName() const </div></div>
 <div class="ttc" id="classacl_1_1_element_sync_copy_html_adfeca08bcf096decaed2fc2523f05be5"><div class="ttname"><a href="classacl_1_1_element_sync_copy.html#adfeca08bcf096decaed2fc2523f05be5">acl::ElementSyncCopy::setAsArgument</a></div><div class="ttdeci">virtual void setAsArgument(cl::Kernel &amp;kernel, unsigned int argumentIndex) const </div></div>
+<div class="ttc" id="classcl_1_1_kernel_html"><div class="ttname"><a href="classcl_1_1_kernel.html">cl::Kernel</a></div><div class="ttdoc">Class interface for cl_kernel. </div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l04820">cl.hpp:4820</a></div></div>
 <div class="ttc" id="classacl_1_1_element_sync_copy_html_a8937009133e669b4cf65d067bbb62122"><div class="ttname"><a href="classacl_1_1_element_sync_copy.html#a8937009133e669b4cf65d067bbb62122">acl::ElementSyncCopy::str</a></div><div class="ttdeci">virtual string str(const KernelConfiguration &amp;kernelConfig) const </div></div>
 <div class="ttc" id="classacl_1_1_element_sync_copy_html"><div class="ttname"><a href="classacl_1_1_element_sync_copy.html">acl::ElementSyncCopy</a></div><div class="ttdef"><b>Definition:</b> <a href="acl_element_sync_copy_8h_source.html#l00033">aclElementSyncCopy.h:33</a></div></div>
 <div class="ttc" id="classacl_1_1_element_sync_copy_html_ae79e0150b9592f12f09db3a4dfa840d6"><div class="ttname"><a href="classacl_1_1_element_sync_copy.html#ae79e0150b9592f12f09db3a4dfa840d6">acl::ElementSyncCopy::ElementSyncCopy</a></div><div class="ttdeci">ElementSyncCopy(Element source_, Element destination_, Element srcOffset, Element dstOffset, Element length_)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:26 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

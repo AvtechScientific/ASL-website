@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -158,17 +158,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a8"></a><a class="code" href="test_a_s_l_data_8cc.html#a872825673069bc1310ea388f1ca2b471">testUploadToLocalMem</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of UploadToLocalMem()...&quot;</span>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of UploadToLocalMem()...&quot;</span> &lt;&lt; <a name="a9"></a><a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> componentsNum = 2;</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> groupSize = 27;</div>
-<div class="line">  <a name="_a9"></a><a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> <a name="a10"></a><a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>(<a name="a11"></a><a class="code" href="group___kernel_gen.html#gad3c50512deb3cd20bef55603b2816edd">KERNEL_BASIC</a>);</div>
-<div class="line">  <a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>.<a name="a12"></a><a class="code" href="classacl_1_1_kernel_configuration.html#af3c8e3ff88a3c40d457f8ddfc53ad9cb">local</a> = <span class="keyword">true</span>;</div>
+<div class="line">  <a name="_a10"></a><a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> <a name="a11"></a><a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>(<a name="a12"></a><a class="code" href="group___kernel_gen.html#gad3c50512deb3cd20bef55603b2816edd">KERNEL_BASIC</a>);</div>
+<div class="line">  <a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>.<a name="a13"></a><a class="code" href="classacl_1_1_kernel_configuration.html#af3c8e3ff88a3c40d457f8ddfc53ad9cb">local</a> = <span class="keyword">true</span>;</div>
 <div class="line">  <a class="code" href="classacl_1_1_kernel.html">Kernel</a> kernel(<a class="code" href="test_private_var_8cc.html#a846ce5e937da2d70164c627694d5da87">kConf</a>);</div>
-<div class="line">  <a name="_a13"></a><a class="code" href="classstd_1_1shared__ptr.html">Element</a> groupID(<span class="keyword">new</span> <a name="_a14"></a><a class="code" href="classacl_1_1_group_i_d.html">GroupID</a>());</div>
-<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c0(<span class="keyword">new</span> <a name="_a15"></a><a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_uint&gt;</a>(0));</div>
+<div class="line">  <a name="_a14"></a><a class="code" href="classstd_1_1shared__ptr.html">Element</a> groupID(<span class="keyword">new</span> <a name="_a15"></a><a class="code" href="classacl_1_1_group_i_d.html">GroupID</a>());</div>
+<div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c0(<span class="keyword">new</span> <a name="_a16"></a><a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_uint&gt;</a>(0));</div>
 <div class="line"></div>
-<div class="line">  <a name="_a16"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;int&gt;</a> totalDimensions(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(10, 10, 10));</div>
+<div class="line">  <a name="_a17"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;int&gt;</a> totalDimensions(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(10, 10, 10));</div>
 <div class="line">  <span class="comment">// dx = 1</span></div>
 <div class="line">  <a class="code" href="classasl_1_1_block.html">asl::Block</a> block(totalDimensions, 1);</div>
 <div class="line"></div>
@@ -177,7 +177,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                                                       componentsNum,</div>
 <div class="line">                                                       0u));</div>
 <div class="line">  <span class="comment">// initialize source with value &quot;13&quot;</span></div>
-<div class="line">  <a class="code" href="group___special_purpose_functions.html#ga093e164b377439dac056005a5e741403">acl::initData</a>(source-&gt;getEContainer(), <a name="a17"></a><a class="code" href="group__generate_v_e.html#ga0de0fa7b101ee3d2f0873c1b1fa3cedf">acl::generateVEConstantN</a>(componentsNum,</div>
+<div class="line">  <a class="code" href="group___special_purpose_functions.html#ga093e164b377439dac056005a5e741403">acl::initData</a>(source-&gt;getEContainer(), <a name="a18"></a><a class="code" href="group__generate_v_e.html#ga0de0fa7b101ee3d2f0873c1b1fa3cedf">acl::generateVEConstantN</a>(componentsNum,</div>
 <div class="line">                                                                  13));</div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// boundary = 0</span></div>
@@ -191,27 +191,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">  <a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;int&gt;</a> portionDimensions(<a class="code" href="namespaceasl.html#a8dd0a34e3d7690ed0ea6b2332947c3d0">asl::makeAVec</a>(5, 5, 5));</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> portionSize = <a name="a18"></a><a class="code" href="namespaceasl.html#a544a2e516e584adaf7ae14f397242322">productOfElements</a>(portionDimensions);</div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> portionSize = <a name="a19"></a><a class="code" href="namespaceasl.html#a544a2e516e584adaf7ae14f397242322">productOfElements</a>(portionDimensions);</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> totalSize = <a class="code" href="namespaceasl.html#a544a2e516e584adaf7ae14f397242322">productOfElements</a>(totalDimensions);</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> groupsNumber = totalSize / portionSize;</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> cPortionSize(<span class="keyword">new</span> <a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_uint&gt;</a>(portionSize));</div>
 <div class="line">  kernel.setGroupsNumber(groupsNumber);</div>
 <div class="line"></div>
-<div class="line">  <a name="_a19"></a><a class="code" href="classacl_1_1_vector_of_elements.html">VectorOfElements</a> localSource(componentsNum);</div>
-<div class="line">  <a name="a20"></a><a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(<a name="a21"></a><a class="code" href="group___data_utilities.html#gaffdbf0bd05524ebaa71727ebc49aa7ff">uploadToLocalMem</a>(*source, portionDimensions, groupSize, kernel), localSource);</div>
+<div class="line">  <a name="_a20"></a><a class="code" href="classacl_1_1_vector_of_elements.html">VectorOfElements</a> localSource(componentsNum);</div>
+<div class="line">  <a name="a21"></a><a class="code" href="namespaceacl.html#a7d200cba563db7a347db1708d15a2627">copy</a>(<a name="a22"></a><a class="code" href="group___data_utilities.html#gaffdbf0bd05524ebaa71727ebc49aa7ff">uploadToLocalMem</a>(*source, portionDimensions, groupSize, kernel), localSource);</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">using namespace </span>elementOperators;</div>
-<div class="line">  kernel.addExpression(<a name="a22"></a><a class="code" href="group___synchronization_functions.html#ga8e5d9f48d2c70aafdb6d987cb213721d">barrier</a>(<span class="stringliteral">&quot;CLK_LOCAL_MEM_FENCE | CLK_GLOBAL_MEM_FENCE&quot;</span>));</div>
+<div class="line">  kernel.addExpression(<a name="a23"></a><a class="code" href="group___synchronization_functions.html#ga8e5d9f48d2c70aafdb6d987cb213721d">barrier</a>(<span class="stringliteral">&quot;CLK_LOCAL_MEM_FENCE | CLK_GLOBAL_MEM_FENCE&quot;</span>));</div>
 <div class="line">  <span class="comment">// overwrite destination with localSource</span></div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; componentsNum; ++i)</div>
-<div class="line">    kernel.addExpression(<a name="a23"></a><a class="code" href="group___synchronization_functions.html#ga11056b9b4c55afe89eb6abc341c670d0">syncCopy</a>(localSource[i], destination-&gt;getEContainer()[i],</div>
+<div class="line">    kernel.addExpression(<a name="a24"></a><a class="code" href="group___synchronization_functions.html#ga11056b9b4c55afe89eb6abc341c670d0">syncCopy</a>(localSource[i], destination-&gt;getEContainer()[i],</div>
 <div class="line">                                  c0, cPortionSize * groupID, cPortionSize));</div>
 <div class="line"></div>
 <div class="line">  kernel.setup();</div>
 <div class="line">  kernel.compute();</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line">  <span class="keywordtype">bool</span> status = <span class="keyword">true</span>;</div>
+<div class="line">  <span class="keywordtype">bool</span> status(<span class="keyword">true</span>);</div>
 <div class="line">  vector&lt;cl_float&gt; src(totalSize);</div>
 <div class="line">  vector&lt;cl_float&gt; dst(totalSize);</div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; componentsNum; ++i)</div>
@@ -224,23 +224,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    status &amp;= (src == dst);</div>
 <div class="line">  }</div>
 <div class="line">  </div>
-<div class="line">  <a name="a24"></a><a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">errorMessage</a>(status);</div>
+<div class="line">  <a name="a25"></a><a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">errorMessage</a>(status);</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">  <span class="keywordflow">return</span> status;</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> <a name="a25"></a><a class="code" href="test_a_s_l_data_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a26"></a><a class="code" href="test_a_s_l_data_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="test_a_s_l_data_8cc.html#a6d2dcab8f4d350f04382d95e94254d97">testSimpleKernel</a>();</div>
-<div class="line">  <a class="code" href="test_a_s_l_data_8cc.html#a13b470dd482377a33c39d6067bd190d9">testInitData</a>();</div>
-<div class="line">  <a class="code" href="test_a_s_l_data_8cc.html#a872825673069bc1310ea388f1ca2b471">testUploadToLocalMem</a>();</div>
+<div class="line">  <span class="keywordtype">bool</span> allTestsPassed(<span class="keyword">true</span>);</div>
+<div class="line"></div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_a_s_l_data_8cc.html#a6d2dcab8f4d350f04382d95e94254d97">testSimpleKernel</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_a_s_l_data_8cc.html#a13b470dd482377a33c39d6067bd190d9">testInitData</a>();</div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_a_s_l_data_8cc.html#a872825673069bc1310ea388f1ca2b471">testUploadToLocalMem</a>();</div>
 <div class="line">    </div>
-<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">  <span class="keywordflow">return</span> allTestsPassed ? EXIT_SUCCESS : EXIT_FAILURE;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

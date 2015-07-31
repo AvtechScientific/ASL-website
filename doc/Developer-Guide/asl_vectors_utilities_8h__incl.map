@@ -1,7 +1,8 @@
 <map id="/home/zeev/AvtechScientific/Projects/ASL/asl&#45;dev/src/math/aslVectorsUtilities.h" name="/home/zeev/AvtechScientific/Projects/ASL/asl&#45;dev/src/math/aslVectorsUtilities.h">
-<area shape="rect" id="node2" href="$asl_vectors_8h.html" title="definition of class АVec&lt;T&gt; " alt="" coords="843,109,938,136"/>
-<area shape="rect" id="node3" href="$asl_vectors_dynamic_length_8h.html" title="aslVectorsDynamicLength.h" alt="" coords="555,184,741,211"/>
-<area shape="rect" id="node19" href="$asl_vectors_dynamic_length_operations_8h.html" title="aslVectorsDynamicLengthOperations.h" alt="" coords="766,184,1015,211"/>
-<area shape="rect" id="node4" href="$asl_utilities_8h.html" title="useful common utilities " alt="" coords="595,259,701,285"/>
-<area shape="rect" id="node5" href="$acl_std_includes_8h.html" title="acl/aclStdIncludes.h" alt="" coords="203,333,343,360"/>
+<area shape="rect" id="node2" href="$asl_vectors_8h.html" title="definition of class АVec&lt;T&gt; " alt="" coords="723,109,818,136"/>
+<area shape="rect" id="node3" href="$asl_vectors_dynamic_length_8h.html" title="aslVectorsDynamicLength.h" alt="" coords="435,184,621,211"/>
+<area shape="rect" id="node23" href="$asl_vectors_dynamic_length_operations_8h.html" title="aslVectorsDynamicLengthOperations.h" alt="" coords="646,184,895,211"/>
+<area shape="rect" id="node4" href="$asl_utilities_8h.html" title="useful common utilities " alt="" coords="475,259,581,285"/>
+<area shape="rect" id="node5" href="$cl_8hpp.html" title="C++ bindings for OpenCL 1.0 (rev 48), OpenCL 1.1 (rev 33) and OpenCL 1.2 (rev 15) ..." alt="" coords="715,333,794,360"/>
+<area shape="rect" id="node13" href="$acl_std_includes_8h.html" title="acl/aclStdIncludes.h" alt="" coords="159,333,299,360"/>
 </map>

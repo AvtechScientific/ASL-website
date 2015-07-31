@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -126,37 +126,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a0"></a><a class="code" href="test_kernel_merger_8cc.html#acd46d25f7c04b630efdb55252f151bd8">testKernelMerger</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;KernelMerger\&quot; functionality...&quot;</span>;</div>
-<div class="line">  <a name="_a1"></a><a class="code" href="classstd_1_1shared__ptr.html">ElementData</a> vec0(<span class="keyword">new</span> <a name="_a2"></a><a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (10));</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of \&quot;KernelMerger\&quot; functionality...&quot;</span> &lt;&lt; <a name="a1"></a><a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
+<div class="line">  <a name="_a2"></a><a class="code" href="classstd_1_1shared__ptr.html">ElementData</a> vec0(<span class="keyword">new</span> <a name="_a3"></a><a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (10));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">ElementData</a> vec1(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (5));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">ElementData</a> vec2(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (8));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">ElementData</a> vec3(<span class="keyword">new</span> <a class="code" href="singletonacl_1_1_array.html">Array&lt;cl_float&gt;</a> (20)); </div>
 <div class="line"></div>
-<div class="line">  <a name="_a3"></a><a class="code" href="classstd_1_1shared__ptr.html">Element</a> c0(<span class="keyword">new</span> <a name="_a4"></a><a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_double&gt;</a>(2));</div>
+<div class="line">  <a name="_a4"></a><a class="code" href="classstd_1_1shared__ptr.html">Element</a> c0(<span class="keyword">new</span> <a name="_a5"></a><a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_double&gt;</a>(2));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c1(<span class="keyword">new</span> <a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_double&gt;</a>(1));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c2(<span class="keyword">new</span> <a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_double&gt;</a>(4));</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">Element</a> c3(<span class="keyword">new</span> <a class="code" href="classacl_1_1_constant.html">Constant&lt;cl_double&gt;</a>(7));</div>
 <div class="line">  </div>
-<div class="line">  <a name="_a5"></a><a class="code" href="classstd_1_1shared__ptr.html">SPKernel</a> k0(<span class="keyword">new</span> <a name="_a6"></a><a class="code" href="classacl_1_1_kernel.html">Kernel</a>());</div>
+<div class="line">  <a name="_a6"></a><a class="code" href="classstd_1_1shared__ptr.html">SPKernel</a> k0(<span class="keyword">new</span> <a name="_a7"></a><a class="code" href="classacl_1_1_kernel.html">Kernel</a>());</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">SPKernel</a> k1(<span class="keyword">new</span> <a class="code" href="classacl_1_1_kernel.html">Kernel</a>());</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">SPKernel</a> k2(<span class="keyword">new</span> <a class="code" href="classacl_1_1_kernel.html">Kernel</a>());</div>
 <div class="line">  <a class="code" href="classstd_1_1shared__ptr.html">SPKernel</a> k3(<span class="keyword">new</span> <a class="code" href="classacl_1_1_kernel.html">Kernel</a>());</div>
 <div class="line">  { </div>
 <div class="line">    <span class="keyword">using namespace </span>elementOperators;</div>
-<div class="line">    k0-&gt;addExpression(<a name="a7"></a><a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a> (vec0, c0));</div>
+<div class="line">    k0-&gt;addExpression(<a name="a8"></a><a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a> (vec0, c0));</div>
 <div class="line">    k1-&gt;addExpression(<a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a> (vec1, c1));</div>
 <div class="line">    k2-&gt;addExpression(<a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a> (vec2, c2));</div>
 <div class="line">    k3-&gt;addExpression(<a class="code" href="group___assignment_operators.html#ga662119fe364519375afd03faa347e426">operatorAssignment</a> (vec3, c3));</div>
 <div class="line">  }</div>
 <div class="line"></div>
-<div class="line">  <a name="_a8"></a><a class="code" href="classacl_1_1_kernel_merger.html">KernelMerger</a> km;</div>
-<div class="line">  km.<a name="a9"></a><a class="code" href="classacl_1_1_kernel_merger.html#ae49e0928081139923a6e7f1a541263ba">addKernel</a>(k0);</div>
+<div class="line">  <a name="_a9"></a><a class="code" href="classacl_1_1_kernel_merger.html">KernelMerger</a> km;</div>
+<div class="line">  km.<a name="a10"></a><a class="code" href="classacl_1_1_kernel_merger.html#ae49e0928081139923a6e7f1a541263ba">addKernel</a>(k0);</div>
 <div class="line">  km.<a class="code" href="classacl_1_1_kernel_merger.html#ae49e0928081139923a6e7f1a541263ba">addKernel</a>(k1);</div>
 <div class="line">  km.<a class="code" href="classacl_1_1_kernel_merger.html#ae49e0928081139923a6e7f1a541263ba">addKernel</a>(k2);</div>
 <div class="line"><span class="comment">//  km.addKernel(k3);</span></div>
 <div class="line"></div>
-<div class="line">  km.<a name="a10"></a><a class="code" href="classacl_1_1_kernel_merger.html#a424b8896ba3d8433c25d00e52da0dce5">setup</a>();</div>
-<div class="line">  cout&lt;&lt;km.<a name="a11"></a><a class="code" href="classacl_1_1_kernel_merger.html#a5c058ce198316e5cd0e81e9a60cd638a">getKernelSource</a>()&lt;&lt;endl;</div>
+<div class="line">  km.<a name="a11"></a><a class="code" href="classacl_1_1_kernel_merger.html#a424b8896ba3d8433c25d00e52da0dce5">setup</a>();</div>
 <div class="line">  km.<a name="a12"></a><a class="code" href="classacl_1_1_kernel_merger.html#a2b7cde32bb377405b3550f5ca665cf4f">compute</a>();</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordtype">bool</span> status((acl::map&lt;float&gt;(vec0).<span class="keyword">get</span>()[9] == 2) &amp;&amp; </div>
@@ -164,20 +163,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">              (acl::map&lt;float&gt;(vec2).<span class="keyword">get</span>()[7] == 4));<span class="comment">// &amp;&amp;</span></div>
 <div class="line"><span class="comment">//              (acl::map&lt;float&gt;(vec3).get()[19] == 7));</span></div>
 <div class="line">  <a name="a13"></a><a class="code" href="group___error_messaging.html#ga80696dde698d52ecc666765a654aa282">errorMessage</a>(status);</div>
-<div class="line"></div>
+<div class="line">  cout &lt;&lt; km.<a name="a14"></a><a class="code" href="classacl_1_1_kernel_merger.html#a5c058ce198316e5cd0e81e9a60cd638a">getKernelSource</a>() &lt;&lt; endl;</div>
 <div class="line">  <span class="keywordflow">return</span> status;    </div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> <a name="a14"></a><a class="code" href="test_kernel_merger_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a15"></a><a class="code" href="test_kernel_merger_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="test_kernel_merger_8cc.html#acd46d25f7c04b630efdb55252f151bd8">testKernelMerger</a>();</div>
+<div class="line">  <span class="keywordtype">bool</span> allTestsPassed(<span class="keyword">true</span>);</div>
+<div class="line"></div>
+<div class="line">  allTestsPassed &amp;= <a class="code" href="test_kernel_merger_8cc.html#acd46d25f7c04b630efdb55252f151bd8">testKernelMerger</a>();</div>
 <div class="line">  </div>
-<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">  <span class="keywordflow">return</span> allTestsPassed ? EXIT_SUCCESS : EXIT_FAILURE;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:25 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

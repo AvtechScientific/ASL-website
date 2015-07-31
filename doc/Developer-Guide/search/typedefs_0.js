@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['commandqueue',['CommandQueue',['../namespaceacl.html#a26a28eb0d460d66f0a0532f92b72859f',1,'acl']]]
+  ['binaries',['Binaries',['../classcl_1_1_program.html#a4c9e74c7f663ded16092bd5ad68aca7a',1,'cl::Program']]]
 ];

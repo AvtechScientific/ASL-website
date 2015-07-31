@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.4</span>
+   &#160;<span id="projectnumber">0.1.5</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -146,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classacl_1_1_element_parser.html#a05cc4367502cd015f994359122ba7790">getLocalDeclaration</a>(<span class="keyword">const</span> <a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> &amp; kernelConfig) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_element_parser.html#aa38886b241c0cd77fb6a10f8108d36fe">addToKernelSource</a>(vector&lt;Element&gt; &amp; arguments,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                   vector&lt;Element&gt; &amp; localDeclarations) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_element_parser.html#aa3880e58d28657d8c73c7568d7550967">setAsArgument</a>(cl::Kernel &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classacl_1_1_element_parser.html#aa3880e58d28657d8c73c7568d7550967">setAsArgument</a>(<a class="code" href="classcl_1_1_kernel.html">cl::Kernel</a> &amp; kernel, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> argumentIndex) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classacl_1_1_element_parser.html#a00cb515851b04173fea2045ce3af7835">str</a>(<span class="keyword">const</span> <a class="code" href="classacl_1_1_kernel_configuration.html">KernelConfiguration</a> &amp; kernelConfig) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
@@ -167,12 +167,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classacl_1_1_element_parser_html"><div class="ttname"><a href="classacl_1_1_element_parser.html">acl::ElementParser</a></div><div class="ttdef"><b>Definition:</b> <a href="acl_element_parser_8h_source.html#l00037">aclElementParser.h:37</a></div></div>
 <div class="ttc" id="classacl_1_1_element_parser_html_a4c8d5d496a3bffaa9829bb5350ec457b"><div class="ttname"><a href="classacl_1_1_element_parser.html#a4c8d5d496a3bffaa9829bb5350ec457b">acl::ElementParser::ElementParser</a></div><div class="ttdeci">ElementParser()</div></div>
 <div class="ttc" id="classacl_1_1_element_parser_html_ab28df2a483d01696768da1f8a2a3b0d9"><div class="ttname"><a href="classacl_1_1_element_parser.html#ab28df2a483d01696768da1f8a2a3b0d9">acl::ElementParser::statement</a></div><div class="ttdeci">string statement</div><div class="ttdef"><b>Definition:</b> <a href="acl_element_parser_8h_source.html#l00041">aclElementParser.h:41</a></div></div>
+<div class="ttc" id="classcl_1_1_kernel_html"><div class="ttname"><a href="classcl_1_1_kernel.html">cl::Kernel</a></div><div class="ttdoc">Class interface for cl_kernel. </div><div class="ttdef"><b>Definition:</b> <a href="cl_8hpp_source.html#l04820">cl.hpp:4820</a></div></div>
 <div class="ttc" id="classacl_1_1_element_parser_html_a4d6be22857f79ef448b7d2177d6c0a6d"><div class="ttname"><a href="classacl_1_1_element_parser.html#a4d6be22857f79ef448b7d2177d6c0a6d">acl::ElementParser::getTypeSignature</a></div><div class="ttdeci">virtual string getTypeSignature(const KernelConfiguration &amp;kernelConfig) const </div></div>
 <div class="ttc" id="classacl_1_1_element_parser_html_a7ce8b8473fcd9902724dad6eaaf1e3c2"><div class="ttname"><a href="classacl_1_1_element_parser.html#a7ce8b8473fcd9902724dad6eaaf1e3c2">acl::ElementParser::addElementNamePair</a></div><div class="ttdeci">void addElementNamePair(Element element, string name)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 21 2015 12:26:26 for ASL by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
