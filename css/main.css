@@ -291,6 +291,8 @@ pre {
   text-align: justify; }
   .page-content .footnote, .page-content .footnotes {
     font-size: 13.2px; }
+    .page-content .footnote p, .page-content .footnotes p {
+      margin-bottom: 0; }
   .page-content hr {
     border-color: #d7d7d7;
     border-width: 1px 0 0 0;
