@@ -72,6 +72,8 @@
           
         
           
+        
+          
           <a class="page-link" href="/features/">Features</a>
           
         
@@ -145,9 +147,10 @@
 
 <ol>
   <li>Go to examples: <code>cd examples/flow/locomotive</code></li>
-  <li><code>./asl-locomotive --input ../../../../ASL/examples/input_data/locomotive.stl</code>  <br />
+  <li>Download geometry file <a href="/input_data/locomotive.stl">locomotive.stl</a> from the <a href="/input_data">ASL input data page</a>.</li>
+  <li>Run: <code>./asl-locomotive --input locomotive.stl</code>  <br />
 Optionally: change parameters <code>./asl-locomotive --input locomotive.stl --dx 1 --dt 2</code> or write all of them into a file for later editing/reuse - <code>./asl-locomotive -g bigGrid.ini</code>. List all available options - <code>./asl-locomotive -h</code>.</li>
-  <li>Post-processing: see <a href="https://github.com/AvtechScientific/ASL/wiki/User-Guide#post-processing">step by step example</a> and <code>examples/input_data/locomotive.pvsm</code> - the ParaView state file.</li>
+  <li>Post-processing: see <a href="https://github.com/AvtechScientific/ASL/wiki/User-Guide#post-processing">step by step example</a> and <a href="/input_data/locomotive.pvsm">locomotive.pvsm</a> - the ParaView state file.</li>
 </ol>
 
 <h3 id="writing-your-own-code-using-asl">Writing your own code using ASL</h3>
