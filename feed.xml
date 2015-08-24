@@ -5,8 +5,8 @@
     <description>OpenCL-enabled open source multiphysics simulation software package</description>
     <link>http://asl.org.il/</link>
     <atom:link href="http://asl.org.il/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Aug 2015 12:28:43 +0300</pubDate>
-    <lastBuildDate>Mon, 24 Aug 2015 12:28:43 +0300</lastBuildDate>
+    <pubDate>Mon, 24 Aug 2015 12:53:00 +0300</pubDate>
+    <lastBuildDate>Mon, 24 Aug 2015 12:53:00 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -46,6 +46,8 @@
 
 &lt;p&gt;Advanced Simulation Library is a free and open source multiphysics simulation software package. Its computational engine is based, among others, on the &lt;a href=&quot;http://en.wikipedia.org/wiki/Lattice_Boltzmann_methods&quot;&gt;Lattice Boltzmann Methods&lt;/a&gt; and is written in &lt;a href=&quot;http://en.wikipedia.org/wiki/OpenCL&quot;&gt;OpenCL&lt;/a&gt; which enable &lt;a href=&quot;/benchmarks&quot;&gt;extraordinarily efficient deployment&lt;/a&gt; on a variety of massively parallel architectures, ranging from inexpensive FPGAs, DSPs and GPUs up to heterogeneous clusters and supercomputers. The engine is hidden entirely behind C++ classes, so that no OpenCL knowledge is required from application programmers. ASL can be utilized to model various coupled physical and chemical phenomena and employed in a multitude of fields: computational fluid dynamics, virtual sensing&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, industrial process data validation and reconciliation, image-guided surgery, computer-aided engineering, high-performance scientific computing, etc..&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://www.khronos.org/news/permalink/avtech-scientific-open-sources-its-opencl-based-advanced-simulation-library&quot;&gt;Announcement on Khronos&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.khronos.org/opencl/resources/opencl-libraries-and-frameworks-with-opencl-acceleration&quot;&gt;ASL among Khronos OpenCL resources&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
