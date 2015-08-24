@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.5</span>
+   &#160;<span id="projectnumber">0.1.6</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">testVTK_IO.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
+<p>Required input file: <a href="http://asl.org.il/input_data/bus.stl">bus.stl</a></p>
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment"> * Advanced Simulation Library &lt;http://asl.org.il&gt;</span></div>
 <div class="line"><span class="comment"> * </span></div>
@@ -112,30 +113,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment"> */</span></div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="asl_v_t_k_format_writers_8h.html">writers/aslVTKFormatWriters.h</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="asl_v_t_k_format_readers_8h.html">readers/aslVTKFormatReaders.h</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="asl_generators_8h.html">aslGenerators.h</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="asl_data_resampling_8h.html">num/aslDataResampling.h</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="asl_data_with_ghost_nodes_8h.html">data/aslDataWithGhostNodes.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="asl_v_t_k_format_writers_8h.html">writers/aslVTKFormatWriters.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="asl_v_t_k_format_readers_8h.html">readers/aslVTKFormatReaders.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="asl_generators_8h.html">aslGenerators.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="asl_data_resampling_8h.html">num/aslDataResampling.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="asl_data_with_ghost_nodes_8h.html">data/aslDataWithGhostNodes.h</a>&quot;</span></div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">void</span> <a name="a0"></a><a class="code" href="test_v_t_k___i_o_8cc.html#a44ebdd3d19b8b90f9f689ef1349a3197">testMINC</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of MINC files reader...&quot;</span> &lt;&lt; <a name="a1"></a><a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of MINC files reader...&quot;</span> &lt;&lt; endl;</div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">auto</span> data(<a name="a2"></a><a class="code" href="group___i_o.html#ga9f3320322a28535ffb08d4fec69aff57">asl::read</a>(<span class="stringliteral">&quot;subject04_crisp_v.mnc&quot;</span>, 0));</div>
+<div class="line">  <span class="keyword">auto</span> data(<a name="a1"></a><a class="code" href="group___i_o.html#ga9f3320322a28535ffb08d4fec69aff57">asl::read</a>(<span class="stringliteral">&quot;subject04_crisp_v.mnc&quot;</span>, 0));</div>
 <div class="line">  </div>
-<div class="line">  <a name="a3"></a><a class="code" href="group___i_o.html#ga56db95c5ff1b5843f9211379eaaf4a4e">asl::writeVTKXML</a>(<span class="stringliteral">&quot;data.vti&quot;</span>,</div>
+<div class="line">  <a name="a2"></a><a class="code" href="group___i_o.html#ga56db95c5ff1b5843f9211379eaaf4a4e">asl::writeVTKXML</a>(<span class="stringliteral">&quot;data.vti&quot;</span>,</div>
 <div class="line">                   *data,</div>
 <div class="line">                   <span class="stringliteral">&quot;data&quot;</span>);</div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> <a name="a4"></a><a class="code" href="test_v_t_k___i_o_8cc.html#aa2886c327d8f5a80916080e8128dfcc6">testMINCplus</a>()</div>
+<div class="line"><span class="keywordtype">void</span> <a name="a3"></a><a class="code" href="test_v_t_k___i_o_8cc.html#aa2886c327d8f5a80916080e8128dfcc6">testMINCplus</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of MINC files reader +...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of MINC files reader +...&quot;</span> &lt;&lt; endl;</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">auto</span> data(<a class="code" href="group___i_o.html#ga9f3320322a28535ffb08d4fec69aff57">asl::read</a>(<span class="stringliteral">&quot;subject04_crisp_v.mnc&quot;</span>, 0));</div>
 <div class="line">  </div>
-<div class="line">  <a name="_a5"></a><a class="code" href="classasl_1_1_data_coarser.html">asl::DataCoarser</a> dc(data);</div>
+<div class="line">  <a name="_a4"></a><a class="code" href="classasl_1_1_data_coarser.html">asl::DataCoarser</a> dc(data);</div>
 <div class="line">  dc.init();</div>
 <div class="line">  dc.execute();</div>
 <div class="line">  <a class="code" href="group___i_o.html#ga56db95c5ff1b5843f9211379eaaf4a4e">asl::writeVTKXML</a>(<span class="stringliteral">&quot;dataCoarsed.vti&quot;</span>,</div>
@@ -144,11 +145,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">}</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">void</span> <a name="a6"></a><a class="code" href="test_v_t_k___i_o_8cc.html#a362a12c12ea41e53ea90da1874e56476">testSurfaceSTL</a>()</div>
+<div class="line"><span class="keywordtype">void</span> <a name="a5"></a><a class="code" href="test_v_t_k___i_o_8cc.html#a362a12c12ea41e53ea90da1874e56476">testSurfaceSTL</a>()</div>
 <div class="line">{</div>
-<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Surface STL files reader...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
+<div class="line">  cout &lt;&lt; <span class="stringliteral">&quot;Test of Surface STL files reader...&quot;</span> &lt;&lt; endl;</div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">auto</span> data(<a name="a7"></a><a class="code" href="group___i_o.html#ga5a389f6ba49562eff4929f84eb1c53be">asl::readSurface</a>(<span class="stringliteral">&quot;bus.stl&quot;</span>, 5));</div>
+<div class="line">  <span class="comment">// INPUT_DATA_DIR will be expanded by the preprocessor to e.g. &quot;/path/to/dir/&quot;</span></div>
+<div class="line">  <span class="comment">// and the compiler will merge adjacent string literals</span></div>
+<div class="line">  <span class="comment">// alternatively `bus.stl` can be copied to the test directory</span></div>
+<div class="line">  <span class="comment">// by cmake (configure_file() for a configuration time copy or add_custom_command() for a build time copy)</span></div>
+<div class="line">  <span class="keyword">auto</span> data(<a name="a6"></a><a class="code" href="group___i_o.html#ga5a389f6ba49562eff4929f84eb1c53be">asl::readSurface</a>(INPUT_DATA_DIR <span class="stringliteral">&quot;bus.stl&quot;</span>, 5));</div>
 <div class="line"><span class="comment">//  auto data(asl::readSurface(&quot;xx.vtp&quot;, .01));</span></div>
 <div class="line">  </div>
 <div class="line">  <a class="code" href="group___i_o.html#ga56db95c5ff1b5843f9211379eaaf4a4e">asl::writeVTKXML</a>(<span class="stringliteral">&quot;dataSurfaceSTL.vti&quot;</span>,</div>
@@ -158,7 +163,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> <a name="a8"></a><a class="code" href="test_v_t_k___i_o_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a7"></a><a class="code" href="test_v_t_k___i_o_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
 <div class="line"><span class="comment">//  testMINC();</span></div>
 <div class="line"><span class="comment">//  testMINCplus();</span></div>

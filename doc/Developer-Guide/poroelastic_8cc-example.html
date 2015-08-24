@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ASL
-   &#160;<span id="projectnumber">0.1.5</span>
+   &#160;<span id="projectnumber">0.1.6</span>
    </div>
    <div id="projectbrief">Advanced Simulation Library</div>
   </td>
@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">poroelastic.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
+<p>Required input file: <a href="http://asl.org.il/input_data/brain.vti">brain.vti</a></p>
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment"> * Advanced Simulation Library &lt;http://asl.org.il&gt;</span></div>
 <div class="line"><span class="comment"> * </span></div>
@@ -151,72 +152,72 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  </div>
 <div class="line">  appParamsManager.<a name="a7"></a><a class="code" href="classasl_1_1_application_parameters_manager.html#a9db9e7cf2dc5887077daabdd4d108871">load</a>(argc, argv);</div>
 <div class="line">    </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Data initialization... &quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Data initialization... &quot;</span> &lt;&lt; <a name="a8"></a><a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
-<div class="line">  <a name="_a8"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPDataWithGhostNodesACLData</a> map0(<a name="a9"></a><a class="code" href="group___i_o.html#ga9f3320322a28535ffb08d4fec69aff57">asl::read</a>(input.<a name="a10"></a><a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>(), 0));</div>
+<div class="line">  <a name="_a9"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPDataWithGhostNodesACLData</a> map0(<a name="a10"></a><a class="code" href="group___i_o.html#ga9f3320322a28535ffb08d4fec69aff57">asl::read</a>(input.<a name="a11"></a><a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>(), 0));</div>
 <div class="line"><span class="comment">//  asl::Block block(size.v(), dx.v());</span></div>
-<div class="line">  <a name="_a11"></a><a class="code" href="classasl_1_1_block.html">asl::Block</a> block(map0-&gt;getInternalBlock());</div>
-<div class="line">  dx.<a name="a12"></a><a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>() = block.dx*1e-3;</div>
+<div class="line">  <a name="_a12"></a><a class="code" href="classasl_1_1_block.html">asl::Block</a> block(map0-&gt;getInternalBlock());</div>
+<div class="line">  dx.<a name="a13"></a><a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>() = block.dx*1e-3;</div>
 <div class="line"></div>
 <div class="line">  dt.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>() = 0.0001f;</div>
 <div class="line">  <a class="code" href="singletonasl_1_1_u_value.html">Param</a> bulkModulusNum(bulkModulus.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/rho.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/dx.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/dx.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>());</div>
 <div class="line">  <a class="code" href="singletonasl_1_1_u_value.html">Param</a> shearModulusNum(shearModulus.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/rho.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/dx.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/dx.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>());</div>
-<div class="line">  <a name="_a13"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;FlT&gt;</a> gNum(g.<a name="a14"></a><a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/dx.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>());</div>
+<div class="line">  <a name="_a14"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;FlT&gt;</a> gNum(g.<a name="a15"></a><a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/dx.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>());</div>
 <div class="line">  <a class="code" href="singletonasl_1_1_u_value.html">Param</a> hydraulicConductivityNum(hydraulicConductivity.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/dx.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/dx.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()/dx.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>());</div>
 <div class="line"></div>
-<div class="line">  cout &lt;&lt; gNum &lt;&lt; <span class="stringliteral">&quot;; &quot;</span> &lt;&lt; bulkModulusNum.<a name="a15"></a><a class="code" href="singletonasl_1_1_u_value.html#ab332ee5af306aee74dbae575f53a88e8">v</a>() &lt;&lt; <span class="stringliteral">&quot;; &quot;</span> &lt;&lt; hydraulicConductivityNum.v() &lt;&lt; endl;</div>
+<div class="line">  cout &lt;&lt; gNum &lt;&lt; <span class="stringliteral">&quot;; &quot;</span> &lt;&lt; bulkModulusNum.<a name="a16"></a><a class="code" href="singletonasl_1_1_u_value.html#ab332ee5af306aee74dbae575f53a88e8">v</a>() &lt;&lt; <span class="stringliteral">&quot;; &quot;</span> &lt;&lt; hydraulicConductivityNum.v() &lt;&lt; endl;</div>
 <div class="line"></div>
 <div class="line">  </div>
 <div class="line">  <span class="keyword">auto</span> displacement(asl::generateDataContainerACL_SP&lt;FlT&gt;(block, 3, 1u));</div>
 <div class="line">  <span class="keyword">auto</span> pressure(asl::generateDataContainerACL_SP&lt;FlT&gt;(block, 1, 1u));</div>
-<div class="line">  <a name="a16"></a><a class="code" href="group___special_purpose_functions.html#ga093e164b377439dac056005a5e741403">acl::initData</a>(displacement-&gt;getEContainer(), <a name="a17"></a><a class="code" href="group__generate_v_e.html#ga0de0fa7b101ee3d2f0873c1b1fa3cedf">acl::generateVEConstantN</a>(3,0));</div>
-<div class="line">  <a class="code" href="group___special_purpose_functions.html#ga093e164b377439dac056005a5e741403">acl::initData</a>(pressure-&gt;getEContainer(), <a name="a18"></a><a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(0));</div>
+<div class="line">  <a name="a17"></a><a class="code" href="group___special_purpose_functions.html#ga093e164b377439dac056005a5e741403">acl::initData</a>(displacement-&gt;getEContainer(), <a name="a18"></a><a class="code" href="group__generate_v_e.html#ga0de0fa7b101ee3d2f0873c1b1fa3cedf">acl::generateVEConstantN</a>(3,0));</div>
+<div class="line">  <a class="code" href="group___special_purpose_functions.html#ga093e164b377439dac056005a5e741403">acl::initData</a>(pressure-&gt;getEContainer(), <a name="a19"></a><a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(0));</div>
 <div class="line">  </div>
 <div class="line"><span class="comment">//  auto mapDF(asl::generateDFInBlock(block, 0));</span></div>
 <div class="line"><span class="comment">//  auto map(asl::generateDataContainer_SP(block, mapDF, 1u, acl::typeToTypeID&lt;FlT&gt;()));</span></div>
 <div class="line">  <span class="keyword">auto</span> mapX(asl::generateDataContainerACL_SP&lt;FlT&gt;(block, 1, 1u));</div>
 <div class="line"><span class="comment">//  initData(mapX-&gt;getEContainer(), map-&gt;getEContainer());</span></div>
-<div class="line">  <a name="a19"></a><a class="code" href="classacl_1_1_vector_of_elements.html#a4b336186f1cf3877ccb41f71f53c7b60">initData</a>(mapX-&gt;getEContainer(), map0-&gt;getEContainer()*2.-1., <a name="a20"></a><a class="code" href="group___kernel_gen.html#gad3c50512deb3cd20bef55603b2816edd">acl::KERNEL_BASIC</a>);</div>
+<div class="line">  <a name="a20"></a><a class="code" href="classacl_1_1_vector_of_elements.html#a4b336186f1cf3877ccb41f71f53c7b60">initData</a>(mapX-&gt;getEContainer(), map0-&gt;getEContainer()*2.-1., <a name="a21"></a><a class="code" href="group___kernel_gen.html#gad3c50512deb3cd20bef55603b2816edd">acl::KERNEL_BASIC</a>);</div>
 <div class="line">  </div>
-<div class="line">  <a name="_a21"></a><a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html">asl::WriterVTKXML</a> writer(appParamsManager.<a name="a22"></a><a class="code" href="classasl_1_1_parameters_manager.html#a2b6b8a34e28b0e8d0ff06b8d7dbc49dd">getDir</a>() + <span class="stringliteral">&quot;poroelastic&quot;</span>);</div>
-<div class="line">  writer.<a name="a23"></a><a class="code" href="classasl_1_1_writer.html#a8811b5330c87e4a758ff899781385f45">addVector</a>(<span class="stringliteral">&quot;displacement&quot;</span>, *displacement);</div>
+<div class="line">  <a name="_a22"></a><a class="code" href="classasl_1_1_writer_v_t_k_x_m_l.html">asl::WriterVTKXML</a> writer(appParamsManager.<a name="a23"></a><a class="code" href="classasl_1_1_parameters_manager.html#a2b6b8a34e28b0e8d0ff06b8d7dbc49dd">getDir</a>() + <span class="stringliteral">&quot;poroelastic&quot;</span>);</div>
+<div class="line">  writer.<a name="a24"></a><a class="code" href="classasl_1_1_writer.html#a8811b5330c87e4a758ff899781385f45">addVector</a>(<span class="stringliteral">&quot;displacement&quot;</span>, *displacement);</div>
 <div class="line">  writer.addScalars(<span class="stringliteral">&quot;pressure&quot;</span>, *pressure);</div>
 <div class="line">  writer.addScalars(<span class="stringliteral">&quot;map&quot;</span>, *mapX);</div>
 <div class="line"><span class="comment">//  writer.write();</span></div>
 <div class="line"></div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl;</div>
 <div class="line">  </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Numerics initialization... &quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Numerics initialization... &quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">auto</span> elasticity(make_shared&lt;asl::FDPoroElasticity&gt;(displacement,</div>
 <div class="line">                                                     pressure,</div>
 <div class="line">                                                       <a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(bulkModulusNum.v()),</div>
 <div class="line">                                                     <a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(shearModulusNum.v()),</div>
 <div class="line">                                                     <a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(hydraulicConductivityNum.v()),</div>
-<div class="line">                                                     &amp;<a name="a24"></a><a class="code" href="group___templates_n_n_p.html#gae9813acc6a475f48b205db7cd3ed625b">asl::d3q15</a>()));</div>
+<div class="line">                                                     &amp;<a name="a25"></a><a class="code" href="group___templates_n_n_p.html#gae9813acc6a475f48b205db7cd3ed625b">asl::d3q15</a>()));</div>
 <div class="line"></div>
-<div class="line">  <a name="_a25"></a><a class="code" href="classasl_1_1_index2_position_a_c_l.html">asl::Index2PositionACL</a> i2p(displacement-&gt;getBlock(),acl::typeToTypeID&lt;FlT&gt;());</div>
-<div class="line">  <a name="_a26"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;&gt;</a> center(<a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;&gt;</a>(displacement-&gt;getBlock().getSize())*.5 *</div>
+<div class="line">  <a name="_a26"></a><a class="code" href="classasl_1_1_index2_position_a_c_l.html">asl::Index2PositionACL</a> i2p(displacement-&gt;getBlock(),acl::typeToTypeID&lt;FlT&gt;());</div>
+<div class="line">  <a name="_a27"></a><a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;&gt;</a> center(<a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;&gt;</a>(displacement-&gt;getBlock().getSize())*.5 *</div>
 <div class="line">                     displacement-&gt;getBlock().dx +</div>
 <div class="line">                     displacement-&gt;getBlock().position);</div>
-<div class="line">  <a name="_a27"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPDistanceFunction</a> scf(<a name="a28"></a><a class="code" href="group___geom.html#ga6135c9c6948b35636a4eb6d5e3304e27">asl::generateDFPlane</a>(<a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;&gt;</a>(g.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()),center));</div>
+<div class="line">  <a name="_a28"></a><a class="code" href="classstd_1_1shared__ptr.html">asl::SPDistanceFunction</a> scf(<a name="a29"></a><a class="code" href="group___geom.html#ga6135c9c6948b35636a4eb6d5e3304e27">asl::generateDFPlane</a>(<a class="code" href="singletonasl_1_1_a_vec.html">asl::AVec&lt;&gt;</a>(g.<a class="code" href="classasl_1_1_parameter.html#a15c9f23e12d27c70293e03b6fa6c598e">v</a>()),center));</div>
 <div class="line">  </div>
-<div class="line">  <span class="keyword">auto</span> force((1.-<a name="a29"></a><a class="code" href="group___math_functions.html#ga4170acb412d9c75bb42ef43e342ec862">acl::sign</a>(scf-&gt;getDistance(i2p.<a name="a30"></a><a class="code" href="classasl_1_1_index2_position_a_c_l.html#a4920c2565eb8d3811ebebf4320f5a643">positionWithInit</a>)))/2.*</div>
+<div class="line">  <span class="keyword">auto</span> force((1.-<a name="a30"></a><a class="code" href="group___math_functions.html#ga4170acb412d9c75bb42ef43e342ec862">acl::sign</a>(scf-&gt;getDistance(i2p.<a name="a31"></a><a class="code" href="classasl_1_1_index2_position_a_c_l.html#a4920c2565eb8d3811ebebf4320f5a643">positionWithInit</a>)))/2.*</div>
 <div class="line">              <a class="code" href="group__generate_v_e.html#ga58b908082b7e31a2709de3c042d79881">acl::generateVEConstant</a>(gNum));</div>
-<div class="line">  <span class="keyword">auto</span> forceField(<a name="a31"></a><a class="code" href="group___data_fields.html#gab840c3992bace0f5475bc3c69ed6896f">asl::generateDataContainer_SP</a>(block, force, 1u));</div>
+<div class="line">  <span class="keyword">auto</span> forceField(<a name="a32"></a><a class="code" href="group___data_fields.html#gab840c3992bace0f5475bc3c69ed6896f">asl::generateDataContainer_SP</a>(block, force, 1u));</div>
 <div class="line">  </div>
 <div class="line">  elasticity-&gt;setForce(forceField-&gt;getSubContainer());</div>
 <div class="line">  elasticity-&gt;init();</div>
 <div class="line"></div>
 <div class="line">  vector&lt;asl::SPNumMethod&gt; bcl;</div>
-<div class="line">  bcl.push_back(<a name="a32"></a><a class="code" href="group___elasticity_b_c.html#ga7967f861711533df227e49c4724b554a">asl::generateBCZeroStress</a>(elasticity, mapX));</div>
-<div class="line">  <a name="a33"></a><a class="code" href="namespaceasl.html#ad92d011d36b9a44e2c83af5d397872ad">asl::addBCRigidWall</a>(bcl, elasticity, {<a name="a34"></a><a class="code" href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129ad0b48b19e82d76d7b78e5ba676782e92">asl::X0</a>});</div>
+<div class="line">  bcl.push_back(<a name="a33"></a><a class="code" href="group___elasticity_b_c.html#ga7967f861711533df227e49c4724b554a">asl::generateBCZeroStress</a>(elasticity, mapX));</div>
+<div class="line">  <a name="a34"></a><a class="code" href="namespaceasl.html#ad92d011d36b9a44e2c83af5d397872ad">asl::addBCRigidWall</a>(bcl, elasticity, {<a name="a35"></a><a class="code" href="group___boundary_conditions.html#ggae173c7e8ab6cd5980d0475bd7f0ff129ad0b48b19e82d76d7b78e5ba676782e92">asl::X0</a>});</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line">  <a name="a35"></a><a class="code" href="namespaceasl.html#a43ad4513d2baf1208d772cb46c23ed98">initAll</a>(bcl);</div>
+<div class="line">  <a name="a36"></a><a class="code" href="namespaceasl.html#a43ad4513d2baf1208d772cb46c23ed98">initAll</a>(bcl);</div>
 <div class="line"></div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Finished&quot;</span> &lt;&lt; endl;</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Computing...&quot;</span> &lt;&lt; <a name="a36"></a><a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Computing...&quot;</span> &lt;&lt; <a class="code" href="namespacecl.html#aec3275453ec57a74dfa7a34653cfa194">flush</a>;</div>
 <div class="line">  <a name="_a37"></a><a class="code" href="classasl_1_1_timer.html">asl::Timer</a> timer;</div>
 <div class="line"></div>
 <div class="line">  <a name="a38"></a><a class="code" href="namespaceasl.html#affa721cec9e33d916206b8e12f7cd5ed">executeAll</a>(bcl);</div>
