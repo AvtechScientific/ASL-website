@@ -5,9 +5,22 @@
     <description>OpenCL-enabled open source multiphysics simulation software package</description>
     <link>http://asl.org.il/</link>
     <atom:link href="http://asl.org.il/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Aug 2015 20:05:13 +0300</pubDate>
-    <lastBuildDate>Mon, 24 Aug 2015 20:05:13 +0300</lastBuildDate>
+    <pubDate>Wed, 02 Sep 2015 11:36:36 +0300</pubDate>
+    <lastBuildDate>Wed, 02 Sep 2015 11:36:36 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>ASL assists neurosurgeons and robots, computes brain deformation in real time.</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/media/brain_with_falx.png&quot; alt=&quot;Brain deformation simulation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/&quot;&gt;ASL&lt;/a&gt; was successfully utilized in the cognitive and diagnostics module of the medical robot developed within the framework of the &lt;a href=&quot;http://www.active-fp7.eu/index.php/resultsmenu/intraopbs.html&quot;&gt;ACTIVE project&lt;/a&gt; (WARNING: graphic images). Simulation of the brain shift process during a craniotomy procedure was implemented to facilitate robot-assisted awake neurosurgery. Despite the fact that it incorporates many physical effects into the underlying mathematical model, operates on a large simulation domain with high resolution - it is 100 times faster than the real time even if deployed on a regular laptop. This remarkable performance allowed to determine unknown patient and operation specific model parameters intra-operatively “on the fly” through iterative smart guessing and subsequent calibration of the intermediate results with the stereo camera observations. This way a full picture of brain deformation was generated, which is otherwise not available to the surgeon through direct examination by means of ultra sound, video cameras or MRI. This synthesized information, as common in image guided surgery, is used by the robot and/or physician for navigation, operative planning and identifying the target location.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 30 Aug 2015 00:00:00 +0300</pubDate>
+        <link>http://asl.org.il/2015/08/30/ASL_assists_neurosurgeons/</link>
+        <guid isPermaLink="true">http://asl.org.il/2015/08/30/ASL_assists_neurosurgeons/</guid>
+        
+        
+      </item>
     
       <item>
         <title>ASL enters Linux distributions at a record-breaking pace.</title>
