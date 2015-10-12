@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Advanced Simulation Library</title>
-    <description>OpenCL-enabled open source multiphysics simulation software package</description>
+    <description>open source hardware accelerated multiphysics simulation software</description>
     <link>http://asl.org.il/</link>
     <atom:link href="http://asl.org.il/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 10 Oct 2015 21:24:49 +0300</pubDate>
-    <lastBuildDate>Sat, 10 Oct 2015 21:24:49 +0300</lastBuildDate>
+    <pubDate>Mon, 12 Oct 2015 10:30:09 +0300</pubDate>
+    <lastBuildDate>Mon, 12 Oct 2015 10:30:09 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -30,7 +30,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;Arch Linux: &lt;a href=&quot;https://www.archlinux.org/packages/libasl/&quot;&gt;libasl&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Debian: &lt;a href=&quot;http://anonscm.debian.org/cgit/debian-science/packages/asl.git/&quot;&gt;asl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Debian: &lt;a href=&quot;https://packages.debian.org/sid/libasl0&quot;&gt;asl&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Fedora: &lt;a href=&quot;https://copr.fedoraproject.org/coprs/lupinix/ASL/&quot;&gt;ASL&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Gentoo: &lt;a href=&quot;https://cgit.gentoo.org/proj/sci.git/tree/sci-libs/asl&quot;&gt;asl&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;OpenSuse: &lt;a href=&quot;https://build.opensuse.org/package/show/science/ASL&quot;&gt;ASL&lt;/a&gt;&lt;/li&gt;
