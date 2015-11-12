@@ -36,6 +36,15 @@ img {
   vertical-align: middle;
   box-shadow: 3px 3px 5px #7e7e7e; }
 
+video.post {
+  max-width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d7d7d7;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 3px 3px 5px #7e7e7e; }
+
 /**
  * Figures
  */
@@ -43,7 +52,7 @@ figure {
   display: table;
   float: left; }
 
-figure img, figure video {
+figure img, figure video.figure {
   border-style: solid;
   border-width: 1px;
   border-color: #d7d7d7;
@@ -52,7 +61,7 @@ figure img, figure video {
 figure img {
   width: 200px;
   height: 125px; }
-figure video {
+figure video.figure {
   width: 400px;
   height: 250px;
   box-shadow: 3px 3px 5px #7e7e7e; }
