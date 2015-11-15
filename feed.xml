@@ -5,8 +5,8 @@
     <description>Open source hardware accelerated multiphysics simulation software</description>
     <link>http://asl.org.il/</link>
     <atom:link href="http://asl.org.il/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Nov 2015 15:48:13 +0200</pubDate>
-    <lastBuildDate>Sun, 15 Nov 2015 15:48:13 +0200</lastBuildDate>
+    <pubDate>Sun, 15 Nov 2015 19:31:19 +0200</pubDate>
+    <lastBuildDate>Sun, 15 Nov 2015 19:31:19 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -23,7 +23,7 @@
 
 &lt;p&gt;On the eve of the SC15 conference Avtech Scientific announces its cooperation with IBM and NVIDIA (both are platinum members of the &lt;a href=&quot;http://openpowerfoundation.org/&quot;&gt;OpenPOWER Foundation&lt;/a&gt;) in the area of high-performance scientific computing. Initial efforts will focus on comparative testing and benchmarking of the open source Advanced Simulation Library on vendors’ hardware with subsequent performance tuning. The long-term objective is to ensure ASL’s optimal productivity on the OpenPOWER platform, smooth user experience and the availability of detailed documentation of the ASL deployment procedure on all related accelerators.&lt;/p&gt;
 
-&lt;p&gt;The first benchmark video of the ASL’s standard &lt;a href=&quot;/benchmarks/multicomponent_flow/&quot;&gt;multicomponent flow test&lt;/a&gt; demonstrates impressive results, obtained on a single NVIDIA Tesla K80 GPU with Intel Xeon E5-2690 10-core 3GHz serving as host. They will be used as a basis for evaluation of POWER8 performance.&lt;/p&gt;
+&lt;p&gt;First &lt;a href=&quot;https://youtu.be/-gWWpkd3YWE&quot;&gt;benchmark video&lt;/a&gt; of the ASL’s standard &lt;a href=&quot;/benchmarks/multicomponent_flow/&quot;&gt;multicomponent flow test&lt;/a&gt; demonstrates impressive results, obtained on a single NVIDIA Tesla K80 GPU with Intel Xeon E5-2690 10-core 3GHz serving as host. They will be used as a basis for evaluation of POWER8 performance.&lt;/p&gt;
 
 &lt;h3 id=&quot;numerical-setup-and-performance&quot;&gt;Numerical setup and performance&lt;/h3&gt;
 
