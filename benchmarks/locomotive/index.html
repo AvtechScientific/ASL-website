@@ -155,15 +155,6 @@
 
 <p><a href="/doc/Developer-Guide/locomotive_8cc-example.html">locomotive.cc</a></p>
 
-<h2 id="platform-used">Platform used</h2>
-
-<ul>
-  <li>CPU: AMD FX(tm)-6300 Six-Core Processor 3.5GHz</li>
-  <li>RAM: 8Gb</li>
-  <li>GPU: Sapphire AMD Radeon HD 7950 3GB GDDR5 Boost OC</li>
-  <li>OS: 64-bit Debian GNU/Linux</li>
-</ul>
-
 <h2 id="numerical-setup">Numerical setup</h2>
 
 <ul>
@@ -171,16 +162,45 @@
   <li>Number of points: 11’687’500</li>
   <li>Resolution: 0.08 m</li>
   <li>Physical size: 14.96 x 10 x 40 m³</li>
-  <li>Number of iterations: 200’000</li>
+  <li>Number of iterations: 50’000</li>
   <li>Time step: 4.8e-4 s</li>
-  <li>Physical time: 96 s</li>
+  <li>Physical time: 24 s</li>
 </ul>
 
 <h2 id="results">Results</h2>
 
-<ul>
-  <li>Computation time: 4191 s</li>
-</ul>
+<p>ASL version - 0.1.6:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Compute device</th>
+      <th style="text-align: left">Host</th>
+      <th style="text-align: right">Computation time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="http://images.nvidia.com/content/pdf/kepler/Tesla-K80-BoardSpec-07317-001-v05.pdf">NVIDIA Tesla K80 12 GB GDDR5</a></td>
+      <td style="text-align: left">Intel Ivy Bridge E5-2690 v2 @ 3.00GHz 10-core</td>
+      <td style="text-align: right">967 s</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">AMD Radeon HD 7950 3GB GDDR5</td>
+      <td style="text-align: left">AMD FX-6300 CPU 3.5GHz 6-core</td>
+      <td style="text-align: right">1048 s</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="http://www.nvidia.com/content/PDF/kepler/Tesla-K40-Active-Board-Spec-BD-06949-001_v03.pdf">NVIDIA Tesla K40m 12 GB GDDR5</a></td>
+      <td style="text-align: left">Intel Ivy Bridge E5-2690 v2 @ 3.00GHz 10-core</td>
+      <td style="text-align: right">1432 s</td>
+    </tr>
+  </tbody>
+</table>
 
   </article>
 
