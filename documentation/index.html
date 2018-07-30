@@ -10,8 +10,8 @@
   <meta name="description" content="Open source hardware accelerated multiphysics simulation software">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://asl.org.il/documentation/">
-  <link rel="alternate" type="application/rss+xml" title="Advanced Simulation Library" href="http://asl.org.il/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/documentation/">
+  <link rel="alternate" type="application/rss+xml" title="Advanced Simulation Library" href="http://localhost:4000/feed.xml" />
 
 <link rel="icon" href="/media/favicon.png">
 
@@ -140,18 +140,18 @@
     </ul>
   </li>
   <li>Download and extract the <a href="https://github.com/AvtechScientific/ASL/releases/latest">ASL source code archive</a>.</li>
-  <li>Create a build directory: <code>mkdir build-asl &amp;&amp; cd build-asl</code></li>
-  <li>Use <a href="http://www.cmake.org/cmake/help/v3.2/manual/cmake-generators.7.html">cmake generator</a> to produce Makefiles: <code>cmake -G "Unix Makefiles" ../ASL</code> or project files for your IDE (Visual Studio, Xcode, Eclipse, etc.): <code>cmake -G "Visual Studio 10" ../ASL</code></li>
-  <li>Run make (as root if installing into default destination <code>/usr/local</code>): <code>make install</code></li>
+  <li>Create a build directory: <code class="highlighter-rouge">mkdir build-asl &amp;&amp; cd build-asl</code></li>
+  <li>Use <a href="http://www.cmake.org/cmake/help/v3.2/manual/cmake-generators.7.html">cmake generator</a> to produce Makefiles: <code class="highlighter-rouge">cmake -G "Unix Makefiles" ../ASL</code> or project files for your IDE (Visual Studio, Xcode, Eclipse, etc.): <code class="highlighter-rouge">cmake -G "Visual Studio 10" ../ASL</code></li>
+  <li>Run make (as root if installing into default destination <code class="highlighter-rouge">/usr/local</code>): <code class="highlighter-rouge">make install</code></li>
 </ol>
 
 <h3 id="running-an-example">Running an example</h3>
 
 <ol>
-  <li>Go to examples: <code>cd examples/flow/locomotive</code></li>
+  <li>Go to examples: <code class="highlighter-rouge">cd examples/flow/locomotive</code></li>
   <li>Download geometry file <a href="http://asl.org.il/input_data/locomotive.stl">locomotive.stl</a> from the <a href="http://asl.org.il/input_data">ASL input data page</a>.</li>
-  <li>Run: <code>./asl-locomotive --input locomotive.stl</code>  <br />
-Optionally: change parameters <code>./asl-locomotive --input locomotive.stl --dx 1 --dt 2</code> or write all of them into a file for later editing/reuse - <code>./asl-locomotive -g bigGrid.ini</code>. List all available options - <code>./asl-locomotive -h</code>.</li>
+  <li>Run: <code class="highlighter-rouge">./asl-locomotive --input locomotive.stl</code><br />
+Optionally: change parameters <code class="highlighter-rouge">./asl-locomotive --input locomotive.stl --dx 1 --dt 2</code> or write all of them into a file for later editing/reuse - <code class="highlighter-rouge">./asl-locomotive -g bigGrid.ini</code>. List all available options - <code class="highlighter-rouge">./asl-locomotive -h</code>.</li>
   <li>Post-processing: see <a href="https://github.com/AvtechScientific/ASL/wiki/User-Guide#post-processing">step by step example</a> and <a href="http://asl.org.il/input_data/locomotive.pvsm">locomotive.pvsm</a> - the ParaView state file.</li>
 </ol>
 
@@ -159,21 +159,21 @@ Optionally: change parameters <code>./asl-locomotive --input locomotive.stl --dx
 
 <ol>
   <li>Take a look on <a href="http://asl.org.il/doc/Developer-Guide/examples.html">examples</a> and the <a href="http://asl.org.il/doc/Developer-Guide/">API documentation</a>, start with <a href="http://asl.org.il/doc/Developer-Guide/locomotive_8cc-example.html">examples/flow/locomotive.cc</a></li>
-  <li>ASL installation supplies <code>ASL.pc</code> and <code>ASLConfig.cmake</code> files. To build your program using:</li>
+  <li>ASL installation supplies <code class="highlighter-rouge">ASL.pc</code> and <code class="highlighter-rouge">ASLConfig.cmake</code> files. To build your program using:</li>
 </ol>
 
 <ul>
-  <li><code>pkg-config</code>: <code>c++ `pkg-config --cflags --libs ASL` -std=c++11 -o flow flow.cc</code></li>
-  <li><code>cmake</code>: write a basic <code>CMakeLists.txt</code> file:</li>
+  <li><code class="highlighter-rouge">pkg-config</code>: <code class="highlighter-rouge">c++ `pkg-config --cflags --libs ASL` -std=c++11 -o flow flow.cc</code></li>
+  <li><code class="highlighter-rouge">cmake</code>: write a basic <code class="highlighter-rouge">CMakeLists.txt</code> file:</li>
 </ul>
 
-<pre><code class="language-cmake">project(locomotive)
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
-find_package(ASL 0.1.4 CONFIG REQUIRED)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-add_executable(locomotive locomotive.cc)
-target_link_libraries(locomotive PRIVATE ASL::aslnum ASL::aslvtk ASL::asl)
-</code></pre>
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">project</span><span class="p">(</span>locomotive<span class="p">)</span>
+<span class="nb">cmake_minimum_required</span><span class="p">(</span>VERSION 3.0.2 FATAL_ERROR<span class="p">)</span>
+<span class="nb">find_package</span><span class="p">(</span>ASL 0.1.4 CONFIG REQUIRED<span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span>CMAKE_CXX_FLAGS <span class="s2">"</span><span class="si">${</span><span class="nv">CMAKE_CXX_FLAGS</span><span class="si">}</span><span class="s2"> -std=c++11"</span><span class="p">)</span>
+<span class="nb">add_executable</span><span class="p">(</span>locomotive locomotive.cc<span class="p">)</span>
+<span class="nb">target_link_libraries</span><span class="p">(</span>locomotive PRIVATE ASL::aslnum ASL::aslvtk ASL::asl<span class="p">)</span>
+</code></pre></div></div>
 
   </article>
 
@@ -186,12 +186,12 @@ target_link_libraries(locomotive PRIVATE ASL::aslnum ASL::aslvtk ASL::asl)
 
 <div class="social-share">
 	Share this on:
-	<a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=Documentation&amp;url=http://asl.org.il/documentation/&amp;source=http%3a%2f%2fasl.org.il" target="_blank" title="Share this on LinkedIn">LinkedIn</a>
-	<a href="https://twitter.com/intent/tweet?text=Documentation&amp;url=http://asl.org.il/documentation/&amp;via=AvtechSci&amp;hashtags=" target="_blank" title="Share this on Twitter">Twitter</a>
-	<a href="https://www.facebook.com/sharer/sharer.php?t=Documentation&amp;u=http://asl.org.il/documentation/" target="_blank" title="Share this on Facebook">Facebook</a>
-	<a href="https://plus.google.com/share?url=http://asl.org.il/documentation/" target="_blank" title="Share this on Google Plus">Google+</a>
-	<a href="http://pinterest.com/pin/create/link/?url=http://asl.org.il/documentation/&amp;description=Documentation" target="_blank" title="Share this on Pinterest">Pinterest</a>
-	<a href="mailto:?Subject=Documentation&amp;body=http://asl.org.il/documentation/" target="_top" title="Share this via Email">Email</a>
+	<a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=Documentation&amp;url=http://localhost:4000/documentation/&amp;source=http%3a%2f%2fasl.org.il" target="_blank" title="Share this on LinkedIn">LinkedIn</a>
+	<a href="https://twitter.com/intent/tweet?text=Documentation&amp;url=http://localhost:4000/documentation/&amp;via=AvtechSci&amp;hashtags=" target="_blank" title="Share this on Twitter">Twitter</a>
+	<a href="https://www.facebook.com/sharer/sharer.php?t=Documentation&amp;u=http://localhost:4000/documentation/" target="_blank" title="Share this on Facebook">Facebook</a>
+	<a href="https://plus.google.com/share?url=http://localhost:4000/documentation/" target="_blank" title="Share this on Google Plus">Google+</a>
+	<a href="http://pinterest.com/pin/create/link/?url=http://localhost:4000/documentation/&amp;description=Documentation" target="_blank" title="Share this on Pinterest">Pinterest</a>
+	<a href="mailto:?Subject=Documentation&amp;body=http://localhost:4000/documentation/" target="_top" title="Share this via Email">Email</a>
 </div>
 
       </div>
@@ -201,7 +201,7 @@ target_link_libraries(locomotive PRIVATE ASL::aslnum ASL::aslvtk ASL::asl)
 
 	<div class="wrapper">
 		<div class="footer-col-wrapper">
-			<a href="/licensing">Copyright</a> © 2015-2017 <a href="http://avtechscientific.com">Avtech Scientific</a> | Advanced Simulation Library™
+			<a href="/licensing">Copyright</a> © 2015-2018 <a href="http://avtechscientific.com">Avtech Scientific</a> | Advanced Simulation Library™
 			<div style="float: right;">
 				Follow us:<br />
 				<a href="https://www.twitter.com/AvtechSci" title="Twitter"><i class="svg-icon twitter"></i></a>

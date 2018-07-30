@@ -3,19 +3,34 @@
   <channel>
     <title>Advanced Simulation Library</title>
     <description>Open source hardware accelerated multiphysics simulation software</description>
-    <link>http://asl.org.il/</link>
-    <atom:link href="http://asl.org.il/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Jun 2017 18:41:31 +0300</pubDate>
-    <lastBuildDate>Thu, 29 Jun 2017 18:41:31 +0300</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 30 Jul 2018 12:25:30 +0300</pubDate>
+    <lastBuildDate>Mon, 30 Jul 2018 12:25:30 +0300</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Avtech Scientific is looking for a CEO and a CTO; 18% equity for each.</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://avtechscientific.com&quot;&gt;Avtech Scientific&lt;/a&gt; is looking for a suitable CEO and CTO who are expected to join the company as shareholders with 18% of equity each.&lt;/p&gt;
+
+&lt;p&gt;CEO should demonstrate relevant experience in building and promoting technological start-ups, preferably in a related field. CTO should have solid experience in computational science, PhD in physics or chemistry and demonstrate the ability to solve advanced problems using &lt;a href=&quot;http://asl.org.il&quot;&gt;ASL&lt;/a&gt;. Both should have passion for open-source and be willing to utilize business models based exclusively on it.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://avtechscientific.com/contact/&quot;&gt;Contact us&lt;/a&gt; to provide your CV.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Jul 2018 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/2018/07/30/Avtech_Scientific_is_looking_for_CEO_and_CTO/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/30/Avtech_Scientific_is_looking_for_CEO_and_CTO/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Avtech Scientific joins OpenHPC initiative to integrate ASL into the HPC framework.</title>
         <description>&lt;p&gt;Avtech Scientific has joined &lt;a href=&quot;http://www.openhpc.community&quot;&gt;OpenHPC&lt;/a&gt;, a collaborative effort to provide a new, open source stack supporting the world’s most sophisticated high-performance computing (HPC) environments. The initiative, which was formed by the Linux Foundation, includes more than 30 national laboratories, universities, research centers, and software vendors. These &lt;a href=&quot;https://web.archive.org/web/20160120050514/http://www.openhpc.community/about-us/participants&quot;&gt;founding members&lt;/a&gt; have agreed to work together to create a stable environment for testing and validating HPC software. Avtech Scientific will integrate its open source accelerated multiphysics toolkit - Advanced Simulation Library into the framework.&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Dec 2015 00:00:00 +0200</pubDate>
-        <link>http://asl.org.il/2015/12/21/Avtech_Scientific_joins_OpenHPC/</link>
-        <guid isPermaLink="true">http://asl.org.il/2015/12/21/Avtech_Scientific_joins_OpenHPC/</guid>
+        <link>http://localhost:4000/2015/12/21/Avtech_Scientific_joins_OpenHPC/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/12/21/Avtech_Scientific_joins_OpenHPC/</guid>
         
         
       </item>
@@ -47,8 +62,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 12 Nov 2015 00:00:00 +0200</pubDate>
-        <link>http://asl.org.il/2015/11/12/Avtech_Scientific_announces_cooperation_with_IBM_and_NVIDIA/</link>
-        <guid isPermaLink="true">http://asl.org.il/2015/11/12/Avtech_Scientific_announces_cooperation_with_IBM_and_NVIDIA/</guid>
+        <link>http://localhost:4000/2015/11/12/Avtech_Scientific_announces_cooperation_with_IBM_and_NVIDIA/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/11/12/Avtech_Scientific_announces_cooperation_with_IBM_and_NVIDIA/</guid>
         
         
       </item>
@@ -62,8 +77,8 @@
 &lt;p&gt;&lt;strong&gt;Covered on:&lt;/strong&gt; &lt;a href=&quot;http://www.technology.org/2015/09/14/asl-assists-neurosurgeons-and-robots-computes-brain-deformation-in-real-time/&quot;&gt;Technology.org&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Aug 2015 00:00:00 +0300</pubDate>
-        <link>http://asl.org.il/2015/08/30/ASL_assists_neurosurgeons/</link>
-        <guid isPermaLink="true">http://asl.org.il/2015/08/30/ASL_assists_neurosurgeons/</guid>
+        <link>http://localhost:4000/2015/08/30/ASL_assists_neurosurgeons/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/08/30/ASL_assists_neurosurgeons/</guid>
         
         
       </item>
@@ -74,16 +89,17 @@
 
 &lt;ul&gt;
   &lt;li&gt;Arch Linux: &lt;a href=&quot;https://www.archlinux.org/packages/libasl/&quot;&gt;libasl&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Debian: &lt;a href=&quot;https://packages.debian.org/testing/libasl-dev&quot;&gt;libasl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Debian: &lt;a href=&quot;https://packages.debian.org/stable/libasl-dev&quot;&gt;libasl&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Fedora: &lt;a href=&quot;https://admin.fedoraproject.org/pkgdb/package/libASL/&quot;&gt;libASL&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Gentoo: &lt;a href=&quot;https://cgit.gentoo.org/proj/sci.git/tree/sci-libs/asl&quot;&gt;asl&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;OpenSuse: &lt;a href=&quot;http://software.opensuse.org/download.html?project=science&amp;amp;package=ASL&quot;&gt;ASL&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Ubuntu: &lt;a href=&quot;http://packages.ubuntu.com/search?keywords=libasl-dev&quot;&gt;libasl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;RedHat EL, CentOS, Scientific Linux, Oracle Linux, etc.: &lt;a href=&quot;https://admin.fedoraproject.org/pkgdb/package/libASL/&quot;&gt;libASL&lt;/a&gt; (via EPEL)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 31 Jul 2015 00:00:00 +0300</pubDate>
-        <link>http://asl.org.il/2015/07/31/ASL_enters_Linux/</link>
-        <guid isPermaLink="true">http://asl.org.il/2015/07/31/ASL_enters_Linux/</guid>
+        <link>http://localhost:4000/2015/07/31/ASL_enters_Linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/07/31/ASL_enters_Linux/</guid>
         
         
       </item>
@@ -94,8 +110,8 @@
 
 </description>
         <pubDate>Tue, 09 Jun 2015 00:00:00 +0300</pubDate>
-        <link>http://asl.org.il/2015/06/09/ASL-0.1.2_released/</link>
-        <guid isPermaLink="true">http://asl.org.il/2015/06/09/ASL-0.1.2_released/</guid>
+        <link>http://localhost:4000/2015/06/09/ASL-0.1.2_released/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/06/09/ASL-0.1.2_released/</guid>
         
         
       </item>
@@ -106,19 +122,19 @@
 
 &lt;p&gt;Advanced Simulation Library is a free and open source hardware accelerated multiphysics simulation platform (and an extensible general purpose tool for solving Partial Differential Equations). Its computational engine is written in &lt;a href=&quot;http://en.wikipedia.org/wiki/OpenCL&quot;&gt;OpenCL&lt;/a&gt; and utilizes matrix-free solution techniques which enable &lt;a href=&quot;/benchmarks&quot;&gt;extraordinarily high performance, memory efficiency and deployability&lt;/a&gt; on a variety of massively parallel architectures, ranging from inexpensive FPGAs, DSPs and GPUs up to heterogeneous clusters and supercomputers. The engine is hidden entirely behind &lt;a href=&quot;/doc/Developer-Guide/locomotive_8cc-example.html&quot;&gt;simple C++ classes&lt;/a&gt;, so that no OpenCL knowledge is required from application programmers. Mesh-free, immersed boundary approach allows one to &lt;a href=&quot;/documentation/#running-an-example&quot;&gt;move from CAD directly to simulation&lt;/a&gt; drastically reducing pre-processing efforts and amount of potential errors. ASL can be used to model various coupled physical and chemical phenomena and employed in a multitude of fields: computational fluid dynamics, virtual sensing&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, industrial process data validation and reconciliation, image-guided surgery, computer-aided engineering, design space exploration, crystallography, etc..&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.khronos.org/news/archives/avtech-scientific-open-sources-its-opencl-based-advanced-simulation-library&quot;&gt;Announcement on Khronos&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.khronos.org/news/archives/avtech-scientific-open-sources-its-opencl-based-advanced-simulation-library&quot;&gt;Announcement on Khronos&lt;/a&gt;
 &lt;a href=&quot;https://www.khronos.org/opencl/resources/opencl-libraries-and-frameworks-with-opencl-acceleration&quot;&gt;ASL among Khronos OpenCL resources&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Virtual or soft sensors are applications for simulation-based monitoring and control of industrial processes, used to provide feasible and economical alternatives to hardware sensors if the latter are unavailable, impractical or do not provide sufficient information. Virtual sensors are often deployed on embedded systems but can also run on more powerful hardware depending on the complexity of the underlying model and operational needs. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Virtual or soft sensors are applications for simulation-based monitoring and control of industrial processes, used to provide feasible and economical alternatives to hardware sensors if the latter are unavailable, impractical or do not provide sufficient information. Virtual sensors are often deployed on embedded systems but can also run on more powerful hardware depending on the complexity of the underlying model and operational needs. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 14 May 2015 00:00:00 +0300</pubDate>
-        <link>http://asl.org.il/2015/05/14/open-sourcing_ASL/</link>
-        <guid isPermaLink="true">http://asl.org.il/2015/05/14/open-sourcing_ASL/</guid>
+        <link>http://localhost:4000/2015/05/14/open-sourcing_ASL/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/05/14/open-sourcing_ASL/</guid>
         
         
       </item>
