@@ -3,23 +3,23 @@
   <channel>
     <title>Advanced Simulation Library</title>
     <description>Open source hardware accelerated multiphysics simulation software</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>http://asl.avtechscientific.com/</link>
+    <atom:link href="http://asl.avtechscientific.com/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Mon, 17 Dec 2018 20:08:38 +0200</pubDate>
     <lastBuildDate>Mon, 17 Dec 2018 20:08:38 +0200</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>Avtech Scientific is looking for a CEO and a CTO; 18% equity for each one.</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://avtechscientific.com&quot;&gt;Avtech Scientific&lt;/a&gt;, the developer of the &lt;a href=&quot;http://asl.org.il&quot;&gt;ASL&lt;/a&gt;, is looking for a suitable CEO and CTO who are expected to join the company as shareholders with 18% of equity each one.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://avtechscientific.com&quot;&gt;Avtech Scientific&lt;/a&gt;, the developer of the &lt;a href=&quot;http://asl.avtechscientific.com&quot;&gt;ASL&lt;/a&gt;, is looking for a suitable CEO and CTO who are expected to join the company as shareholders with 18% of equity each one.&lt;/p&gt;
 
-&lt;p&gt;CEO should demonstrate relevant experience in building and promoting technological start-ups, preferably in a related field. CTO should have solid experience in computational science, PhD in physics or chemistry and demonstrate the ability to solve advanced problems using &lt;a href=&quot;http://asl.org.il&quot;&gt;ASL&lt;/a&gt;. Both should have passion for open-source and be willing to utilize business models based exclusively on it.&lt;/p&gt;
+&lt;p&gt;CEO should demonstrate relevant experience in building and promoting technological start-ups, preferably in a related field. CTO should have solid experience in computational science, PhD in physics or chemistry and demonstrate the ability to solve advanced problems using &lt;a href=&quot;http://asl.avtechscientific.com&quot;&gt;ASL&lt;/a&gt;. Both should have passion for open-source and be willing to utilize business models based exclusively on it.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://avtechscientific.com/contact/&quot;&gt;Contact us&lt;/a&gt; to provide your CV.&lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Jul 2018 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/2018/07/30/Avtech_Scientific_is_looking_for_CEO_and_CTO/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/30/Avtech_Scientific_is_looking_for_CEO_and_CTO/</guid>
+        <link>http://asl.avtechscientific.com/2018/07/30/Avtech_Scientific_is_looking_for_CEO_and_CTO/</link>
+        <guid isPermaLink="true">http://asl.avtechscientific.com/2018/07/30/Avtech_Scientific_is_looking_for_CEO_and_CTO/</guid>
         
         
       </item>
@@ -29,8 +29,8 @@
         <description>&lt;p&gt;Avtech Scientific has joined &lt;a href=&quot;http://www.openhpc.community&quot;&gt;OpenHPC&lt;/a&gt;, a collaborative effort to provide a new, open source stack supporting the world’s most sophisticated high-performance computing (HPC) environments. The initiative, which was formed by the Linux Foundation, includes more than 30 national laboratories, universities, research centers, and software vendors. These &lt;a href=&quot;https://web.archive.org/web/20160120050514/http://www.openhpc.community/about-us/participants&quot;&gt;founding members&lt;/a&gt; have agreed to work together to create a stable environment for testing and validating HPC software. Avtech Scientific will integrate its open source accelerated multiphysics toolkit - Advanced Simulation Library into the framework.&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Dec 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2015/12/21/Avtech_Scientific_joins_OpenHPC/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/12/21/Avtech_Scientific_joins_OpenHPC/</guid>
+        <link>http://asl.avtechscientific.com/2015/12/21/Avtech_Scientific_joins_OpenHPC/</link>
+        <guid isPermaLink="true">http://asl.avtechscientific.com/2015/12/21/Avtech_Scientific_joins_OpenHPC/</guid>
         
         
       </item>
@@ -62,8 +62,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 12 Nov 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2015/11/12/Avtech_Scientific_announces_cooperation_with_IBM_and_NVIDIA/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/11/12/Avtech_Scientific_announces_cooperation_with_IBM_and_NVIDIA/</guid>
+        <link>http://asl.avtechscientific.com/2015/11/12/Avtech_Scientific_announces_cooperation_with_IBM_and_NVIDIA/</link>
+        <guid isPermaLink="true">http://asl.avtechscientific.com/2015/11/12/Avtech_Scientific_announces_cooperation_with_IBM_and_NVIDIA/</guid>
         
         
       </item>
@@ -77,8 +77,8 @@
 &lt;p&gt;&lt;strong&gt;Covered on:&lt;/strong&gt; &lt;a href=&quot;http://www.technology.org/2015/09/14/asl-assists-neurosurgeons-and-robots-computes-brain-deformation-in-real-time/&quot;&gt;Technology.org&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Aug 2015 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/2015/08/30/ASL_assists_neurosurgeons/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/08/30/ASL_assists_neurosurgeons/</guid>
+        <link>http://asl.avtechscientific.com/2015/08/30/ASL_assists_neurosurgeons/</link>
+        <guid isPermaLink="true">http://asl.avtechscientific.com/2015/08/30/ASL_assists_neurosurgeons/</guid>
         
         
       </item>
@@ -98,8 +98,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 31 Jul 2015 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/2015/07/31/ASL_enters_Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/07/31/ASL_enters_Linux/</guid>
+        <link>http://asl.avtechscientific.com/2015/07/31/ASL_enters_Linux/</link>
+        <guid isPermaLink="true">http://asl.avtechscientific.com/2015/07/31/ASL_enters_Linux/</guid>
         
         
       </item>
@@ -110,8 +110,8 @@
 
 </description>
         <pubDate>Tue, 09 Jun 2015 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/2015/06/09/ASL-0.1.2_released/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/06/09/ASL-0.1.2_released/</guid>
+        <link>http://asl.avtechscientific.com/2015/06/09/ASL-0.1.2_released/</link>
+        <guid isPermaLink="true">http://asl.avtechscientific.com/2015/06/09/ASL-0.1.2_released/</guid>
         
         
       </item>
@@ -133,8 +133,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 14 May 2015 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/2015/05/14/open-sourcing_ASL/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/05/14/open-sourcing_ASL/</guid>
+        <link>http://asl.avtechscientific.com/2015/05/14/open-sourcing_ASL/</link>
+        <guid isPermaLink="true">http://asl.avtechscientific.com/2015/05/14/open-sourcing_ASL/</guid>
         
         
       </item>
